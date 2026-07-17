@@ -1,0 +1,55 @@
+2026-06-24 20:12:30.962 | INFO  | [startup] Logging initialized → C:\Users\qam04800.QUINTEFT\Downloads\SQL_Data_Analysis_Agent-voice\backend\logs\app_2026-06-24.log
+2026-06-24 20:12:55.872 | INFO  | [embedding] Preloading embedding model...
+2026-06-24 20:12:55.873 | INFO  | [voice] Loading Whisper model: tiny.en ...
+2026-06-24 20:12:57.084 | INFO  | HTTP Request: GET https://huggingface.co/api/models/Systran/faster-whisper-tiny.en/revision/main "HTTP/1.1 200 OK"
+2026-06-24 20:12:57.334 | INFO  | HTTP Request: HEAD https://huggingface.co/Systran/faster-whisper-tiny.en/resolve/0d3d19a32d3338f10357c0889762bd8d64bbdeba/vocabulary.txt "HTTP/1.1 307 Temporary Redirect"
+2026-06-24 20:12:57.335 | INFO  | HTTP Request: HEAD https://huggingface.co/Systran/faster-whisper-tiny.en/resolve/0d3d19a32d3338f10357c0889762bd8d64bbdeba/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-24 20:12:57.337 | INFO  | HTTP Request: HEAD https://huggingface.co/Systran/faster-whisper-tiny.en/resolve/0d3d19a32d3338f10357c0889762bd8d64bbdeba/tokenizer.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-24 20:12:57.339 | WARNING | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-06-24 20:12:57.345 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Systran/faster-whisper-tiny.en/0d3d19a32d3338f10357c0889762bd8d64bbdeba/vocabulary.txt "HTTP/1.1 200 OK"
+2026-06-24 20:12:57.346 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Systran/faster-whisper-tiny.en/0d3d19a32d3338f10357c0889762bd8d64bbdeba/config.json "HTTP/1.1 200 OK"
+2026-06-24 20:12:57.347 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Systran/faster-whisper-tiny.en/0d3d19a32d3338f10357c0889762bd8d64bbdeba/tokenizer.json "HTTP/1.1 200 OK"
+2026-06-24 20:12:57.351 | INFO  | HTTP Request: HEAD https://huggingface.co/Systran/faster-whisper-tiny.en/resolve/0d3d19a32d3338f10357c0889762bd8d64bbdeba/model.bin "HTTP/1.1 302 Found"
+2026-06-24 20:12:57.364 | INFO  | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Systran/faster-whisper-tiny.en/0d3d19a32d3338f10357c0889762bd8d64bbdeba/config.json "HTTP/1.1 200 OK"
+2026-06-24 20:12:57.365 | INFO  | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Systran/faster-whisper-tiny.en/0d3d19a32d3338f10357c0889762bd8d64bbdeba/vocabulary.txt "HTTP/1.1 200 OK"
+2026-06-24 20:12:57.367 | INFO  | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Systran/faster-whisper-tiny.en/0d3d19a32d3338f10357c0889762bd8d64bbdeba/tokenizer.json "HTTP/1.1 200 OK"
+2026-06-24 20:12:57.787 | INFO  | HTTP Request: GET https://huggingface.co/api/models/Systran/faster-whisper-tiny.en/xet-read-token/0d3d19a32d3338f10357c0889762bd8d64bbdeba "HTTP/1.1 200 OK"
+2026-06-24 20:13:08.769 | INFO  | [voice] ✅ Whisper model 'tiny.en' ready.
+2026-06-24 20:13:12.564 | INFO  | [auth] ❌ Auth DB failed: (pyodbc.OperationalError) ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]SQL Server Network Interfaces: Error Locating Server/Instance Specified [xFFFFFFFF].  (-1) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (-1)')
+(Background on this error at: https://sqlalche.me/e/20/e3q8) — using hardcoded users
+2026-06-24 20:13:15.821 | INFO  | No device provided, using cpu
+2026-06-24 20:13:16.068 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-24 20:13:16.079 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json "HTTP/1.1 200 OK"
+2026-06-24 20:13:16.401 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-24 20:13:16.413 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-06-24 20:13:16.420 | INFO  | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-06-24 20:13:16.646 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-24 20:13:16.654 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-06-24 20:13:16.884 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-06-24 20:13:16.894 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/README.md "HTTP/1.1 200 OK"
+2026-06-24 20:13:17.134 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-24 20:13:17.142 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json "HTTP/1.1 200 OK"
+2026-06-24 20:13:17.393 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-24 20:13:17.400 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-06-24 20:13:17.632 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-06-24 20:13:17.878 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-24 20:13:17.886 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+2026-06-24 20:13:18.319 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-06-24 20:13:18.554 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-06-24 20:13:18.787 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-06-24 20:13:19.032 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-06-24 20:13:19.278 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-24 20:13:19.289 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-06-24 20:13:19.529 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-24 20:13:19.539 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+2026-06-24 20:13:19.817 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-24 20:13:19.825 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+2026-06-24 20:13:20.058 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-24 20:13:20.070 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-06-24 20:13:20.326 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-06-24 20:13:20.555 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-06-24 20:13:20.858 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-24 20:13:20.868 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-06-24 20:13:21.114 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-06-24 20:13:21.121 | INFO  | [embedding] ✅ Model loaded and ready.
+2026-06-24 21:04:08.203 | INFO  | [startup] Logging initialized → C:\Users\qam04800.QUINTEFT\Downloads\SQL_Data_Analysis_Agent-voice\backend\logs\app_2026-06-24.log

@@ -1,0 +1,489 @@
+2026-05-14 15:58:32.365 | INFO  | [startup] Logging initialized → C:\Users\qam04673\Documents\AI_SQL_AGENT_NextJS\sql-analyst-ui\backend\logs\app_2026-05-14.log
+2026-05-14 15:58:32.508 | INFO  | [embedding] Preloading embedding model...
+2026-05-14 15:58:32.508 | INFO  | [auth] ❌ Auth DB error: create_sql_server_connection() got an unexpected keyword argument 'windows_auth'
+2026-05-14 15:58:50.190 | INFO  | [startup] Logging initialized → C:\Users\qam04673\Documents\AI_SQL_AGENT_NextJS\sql-analyst-ui\backend\logs\app_2026-05-14.log
+2026-05-14 15:58:50.290 | INFO  | [embedding] Preloading embedding model...
+2026-05-14 15:58:50.291 | INFO  | [auth] ❌ Auth DB error: create_sql_server_connection() got an unexpected keyword argument 'windows_auth'
+2026-05-14 15:59:06.419 | INFO  | [startup] Logging initialized → C:\Users\qam04673\Documents\AI_SQL_AGENT_NextJS\sql-analyst-ui\backend\logs\app_2026-05-14.log
+2026-05-14 15:59:06.521 | INFO  | [embedding] Preloading embedding model...
+2026-05-14 15:59:06.522 | INFO  | [auth] ❌ Auth DB error: create_sql_server_connection() got an unexpected keyword argument 'windows_auth'
+2026-05-14 15:59:18.782 | INFO  | No device provided, using cpu
+2026-05-14 15:59:19.821 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 15:59:19.833 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-05-14 15:59:20.105 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 15:59:20.106 | WARNING | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-14 15:59:20.118 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-05-14 15:59:20.124 | INFO  | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-05-14 15:59:20.380 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 15:59:20.392 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-05-14 15:59:24.203 | INFO  | [startup] Logging initialized → C:\Users\qam04673\Documents\AI_SQL_AGENT_NextJS\sql-analyst-ui\backend\logs\app_2026-05-14.log
+2026-05-14 15:59:24.303 | INFO  | [embedding] Preloading embedding model...
+2026-05-14 15:59:24.303 | INFO  | [auth] ❌ Auth DB error: create_sql_server_connection() got an unexpected keyword argument 'windows_auth'
+2026-05-14 15:59:36.103 | INFO  | No device provided, using cpu
+2026-05-14 15:59:37.077 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 15:59:37.093 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-05-14 15:59:37.359 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 15:59:37.370 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-05-14 15:59:37.374 | INFO  | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-05-14 15:59:37.641 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 15:59:37.656 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-05-14 15:59:37.910 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 15:59:37.924 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+2026-05-14 15:59:38.208 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 15:59:38.210 | WARNING | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-14 15:59:38.225 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-05-14 15:59:38.495 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 15:59:38.508 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-05-14 15:59:38.777 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 15:59:39.039 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 15:59:39.059 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-05-14 15:59:39.606 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 15:59:39.897 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 15:59:40.162 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 15:59:40.442 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 15:59:40.709 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 15:59:40.723 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-14 15:59:40.990 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 15:59:41.000 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-05-14 15:59:41.278 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 15:59:41.289 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-05-14 15:59:41.554 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 15:59:41.568 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-14 15:59:41.845 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-14 15:59:42.121 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-14 15:59:42.448 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 15:59:42.462 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-05-14 15:59:42.746 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-05-14 15:59:42.758 | INFO  | [embedding] ✅ Model loaded and ready.
+2026-05-14 15:59:57.750 | INFO  | [startup] Logging initialized → C:\Users\qam04673\Documents\AI_SQL_AGENT_NextJS\sql-analyst-ui\backend\logs\app_2026-05-14.log
+2026-05-14 15:59:57.852 | INFO  | [embedding] Preloading embedding model...
+2026-05-14 15:59:57.852 | INFO  | [auth] ❌ Auth DB error: create_sql_server_connection() got an unexpected keyword argument 'windows_auth'
+2026-05-14 16:00:10.260 | INFO  | [startup] Logging initialized → C:\Users\qam04673\Documents\AI_SQL_AGENT_NextJS\sql-analyst-ui\backend\logs\app_2026-05-14.log
+2026-05-14 16:00:10.400 | INFO  | [embedding] Preloading embedding model...
+2026-05-14 16:00:10.400 | INFO  | [auth] ❌ Auth DB error: create_sql_server_connection() got an unexpected keyword argument 'windows_auth'
+2026-05-14 16:00:20.997 | INFO  | No device provided, using cpu
+2026-05-14 16:00:21.908 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 16:00:21.921 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-05-14 16:00:22.181 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 16:00:22.182 | WARNING | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-14 16:00:22.195 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-05-14 16:00:22.204 | INFO  | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-05-14 16:00:22.483 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 16:00:22.497 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-05-14 16:00:22.751 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 16:00:22.768 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+2026-05-14 16:00:23.028 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 16:00:23.043 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-05-14 16:00:23.305 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 16:00:23.322 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-05-14 16:00:23.592 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 16:00:23.845 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 16:00:23.860 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-05-14 16:00:24.256 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 16:00:24.532 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 16:00:24.797 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 16:00:25.053 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 16:00:25.313 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 16:00:25.331 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-14 16:00:25.595 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 16:00:25.605 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-05-14 16:00:25.877 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 16:00:25.890 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-05-14 16:00:26.169 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 16:00:26.181 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-14 16:00:26.448 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-14 16:00:26.720 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-14 16:00:27.018 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 16:00:27.030 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-05-14 16:00:27.301 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-05-14 16:00:27.306 | INFO  | [embedding] ✅ Model loaded and ready.
+2026-05-14 16:00:50.420 | INFO  | [startup] Logging initialized → C:\Users\qam04673\Documents\AI_SQL_AGENT_NextJS\sql-analyst-ui\backend\logs\app_2026-05-14.log
+2026-05-14 16:00:50.518 | INFO  | [embedding] Preloading embedding model...
+2026-05-14 16:00:50.519 | INFO  | [auth] ❌ Auth DB error: create_sql_server_connection() got an unexpected keyword argument 'windows_auth'
+2026-05-14 16:01:00.839 | INFO  | No device provided, using cpu
+2026-05-14 16:01:01.761 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 16:01:01.762 | WARNING | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-14 16:01:01.773 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-05-14 16:01:02.039 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 16:01:02.054 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-05-14 16:01:02.065 | INFO  | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-05-14 16:01:02.318 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 16:01:02.329 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-05-14 16:01:02.581 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 16:01:02.595 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+2026-05-14 16:01:02.865 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 16:01:02.875 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-05-14 16:01:03.151 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 16:01:03.165 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-05-14 16:01:03.446 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 16:01:03.720 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 16:01:03.734 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-05-14 16:01:04.131 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 16:01:04.395 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 16:01:04.663 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 16:01:04.918 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 16:01:05.205 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 16:01:05.215 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-14 16:01:05.479 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 16:01:05.490 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-05-14 16:01:05.770 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 16:01:05.784 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-05-14 16:01:06.056 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 16:01:06.072 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-14 16:01:06.370 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-14 16:01:06.628 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-14 16:01:06.955 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 16:01:06.969 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-05-14 16:01:07.245 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-05-14 16:01:07.255 | INFO  | [embedding] ✅ Model loaded and ready.
+2026-05-14 20:23:43.322 | INFO  | [login] Attempting: 'dvadranam91@gmail.com'
+2026-05-14 20:23:43.323 | INFO  | [login] No auth DB available — using hardcoded users
+2026-05-14 20:23:47.520 | INFO  | [login] Attempting: 'dvadranam91@gmail.com'
+2026-05-14 20:23:47.521 | INFO  | [login] No auth DB available — using hardcoded users
+2026-05-14 20:24:25.079 | INFO  | [login] Attempting: 'divya.v@quinteft.com'
+2026-05-14 20:24:25.079 | INFO  | [login] No auth DB available — using hardcoded users
+2026-05-14 20:24:25.080 | INFO  | [login] ✅ Hardcoded auth: divya.v@quinteft.com
+2026-05-14 20:35:08.797 | INFO  | [files] Tables ready
+2026-05-14 20:35:10.757 | INFO  | [files] Excel sheets detected: ['Q1_Sales', 'Q2_Sales', 'Annual_Summary']
+2026-05-14 20:35:10.877 | INFO  | [files] Sheet 'Q1_Sales': 61 rows x 10 cols
+2026-05-14 20:35:10.922 | INFO  | [files] Sheet 'Q2_Sales': 61 rows x 10 cols
+2026-05-14 20:35:10.952 | INFO  | [files] Sheet 'Annual_Summary': 7 rows x 6 cols
+2026-05-14 20:35:10.967 | INFO  | [files] list error: (pyodbc.ProgrammingError) ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'sheet_name'. (207) (SQLExecDirectW); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Statement(s) could not be prepared. (8180)")
+[SQL: 
+                SELECT id, file_name, file_size, file_type, row_count,
+                       col_count, columns_json, uploaded_at, last_used, sheet_name
+                FROM dbo.uploaded_files WHERE user_id=?
+                ORDER BY COALESCE(last_used, uploaded_at) DESC
+            ]
+[parameters: (2,)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-14 20:35:11.079 | INFO  | [files] save error: (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]String or binary data would be truncated in table 'AdventureWorks2019.dbo.uploaded_files', column 'file_hash'. Truncated value: '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67'. (2628) (SQLParamData); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+[SQL: 
+                INSERT INTO dbo.uploaded_files
+                    (user_id, file_hash, file_name, file_size, file_type,
+                     row_count, col_count, columns_json, preview_json, sheet_name)
+                OUTPUT INSERTED.id
+                VALUES (?, ?, ?, ?, ?,
+                        ?, ?, ?, ?, ?)
+            ]
+[parameters: (2, '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67::Q1_Sales', 'sales_2024.xlsx', 16459, 'xlsx', 61, 10, '["Product", "Region", "Sales Rep", "Units Sold", "Unit Price (\\u20b9)", "Revenue (\\u20b9)", "COGS (\\u20b9)", "Gross Profit (\\u20b9)", "Margin %", "Sale Date"]', '[["Wireless Mouse", "North", "Karthik B", "36.0", "19594.34", "705396.24", "421329.11", "284067.13", "40.27", "2024-03-27"], ["External SSD 1TB", "No ... (7494 characters truncated) ... Ravi S", "105.0", "59847.62", "6284000.100000001", "3308578.49", "2975421.61", "47.35", "2024-01-05"], ["TOTAL", "", "", "", "", "", "", "", "", ""]]', 'Q1_Sales')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-14 20:35:11.096 | INFO  | [files] save error: (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]String or binary data would be truncated in table 'AdventureWorks2019.dbo.uploaded_files', column 'file_hash'. Truncated value: '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67'. (2628) (SQLParamData); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+[SQL: 
+                INSERT INTO dbo.uploaded_files
+                    (user_id, file_hash, file_name, file_size, file_type,
+                     row_count, col_count, columns_json, preview_json, sheet_name)
+                OUTPUT INSERTED.id
+                VALUES (?, ?, ?, ?, ?,
+                        ?, ?, ?, ?, ?)
+            ]
+[parameters: (2, '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67::Q2_Sales', 'sales_2024.xlsx', 16459, 'xlsx', 61, 10, '["Product", "Region", "Sales Rep", "Units Sold", "Unit Price (\\u20b9)", "Revenue (\\u20b9)", "COGS (\\u20b9)", "Gross Profit (\\u20b9)", "Margin %", "Sale Date"]', '[["Noise Cancelling Headphones", "South", "Neha T", "109.0", "87509.69", "9538556.21", "4959397.6", "4579158.610000001", "48.01", "2024-04-30"], ["Me ... (7452 characters truncated) ... th", "Venkat L", "53.0", "43381.32", "2299209.96", "1238226.19", "1060983.77", "46.15", "2024-06-15"], ["TOTAL", "", "", "", "", "", "", "", "", ""]]', 'Q2_Sales')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-14 20:35:11.113 | INFO  | [files] save error: (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]String or binary data would be truncated in table 'AdventureWorks2019.dbo.uploaded_files', column 'file_hash'. Truncated value: '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67'. (2628) (SQLExecDirectW); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+[SQL: 
+                INSERT INTO dbo.uploaded_files
+                    (user_id, file_hash, file_name, file_size, file_type,
+                     row_count, col_count, columns_json, preview_json, sheet_name)
+                OUTPUT INSERTED.id
+                VALUES (?, ?, ?, ?, ?,
+                        ?, ?, ?, ?, ?)
+            ]
+[parameters: (2, '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67::Annual_Summary', 'sales_2024.xlsx', 16459, 'xlsx', 7, 6, '["Metric", "Q1", "Q2", "Q3 (Est.)", "Q4 (Est.)", "Full Year"]', '[["Total Revenue (\\u20b9)", "4820000.0", "5390000.0", "5100000.0", "5800000.0", ""], ["Total Units Sold", "2840.0", "3210.0", "2950.0", "3400.0", "" ... (140 characters truncated) ...  ["Top Product", "", "", "", "", "\\u2014"], ["Best Region", "", "", "", "", "\\u2014"], ["No. of Transactions", "60.0", "60.0", "65.0", "70.0", ""]]', 'Annual_Summary')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-14 20:36:46.764 | INFO  | [files] Tables ready
+2026-05-14 20:36:46.775 | INFO  | [files] Excel sheets detected: ['Q1_Sales', 'Q2_Sales', 'Annual_Summary']
+2026-05-14 20:36:46.806 | INFO  | [files] Sheet 'Q1_Sales': 61 rows x 10 cols
+2026-05-14 20:36:46.836 | INFO  | [files] Sheet 'Q2_Sales': 61 rows x 10 cols
+2026-05-14 20:36:46.855 | INFO  | [files] Sheet 'Annual_Summary': 7 rows x 6 cols
+2026-05-14 20:36:46.902 | INFO  | [files] save error: (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]String or binary data would be truncated in table 'AdventureWorks2019.dbo.uploaded_files', column 'file_hash'. Truncated value: '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67'. (2628) (SQLParamData); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+[SQL: 
+                INSERT INTO dbo.uploaded_files
+                    (user_id, file_hash, file_name, file_size, file_type,
+                     row_count, col_count, columns_json, preview_json, sheet_name)
+                OUTPUT INSERTED.id
+                VALUES (?, ?, ?, ?, ?,
+                        ?, ?, ?, ?, ?)
+            ]
+[parameters: (2, '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67::Q1_Sales', 'sales_2024.xlsx', 16459, 'xlsx', 61, 10, '["Product", "Region", "Sales Rep", "Units Sold", "Unit Price (\\u20b9)", "Revenue (\\u20b9)", "COGS (\\u20b9)", "Gross Profit (\\u20b9)", "Margin %", "Sale Date"]', '[["Wireless Mouse", "North", "Karthik B", "36.0", "19594.34", "705396.24", "421329.11", "284067.13", "40.27", "2024-03-27"], ["External SSD 1TB", "No ... (7494 characters truncated) ... Ravi S", "105.0", "59847.62", "6284000.100000001", "3308578.49", "2975421.61", "47.35", "2024-01-05"], ["TOTAL", "", "", "", "", "", "", "", "", ""]]', 'Q1_Sales')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-14 20:36:46.913 | INFO  | [files] save error: (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]String or binary data would be truncated in table 'AdventureWorks2019.dbo.uploaded_files', column 'file_hash'. Truncated value: '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67'. (2628) (SQLParamData); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+[SQL: 
+                INSERT INTO dbo.uploaded_files
+                    (user_id, file_hash, file_name, file_size, file_type,
+                     row_count, col_count, columns_json, preview_json, sheet_name)
+                OUTPUT INSERTED.id
+                VALUES (?, ?, ?, ?, ?,
+                        ?, ?, ?, ?, ?)
+            ]
+[parameters: (2, '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67::Q2_Sales', 'sales_2024.xlsx', 16459, 'xlsx', 61, 10, '["Product", "Region", "Sales Rep", "Units Sold", "Unit Price (\\u20b9)", "Revenue (\\u20b9)", "COGS (\\u20b9)", "Gross Profit (\\u20b9)", "Margin %", "Sale Date"]', '[["Noise Cancelling Headphones", "South", "Neha T", "109.0", "87509.69", "9538556.21", "4959397.6", "4579158.610000001", "48.01", "2024-04-30"], ["Me ... (7452 characters truncated) ... th", "Venkat L", "53.0", "43381.32", "2299209.96", "1238226.19", "1060983.77", "46.15", "2024-06-15"], ["TOTAL", "", "", "", "", "", "", "", "", ""]]', 'Q2_Sales')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-14 20:36:46.925 | INFO  | [files] save error: (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]String or binary data would be truncated in table 'AdventureWorks2019.dbo.uploaded_files', column 'file_hash'. Truncated value: '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67'. (2628) (SQLExecDirectW); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+[SQL: 
+                INSERT INTO dbo.uploaded_files
+                    (user_id, file_hash, file_name, file_size, file_type,
+                     row_count, col_count, columns_json, preview_json, sheet_name)
+                OUTPUT INSERTED.id
+                VALUES (?, ?, ?, ?, ?,
+                        ?, ?, ?, ?, ?)
+            ]
+[parameters: (2, '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67::Annual_Summary', 'sales_2024.xlsx', 16459, 'xlsx', 7, 6, '["Metric", "Q1", "Q2", "Q3 (Est.)", "Q4 (Est.)", "Full Year"]', '[["Total Revenue (\\u20b9)", "4820000.0", "5390000.0", "5100000.0", "5800000.0", ""], ["Total Units Sold", "2840.0", "3210.0", "2950.0", "3400.0", "" ... (140 characters truncated) ...  ["Top Product", "", "", "", "", "\\u2014"], ["Best Region", "", "", "", "", "\\u2014"], ["No. of Transactions", "60.0", "60.0", "65.0", "70.0", ""]]', 'Annual_Summary')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-14 20:40:20.596 | INFO  | [files] Tables ready
+2026-05-14 20:40:20.611 | INFO  | [files] Excel sheets detected: ['Q1_Sales', 'Q2_Sales', 'Annual_Summary']
+2026-05-14 20:40:20.660 | INFO  | [files] Sheet 'Q1_Sales': 61 rows x 10 cols
+2026-05-14 20:40:20.712 | INFO  | [files] Sheet 'Q2_Sales': 61 rows x 10 cols
+2026-05-14 20:40:20.744 | INFO  | [files] Sheet 'Annual_Summary': 7 rows x 6 cols
+2026-05-14 20:40:20.794 | INFO  | [files] save error: (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]String or binary data would be truncated in table 'AdventureWorks2019.dbo.uploaded_files', column 'file_hash'. Truncated value: '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67'. (2628) (SQLParamData); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+[SQL: 
+                INSERT INTO dbo.uploaded_files
+                    (user_id, file_hash, file_name, file_size, file_type,
+                     row_count, col_count, columns_json, preview_json, sheet_name)
+                OUTPUT INSERTED.id
+                VALUES (?, ?, ?, ?, ?,
+                        ?, ?, ?, ?, ?)
+            ]
+[parameters: (2, '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67::Q1_Sales', 'sales_2024.xlsx', 16459, 'xlsx', 61, 10, '["Product", "Region", "Sales Rep", "Units Sold", "Unit Price (\\u20b9)", "Revenue (\\u20b9)", "COGS (\\u20b9)", "Gross Profit (\\u20b9)", "Margin %", "Sale Date"]', '[["Wireless Mouse", "North", "Karthik B", "36.0", "19594.34", "705396.24", "421329.11", "284067.13", "40.27", "2024-03-27"], ["External SSD 1TB", "No ... (7494 characters truncated) ... Ravi S", "105.0", "59847.62", "6284000.100000001", "3308578.49", "2975421.61", "47.35", "2024-01-05"], ["TOTAL", "", "", "", "", "", "", "", "", ""]]', 'Q1_Sales')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-14 20:40:20.813 | INFO  | [files] save error: (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]String or binary data would be truncated in table 'AdventureWorks2019.dbo.uploaded_files', column 'file_hash'. Truncated value: '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67'. (2628) (SQLParamData); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+[SQL: 
+                INSERT INTO dbo.uploaded_files
+                    (user_id, file_hash, file_name, file_size, file_type,
+                     row_count, col_count, columns_json, preview_json, sheet_name)
+                OUTPUT INSERTED.id
+                VALUES (?, ?, ?, ?, ?,
+                        ?, ?, ?, ?, ?)
+            ]
+[parameters: (2, '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67::Q2_Sales', 'sales_2024.xlsx', 16459, 'xlsx', 61, 10, '["Product", "Region", "Sales Rep", "Units Sold", "Unit Price (\\u20b9)", "Revenue (\\u20b9)", "COGS (\\u20b9)", "Gross Profit (\\u20b9)", "Margin %", "Sale Date"]', '[["Noise Cancelling Headphones", "South", "Neha T", "109.0", "87509.69", "9538556.21", "4959397.6", "4579158.610000001", "48.01", "2024-04-30"], ["Me ... (7452 characters truncated) ... th", "Venkat L", "53.0", "43381.32", "2299209.96", "1238226.19", "1060983.77", "46.15", "2024-06-15"], ["TOTAL", "", "", "", "", "", "", "", "", ""]]', 'Q2_Sales')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-14 20:40:20.831 | INFO  | [files] save error: (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]String or binary data would be truncated in table 'AdventureWorks2019.dbo.uploaded_files', column 'file_hash'. Truncated value: '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67'. (2628) (SQLExecDirectW); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+[SQL: 
+                INSERT INTO dbo.uploaded_files
+                    (user_id, file_hash, file_name, file_size, file_type,
+                     row_count, col_count, columns_json, preview_json, sheet_name)
+                OUTPUT INSERTED.id
+                VALUES (?, ?, ?, ?, ?,
+                        ?, ?, ?, ?, ?)
+            ]
+[parameters: (2, '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67::Annual_Summary', 'sales_2024.xlsx', 16459, 'xlsx', 7, 6, '["Metric", "Q1", "Q2", "Q3 (Est.)", "Q4 (Est.)", "Full Year"]', '[["Total Revenue (\\u20b9)", "4820000.0", "5390000.0", "5100000.0", "5800000.0", ""], ["Total Units Sold", "2840.0", "3210.0", "2950.0", "3400.0", "" ... (140 characters truncated) ...  ["Top Product", "", "", "", "", "\\u2014"], ["Best Region", "", "", "", "", "\\u2014"], ["No. of Transactions", "60.0", "60.0", "65.0", "70.0", ""]]', 'Annual_Summary')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-14 20:54:39.409 | INFO  | [files] Tables ready
+2026-05-14 20:54:39.424 | INFO  | [files] Excel sheets detected: ['Q1_Sales', 'Q2_Sales', 'Annual_Summary']
+2026-05-14 20:54:39.470 | INFO  | [files] Sheet 'Q1_Sales': 61 rows x 10 cols
+2026-05-14 20:54:39.514 | INFO  | [files] Sheet 'Q2_Sales': 61 rows x 10 cols
+2026-05-14 20:54:39.542 | INFO  | [files] Sheet 'Annual_Summary': 7 rows x 6 cols
+2026-05-14 20:54:39.587 | INFO  | [files] save error: (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]String or binary data would be truncated in table 'AdventureWorks2019.dbo.uploaded_files', column 'file_hash'. Truncated value: '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67'. (2628) (SQLParamData); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+[SQL: 
+                INSERT INTO dbo.uploaded_files
+                    (user_id, file_hash, file_name, file_size, file_type,
+                     row_count, col_count, columns_json, preview_json, sheet_name)
+                OUTPUT INSERTED.id
+                VALUES (?, ?, ?, ?, ?,
+                        ?, ?, ?, ?, ?)
+            ]
+[parameters: (2, '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67::Q1_Sales', 'sales_2024.xlsx', 16459, 'xlsx', 61, 10, '["Product", "Region", "Sales Rep", "Units Sold", "Unit Price (\\u20b9)", "Revenue (\\u20b9)", "COGS (\\u20b9)", "Gross Profit (\\u20b9)", "Margin %", "Sale Date"]', '[["Wireless Mouse", "North", "Karthik B", "36.0", "19594.34", "705396.24", "421329.11", "284067.13", "40.27", "2024-03-27"], ["External SSD 1TB", "No ... (7494 characters truncated) ... Ravi S", "105.0", "59847.62", "6284000.100000001", "3308578.49", "2975421.61", "47.35", "2024-01-05"], ["TOTAL", "", "", "", "", "", "", "", "", ""]]', 'Q1_Sales')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-14 20:54:39.603 | INFO  | [files] save error: (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]String or binary data would be truncated in table 'AdventureWorks2019.dbo.uploaded_files', column 'file_hash'. Truncated value: '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67'. (2628) (SQLParamData); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+[SQL: 
+                INSERT INTO dbo.uploaded_files
+                    (user_id, file_hash, file_name, file_size, file_type,
+                     row_count, col_count, columns_json, preview_json, sheet_name)
+                OUTPUT INSERTED.id
+                VALUES (?, ?, ?, ?, ?,
+                        ?, ?, ?, ?, ?)
+            ]
+[parameters: (2, '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67::Q2_Sales', 'sales_2024.xlsx', 16459, 'xlsx', 61, 10, '["Product", "Region", "Sales Rep", "Units Sold", "Unit Price (\\u20b9)", "Revenue (\\u20b9)", "COGS (\\u20b9)", "Gross Profit (\\u20b9)", "Margin %", "Sale Date"]', '[["Noise Cancelling Headphones", "South", "Neha T", "109.0", "87509.69", "9538556.21", "4959397.6", "4579158.610000001", "48.01", "2024-04-30"], ["Me ... (7452 characters truncated) ... th", "Venkat L", "53.0", "43381.32", "2299209.96", "1238226.19", "1060983.77", "46.15", "2024-06-15"], ["TOTAL", "", "", "", "", "", "", "", "", ""]]', 'Q2_Sales')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-14 20:54:39.618 | INFO  | [files] save error: (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]String or binary data would be truncated in table 'AdventureWorks2019.dbo.uploaded_files', column 'file_hash'. Truncated value: '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67'. (2628) (SQLExecDirectW); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+[SQL: 
+                INSERT INTO dbo.uploaded_files
+                    (user_id, file_hash, file_name, file_size, file_type,
+                     row_count, col_count, columns_json, preview_json, sheet_name)
+                OUTPUT INSERTED.id
+                VALUES (?, ?, ?, ?, ?,
+                        ?, ?, ?, ?, ?)
+            ]
+[parameters: (2, '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67::Annual_Summary', 'sales_2024.xlsx', 16459, 'xlsx', 7, 6, '["Metric", "Q1", "Q2", "Q3 (Est.)", "Q4 (Est.)", "Full Year"]', '[["Total Revenue (\\u20b9)", "4820000.0", "5390000.0", "5100000.0", "5800000.0", ""], ["Total Units Sold", "2840.0", "3210.0", "2950.0", "3400.0", "" ... (140 characters truncated) ...  ["Top Product", "", "", "", "", "\\u2014"], ["Best Region", "", "", "", "", "\\u2014"], ["No. of Transactions", "60.0", "60.0", "65.0", "70.0", ""]]', 'Annual_Summary')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-14 20:58:27.812 | INFO  | [files] Tables ready
+2026-05-14 20:58:27.837 | INFO  | [files] Excel sheets detected: ['Q1_Sales', 'Q2_Sales', 'Annual_Summary']
+2026-05-14 20:58:27.916 | INFO  | [files] Sheet 'Q1_Sales': 61 rows x 10 cols
+2026-05-14 20:58:27.987 | INFO  | [files] Sheet 'Q2_Sales': 61 rows x 10 cols
+2026-05-14 20:58:28.046 | INFO  | [files] Sheet 'Annual_Summary': 7 rows x 6 cols
+2026-05-14 20:58:28.136 | INFO  | [files] save error: (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]String or binary data would be truncated in table 'AdventureWorks2019.dbo.uploaded_files', column 'file_hash'. Truncated value: '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67'. (2628) (SQLParamData); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+[SQL: 
+                INSERT INTO dbo.uploaded_files
+                    (user_id, file_hash, file_name, file_size, file_type,
+                     row_count, col_count, columns_json, preview_json, sheet_name)
+                OUTPUT INSERTED.id
+                VALUES (?, ?, ?, ?, ?,
+                        ?, ?, ?, ?, ?)
+            ]
+[parameters: (2, '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67::Q1_Sales', 'sales_2024.xlsx', 16459, 'xlsx', 61, 10, '["Product", "Region", "Sales Rep", "Units Sold", "Unit Price (\\u20b9)", "Revenue (\\u20b9)", "COGS (\\u20b9)", "Gross Profit (\\u20b9)", "Margin %", "Sale Date"]', '[["Wireless Mouse", "North", "Karthik B", "36.0", "19594.34", "705396.24", "421329.11", "284067.13", "40.27", "2024-03-27"], ["External SSD 1TB", "No ... (7494 characters truncated) ... Ravi S", "105.0", "59847.62", "6284000.100000001", "3308578.49", "2975421.61", "47.35", "2024-01-05"], ["TOTAL", "", "", "", "", "", "", "", "", ""]]', 'Q1_Sales')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-14 20:58:28.159 | INFO  | [files] save error: (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]String or binary data would be truncated in table 'AdventureWorks2019.dbo.uploaded_files', column 'file_hash'. Truncated value: '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67'. (2628) (SQLParamData); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+[SQL: 
+                INSERT INTO dbo.uploaded_files
+                    (user_id, file_hash, file_name, file_size, file_type,
+                     row_count, col_count, columns_json, preview_json, sheet_name)
+                OUTPUT INSERTED.id
+                VALUES (?, ?, ?, ?, ?,
+                        ?, ?, ?, ?, ?)
+            ]
+[parameters: (2, '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67::Q2_Sales', 'sales_2024.xlsx', 16459, 'xlsx', 61, 10, '["Product", "Region", "Sales Rep", "Units Sold", "Unit Price (\\u20b9)", "Revenue (\\u20b9)", "COGS (\\u20b9)", "Gross Profit (\\u20b9)", "Margin %", "Sale Date"]', '[["Noise Cancelling Headphones", "South", "Neha T", "109.0", "87509.69", "9538556.21", "4959397.6", "4579158.610000001", "48.01", "2024-04-30"], ["Me ... (7452 characters truncated) ... th", "Venkat L", "53.0", "43381.32", "2299209.96", "1238226.19", "1060983.77", "46.15", "2024-06-15"], ["TOTAL", "", "", "", "", "", "", "", "", ""]]', 'Q2_Sales')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-14 20:58:28.180 | INFO  | [files] save error: (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]String or binary data would be truncated in table 'AdventureWorks2019.dbo.uploaded_files', column 'file_hash'. Truncated value: '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67'. (2628) (SQLExecDirectW); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+[SQL: 
+                INSERT INTO dbo.uploaded_files
+                    (user_id, file_hash, file_name, file_size, file_type,
+                     row_count, col_count, columns_json, preview_json, sheet_name)
+                OUTPUT INSERTED.id
+                VALUES (?, ?, ?, ?, ?,
+                        ?, ?, ?, ?, ?)
+            ]
+[parameters: (2, '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67::Annual_Summary', 'sales_2024.xlsx', 16459, 'xlsx', 7, 6, '["Metric", "Q1", "Q2", "Q3 (Est.)", "Q4 (Est.)", "Full Year"]', '[["Total Revenue (\\u20b9)", "4820000.0", "5390000.0", "5100000.0", "5800000.0", ""], ["Total Units Sold", "2840.0", "3210.0", "2950.0", "3400.0", "" ... (140 characters truncated) ...  ["Top Product", "", "", "", "", "\\u2014"], ["Best Region", "", "", "", "", "\\u2014"], ["No. of Transactions", "60.0", "60.0", "65.0", "70.0", ""]]', 'Annual_Summary')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-14 21:05:49.225 | INFO  | [startup] Logging initialized → C:\Users\qam04673\Documents\AI_SQL_AGENT_NextJS\sql-analyst-ui\backend\logs\app_2026-05-14.log
+2026-05-14 21:05:49.506 | INFO  | [embedding] Preloading embedding model...
+2026-05-14 21:05:49.507 | INFO  | [auth] ❌ Auth DB error: create_sql_server_connection() got an unexpected keyword argument 'windows_auth'
+2026-05-14 21:05:52.535 | INFO  | [files] Tables ready
+2026-05-14 21:06:15.942 | INFO  | [files] Tables ready
+2026-05-14 21:06:18.232 | INFO  | [files] Excel sheets detected: ['Q1_Sales', 'Q2_Sales', 'Annual_Summary']
+2026-05-14 21:06:18.339 | INFO  | [files] Sheet 'Q1_Sales': 61 rows x 10 cols
+2026-05-14 21:06:18.413 | INFO  | [files] Sheet 'Q2_Sales': 61 rows x 10 cols
+2026-05-14 21:06:18.459 | INFO  | [files] Sheet 'Annual_Summary': 7 rows x 6 cols
+2026-05-14 21:06:18.554 | INFO  | [files] save error: (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]String or binary data would be truncated in table 'AdventureWorks2019.dbo.uploaded_files', column 'file_hash'. Truncated value: '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67'. (2628) (SQLParamData); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+[SQL: 
+                INSERT INTO dbo.uploaded_files
+                    (user_id, file_hash, file_name, file_size, file_type,
+                     row_count, col_count, columns_json, preview_json, sheet_name)
+                OUTPUT INSERTED.id
+                VALUES (?, ?, ?, ?, ?,
+                        ?, ?, ?, ?, ?)
+            ]
+[parameters: (2, '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67::Q1_Sales', 'sales_2024.xlsx', 16459, 'xlsx', 61, 10, '["Product", "Region", "Sales Rep", "Units Sold", "Unit Price (\\u20b9)", "Revenue (\\u20b9)", "COGS (\\u20b9)", "Gross Profit (\\u20b9)", "Margin %", "Sale Date"]', '[["Wireless Mouse", "North", "Karthik B", "36.0", "19594.34", "705396.24", "421329.11", "284067.13", "40.27", "2024-03-27"], ["External SSD 1TB", "No ... (7494 characters truncated) ... Ravi S", "105.0", "59847.62", "6284000.100000001", "3308578.49", "2975421.61", "47.35", "2024-01-05"], ["TOTAL", "", "", "", "", "", "", "", "", ""]]', 'Q1_Sales')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-14 21:06:18.579 | INFO  | [files] save error: (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]String or binary data would be truncated in table 'AdventureWorks2019.dbo.uploaded_files', column 'file_hash'. Truncated value: '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67'. (2628) (SQLParamData); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+[SQL: 
+                INSERT INTO dbo.uploaded_files
+                    (user_id, file_hash, file_name, file_size, file_type,
+                     row_count, col_count, columns_json, preview_json, sheet_name)
+                OUTPUT INSERTED.id
+                VALUES (?, ?, ?, ?, ?,
+                        ?, ?, ?, ?, ?)
+            ]
+[parameters: (2, '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67::Q2_Sales', 'sales_2024.xlsx', 16459, 'xlsx', 61, 10, '["Product", "Region", "Sales Rep", "Units Sold", "Unit Price (\\u20b9)", "Revenue (\\u20b9)", "COGS (\\u20b9)", "Gross Profit (\\u20b9)", "Margin %", "Sale Date"]', '[["Noise Cancelling Headphones", "South", "Neha T", "109.0", "87509.69", "9538556.21", "4959397.6", "4579158.610000001", "48.01", "2024-04-30"], ["Me ... (7452 characters truncated) ... th", "Venkat L", "53.0", "43381.32", "2299209.96", "1238226.19", "1060983.77", "46.15", "2024-06-15"], ["TOTAL", "", "", "", "", "", "", "", "", ""]]', 'Q2_Sales')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-14 21:06:18.600 | INFO  | [files] save error: (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]String or binary data would be truncated in table 'AdventureWorks2019.dbo.uploaded_files', column 'file_hash'. Truncated value: '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67'. (2628) (SQLExecDirectW); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+[SQL: 
+                INSERT INTO dbo.uploaded_files
+                    (user_id, file_hash, file_name, file_size, file_type,
+                     row_count, col_count, columns_json, preview_json, sheet_name)
+                OUTPUT INSERTED.id
+                VALUES (?, ?, ?, ?, ?,
+                        ?, ?, ?, ?, ?)
+            ]
+[parameters: (2, '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67::Annual_Summary', 'sales_2024.xlsx', 16459, 'xlsx', 7, 6, '["Metric", "Q1", "Q2", "Q3 (Est.)", "Q4 (Est.)", "Full Year"]', '[["Total Revenue (\\u20b9)", "4820000.0", "5390000.0", "5100000.0", "5800000.0", ""], ["Total Units Sold", "2840.0", "3210.0", "2950.0", "3400.0", "" ... (140 characters truncated) ...  ["Top Product", "", "", "", "", "\\u2014"], ["Best Region", "", "", "", "", "\\u2014"], ["No. of Transactions", "60.0", "60.0", "65.0", "70.0", ""]]', 'Annual_Summary')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-14 21:06:51.118 | INFO  | No device provided, using cpu
+2026-05-14 21:06:52.964 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:06:52.965 | WARNING | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-14 21:06:52.979 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-05-14 21:06:53.257 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:06:53.271 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-05-14 21:06:53.282 | INFO  | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-05-14 21:06:53.557 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:06:53.570 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-05-14 21:06:53.841 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:06:53.853 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+2026-05-14 21:06:54.130 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:06:54.143 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-05-14 21:06:54.410 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:06:54.423 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-05-14 21:06:54.697 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 21:06:54.971 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:06:54.986 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-05-14 21:06:55.515 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 21:06:55.777 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 21:06:56.043 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 21:06:56.310 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 21:06:56.582 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:06:56.595 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-14 21:06:56.869 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:06:56.881 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-05-14 21:06:57.159 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:06:57.173 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-05-14 21:06:57.449 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:06:57.461 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-14 21:06:57.762 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-14 21:06:58.524 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-14 21:06:58.920 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:06:58.932 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-05-14 21:06:59.208 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-05-14 21:06:59.214 | INFO  | [embedding] ✅ Model loaded and ready.
+2026-05-14 21:10:03.699 | INFO  | [query] provider=Ollama model=qwen2.5-coder:7b q=top 10 products by sales
+2026-05-14 21:10:06.265 | INFO  | [known_query] Candidate match (score=2): ['top', 'sales']
+2026-05-14 21:10:06.265 | INFO  | [known_query] Best match score=2 — using known-good SQL
+2026-05-14 21:10:06.266 | INFO  | [query] Known-good match — skipping AI
+2026-05-14 21:10:06.409 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-14 21:10:38.279 | INFO  | [chat] deleting session 1077 for user 2
+2026-05-14 21:10:38.510 | INFO  | [chat] deleted 0 messages, 1 sessions
+2026-05-14 21:11:13.352 | INFO  | [query] provider=Ollama model=qwen2.5-coder:7b q=show me top 10 customers by sales revenue
+2026-05-14 21:11:15.917 | INFO  | [query] Cache hit — semantic match
+2026-05-14 21:11:17.266 | INFO  | [audit] ✅ Logged: divya.v@quinteft.com — SUCCESS — show me top 10 customers by sales revenue
+2026-05-14 21:11:41.900 | INFO  | [files] Tables ready
+2026-05-14 21:11:41.962 | INFO  | [files] Parsed CSV: 6435 rows, encoding=utf-8
+2026-05-14 21:12:00.554 | INFO  | [files] Tables ready
+2026-05-14 21:12:00.563 | INFO  | [files] Parsed CSV: 1115 rows, encoding=utf-8
+2026-05-14 21:12:06.110 | INFO  | [ollama] Response received (960 chars)
+2026-05-14 21:12:06.111 | INFO  | [analysis] Generated 960 chars
+2026-05-14 21:12:06.250 | INFO  | [audit] ✅ Logged: divya.v@quinteft.com — SUCCESS — top 10 products by sales
+2026-05-14 21:12:07.738 | INFO  | [chat] deleting session 1076 for user 2
+2026-05-14 21:12:07.745 | INFO  | [chat] deleted 0 messages, 1 sessions
+2026-05-14 21:12:09.158 | INFO  | [chat] deleting session 1078 for user 2
+2026-05-14 21:12:09.160 | INFO  | [chat] deleted 0 messages, 1 sessions
+2026-05-14 21:12:10.601 | INFO  | [chat] deleting session 1079 for user 2
+2026-05-14 21:12:10.603 | INFO  | [chat] deleted 1 messages, 1 sessions
+2026-05-14 21:12:12.212 | INFO  | [chat] deleting session 1080 for user 2
+2026-05-14 21:12:12.214 | INFO  | [chat] deleted 0 messages, 1 sessions
+2026-05-14 21:12:23.143 | INFO  | [files] Tables ready
+2026-05-14 21:12:23.155 | INFO  | [files] Excel sheets detected: ['Q1_Sales', 'Q2_Sales', 'Annual_Summary']
+2026-05-14 21:12:23.195 | INFO  | [files] Sheet 'Q1_Sales': 61 rows x 10 cols
+2026-05-14 21:12:23.235 | INFO  | [files] Sheet 'Q2_Sales': 61 rows x 10 cols
+2026-05-14 21:12:23.260 | INFO  | [files] Sheet 'Annual_Summary': 7 rows x 6 cols
+2026-05-14 21:12:23.310 | INFO  | [files] save error: (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]String or binary data would be truncated in table 'AdventureWorks2019.dbo.uploaded_files', column 'file_hash'. Truncated value: '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67'. (2628) (SQLParamData); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+[SQL: 
+                INSERT INTO dbo.uploaded_files
+                    (user_id, file_hash, file_name, file_size, file_type,
+                     row_count, col_count, columns_json, preview_json, sheet_name)
+                OUTPUT INSERTED.id
+                VALUES (?, ?, ?, ?, ?,
+                        ?, ?, ?, ?, ?)
+            ]
+[parameters: (2, '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67::Q1_Sales', 'sales_2024.xlsx', 16459, 'xlsx', 61, 10, '["Product", "Region", "Sales Rep", "Units Sold", "Unit Price (\\u20b9)", "Revenue (\\u20b9)", "COGS (\\u20b9)", "Gross Profit (\\u20b9)", "Margin %", "Sale Date"]', '[["Wireless Mouse", "North", "Karthik B", "36.0", "19594.34", "705396.24", "421329.11", "284067.13", "40.27", "2024-03-27"], ["External SSD 1TB", "No ... (7494 characters truncated) ... Ravi S", "105.0", "59847.62", "6284000.100000001", "3308578.49", "2975421.61", "47.35", "2024-01-05"], ["TOTAL", "", "", "", "", "", "", "", "", ""]]', 'Q1_Sales')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-14 21:12:23.326 | INFO  | [files] save error: (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]String or binary data would be truncated in table 'AdventureWorks2019.dbo.uploaded_files', column 'file_hash'. Truncated value: '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67'. (2628) (SQLParamData); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+[SQL: 
+                INSERT INTO dbo.uploaded_files
+                    (user_id, file_hash, file_name, file_size, file_type,
+                     row_count, col_count, columns_json, preview_json, sheet_name)
+                OUTPUT INSERTED.id
+                VALUES (?, ?, ?, ?, ?,
+                        ?, ?, ?, ?, ?)
+            ]
+[parameters: (2, '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67::Q2_Sales', 'sales_2024.xlsx', 16459, 'xlsx', 61, 10, '["Product", "Region", "Sales Rep", "Units Sold", "Unit Price (\\u20b9)", "Revenue (\\u20b9)", "COGS (\\u20b9)", "Gross Profit (\\u20b9)", "Margin %", "Sale Date"]', '[["Noise Cancelling Headphones", "South", "Neha T", "109.0", "87509.69", "9538556.21", "4959397.6", "4579158.610000001", "48.01", "2024-04-30"], ["Me ... (7452 characters truncated) ... th", "Venkat L", "53.0", "43381.32", "2299209.96", "1238226.19", "1060983.77", "46.15", "2024-06-15"], ["TOTAL", "", "", "", "", "", "", "", "", ""]]', 'Q2_Sales')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-14 21:12:23.341 | INFO  | [files] save error: (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]String or binary data would be truncated in table 'AdventureWorks2019.dbo.uploaded_files', column 'file_hash'. Truncated value: '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67'. (2628) (SQLExecDirectW); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+[SQL: 
+                INSERT INTO dbo.uploaded_files
+                    (user_id, file_hash, file_name, file_size, file_type,
+                     row_count, col_count, columns_json, preview_json, sheet_name)
+                OUTPUT INSERTED.id
+                VALUES (?, ?, ?, ?, ?,
+                        ?, ?, ?, ?, ?)
+            ]
+[parameters: (2, '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67::Annual_Summary', 'sales_2024.xlsx', 16459, 'xlsx', 7, 6, '["Metric", "Q1", "Q2", "Q3 (Est.)", "Q4 (Est.)", "Full Year"]', '[["Total Revenue (\\u20b9)", "4820000.0", "5390000.0", "5100000.0", "5800000.0", ""], ["Total Units Sold", "2840.0", "3210.0", "2950.0", "3400.0", "" ... (140 characters truncated) ...  ["Top Product", "", "", "", "", "\\u2014"], ["Best Region", "", "", "", "", "\\u2014"], ["No. of Transactions", "60.0", "60.0", "65.0", "70.0", ""]]', 'Annual_Summary')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-14 21:12:35.603 | INFO  | [files] Tables ready
+2026-05-14 21:12:35.609 | INFO  | [files] Parsed CSV: 1115 rows, encoding=utf-8
+2026-05-14 21:12:52.105 | INFO  | [files] Tables ready
+2026-05-14 21:12:52.117 | INFO  | [files] Parsed CSV: 6435 rows, encoding=utf-8

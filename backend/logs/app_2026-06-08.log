@@ -1,0 +1,187 @@
+2026-06-08 21:07:15.697 | INFO  | [startup] Logging initialized → C:\Users\qam04800.QUINTEFT\Downloads\SQL_Data_Analysis_Agent-master\backend\logs\app_2026-06-08.log
+2026-06-08 21:07:17.134 | INFO  | [embedding] Preloading embedding model...
+2026-06-08 21:07:33.697 | INFO  | [auth] ❌ Auth DB failed: (pyodbc.OperationalError) ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]SQL Server Network Interfaces: Error Locating Server/Instance Specified [xFFFFFFFF].  (-1) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (-1)')
+(Background on this error at: https://sqlalche.me/e/20/e3q8) — using hardcoded users
+2026-06-08 21:08:39.315 | INFO  | No device provided, using cpu
+2026-06-08 21:08:41.800 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-08 21:08:41.888 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json "HTTP/1.1 200 OK"
+2026-06-08 21:08:42.190 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-08 21:08:42.192 | WARNING | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-06-08 21:08:42.319 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-06-08 21:08:42.334 | INFO  | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-06-08 21:08:42.680 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-08 21:08:42.737 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-06-08 21:08:43.039 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-06-08 21:08:43.143 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/README.md "HTTP/1.1 200 OK"
+2026-06-08 21:08:43.499 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-08 21:08:43.559 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json "HTTP/1.1 200 OK"
+2026-06-08 21:08:44.012 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-08 21:08:44.117 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-06-08 21:08:44.523 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-06-08 21:08:44.839 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-08 21:08:44.948 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+2026-06-08 21:08:45.854 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-06-08 21:08:46.264 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-06-08 21:08:46.776 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-06-08 21:08:47.288 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-06-08 21:08:48.426 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-08 21:08:48.525 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-06-08 21:08:49.029 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-08 21:08:49.117 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+2026-06-08 21:08:49.439 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-08 21:08:49.549 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+2026-06-08 21:08:49.837 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-08 21:08:49.924 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-06-08 21:08:50.312 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-06-08 21:08:50.587 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-06-08 21:08:51.187 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-08 21:08:51.286 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-06-08 21:08:51.589 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-06-08 21:08:51.598 | INFO  | [embedding] ✅ Model loaded and ready.
+2026-06-08 21:21:44.612 | INFO  | [startup] Logging initialized → C:\Users\qam04800.QUINTEFT\Downloads\SQL_Data_Analysis_Agent-master\backend\logs\app_2026-06-08.log
+2026-06-08 21:21:44.766 | INFO  | [embedding] Preloading embedding model...
+2026-06-08 21:21:57.217 | INFO  | No device provided, using cpu
+2026-06-08 21:21:58.231 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-08 21:21:58.231 | WARNING | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-06-08 21:21:58.297 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json "HTTP/1.1 200 OK"
+2026-06-08 21:21:58.574 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-08 21:21:58.629 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-06-08 21:21:58.633 | INFO  | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-06-08 21:21:58.891 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-08 21:21:58.963 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-06-08 21:21:59.246 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-06-08 21:21:59.299 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/README.md "HTTP/1.1 200 OK"
+2026-06-08 21:21:59.575 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-08 21:21:59.634 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json "HTTP/1.1 200 OK"
+2026-06-08 21:21:59.909 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-08 21:21:59.931 | INFO  | [auth] ❌ Auth DB failed: (pyodbc.OperationalError) ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]SQL Server Network Interfaces: Error Locating Server/Instance Specified [xFFFFFFFF].  (-1) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (-1)')
+(Background on this error at: https://sqlalche.me/e/20/e3q8) — using hardcoded users
+2026-06-08 21:21:59.957 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-06-08 21:22:00.234 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-06-08 21:22:00.534 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-08 21:22:00.632 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+2026-06-08 21:22:01.026 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-06-08 21:22:01.305 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-06-08 21:22:01.601 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-06-08 21:22:01.931 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-06-08 21:22:02.201 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-08 21:22:02.279 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-06-08 21:22:02.580 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-08 21:22:02.634 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+2026-06-08 21:22:02.912 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-08 21:22:02.979 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+2026-06-08 21:22:03.298 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-08 21:22:03.398 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-06-08 21:22:03.736 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-06-08 21:22:04.056 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-06-08 21:22:04.376 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-08 21:22:04.439 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-06-08 21:22:04.706 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-06-08 21:22:04.758 | INFO  | [embedding] ✅ Model loaded and ready.
+2026-06-08 21:22:30.151 | INFO  | [login] Attempting: 'divya.v@quinteft.com'
+2026-06-08 21:22:30.151 | INFO  | [login] No auth DB available — using hardcoded users
+2026-06-08 21:22:30.152 | INFO  | [login] ✅ Hardcoded auth: divya.v@quinteft.com
+2026-06-08 21:24:30.141 | INFO  | [query] provider=Ollama model=qwen2.5:7b q=How many employees are in the HumanResources.Employee table?
+2026-06-08 21:24:31.945 | INFO  | [known_query] Candidate match (score=2): ['employee', 'employees']
+2026-06-08 21:24:31.945 | INFO  | [known_query] Best match score=2 — using known-good SQL
+2026-06-08 21:24:31.946 | INFO  | [query] Known-good match — skipping AI
+2026-06-08 21:24:32.425 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5:7b ...
+2026-06-08 21:25:47.669 | INFO  | [ollama] Response received (1325 chars)
+2026-06-08 21:25:47.670 | INFO  | [analysis] Generated 1325 chars
+2026-06-08 21:25:48.321 | INFO  | [audit] ✅ Logged: divya.v@quinteft.com — SUCCESS — How many employees are in the HumanResources.Emplo
+2026-06-08 22:28:48.199 | INFO  | [files] Tables ready
+2026-06-08 22:28:48.224 | INFO  | [files] Parsed CSV: 50 rows, encoding=utf-8
+2026-06-08 22:28:48.322 | INFO  | [files] Tables ready
+2026-06-08 22:28:48.325 | INFO  | [files] Parsed CSV: 30 rows, encoding=utf-8
+2026-06-08 23:02:09.141 | INFO  | [query] provider=Ollama model=qwen2.5:7b q=📎 clean_sales.csv
+📎 no_numeric.csv
+Compare these two files a
+2026-06-08 23:02:12.110 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5:7b ...
+2026-06-08 23:07:14.168 | INFO  | [sql] Error generating SQL: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=300)
+2026-06-08 23:07:14.533 | INFO  | [audit] ✅ Logged: divya.v@quinteft.com — FAILURE — 📎 clean_sales.csv
+📎 no_numeric.csv
+Compare these t
+2026-06-08 23:07:41.037 | INFO  | [files] cache check error: (pyodbc.ProgrammingError) ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'file_id'. (207) (SQLExecDirectW); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'execution_time_ms'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chart_data'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'cached_exec_ms'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Statement(s) could not be prepared. (8180)")
+[SQL: 
+                SELECT id, analysis, hit_count, execution_time_ms, chart_data, cached_exec_ms
+                FROM dbo.file_analysis_cache
+                WHERE file_id=? AND prompt_hash=?
+            ]
+[parameters: (6, 'b2ab3ea97ac555a6a2a9fe904169ebb67a3b42bb75be4cd891a8568c4fd283a0')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-08 23:07:41.046 | INFO  | [files] Rebuilt df: 50 rows x 5 cols, numeric: ['Units', 'Revenue']
+2026-06-08 23:07:41.054 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5:7b ...
+2026-06-08 23:08:19.219 | INFO  | [ollama] Response received (136 chars)
+2026-06-08 23:08:19.220 | INFO  | [files] AI plan: {'operation': 'top_n', 'metric_column': 'Revenue', 'group_by_column': 'Region', 'date_column': None, 'n': 1, 'agg': 'max'}
+2026-06-08 23:08:19.222 | INFO  | [files] Final: op=top_n, metric=Revenue, group_by=Region, agg=max, n=1
+2026-06-08 23:08:19.250 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5:7b ...
+2026-06-08 23:09:12.775 | INFO  | [ollama] Response received (504 chars)
+2026-06-08 23:09:12.778 | INFO  | [files] Analysis took 91731 ms
+2026-06-08 23:09:12.789 | INFO  | [files] save analysis error: (pyodbc.ProgrammingError) ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'file_id'. (207) (SQLExecDirectW); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'file_id'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'execution_time_ms'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chart_data'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Statement(s) could not be prepared. (8180)")
+[SQL: 
+                IF NOT EXISTS (SELECT 1 FROM dbo.file_analysis_cache
+                               WHERE file_id=? AND prompt_hash=?)
+                INSERT INTO dbo.file_analysis_cache
+                    (file_id, prompt_hash, prompt, analysis, provider, model,
+                     execution_time_ms, chart_data)
+                VALUES (?,?,?,?,?,?,
+                        ?,?)
+            ]
+[parameters: (6, 'b2ab3ea97ac555a6a2a9fe904169ebb67a3b42bb75be4cd891a8568c4fd283a0', 6, 'b2ab3ea97ac555a6a2a9fe904169ebb67a3b42bb75be4cd891a8568c4fd283a0', 'Which region generated the highest sales revenue?', 'SUMMARY: The East region generated the highest sales revenue of $48,555.13.\n\nKEY FINDINGS:\n1. The East region accounted for the maximum revenue wi ... (216 characters truncated) ... r success elsewhere.\n\nRISK FLAGS:\n1. The dominance of the East region might indicate a concentration risk if it performs poorly in future periods.', 'Ollama', 'qwen2.5:7b', 91731.38809204102, '{"columns": ["Region", "Revenue"], "rows": [["East", 48555.13]]}')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-08 23:09:26.753 | INFO  | [files] cache check error: (pyodbc.ProgrammingError) ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'file_id'. (207) (SQLExecDirectW); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'execution_time_ms'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chart_data'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'cached_exec_ms'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Statement(s) could not be prepared. (8180)")
+[SQL: 
+                SELECT id, analysis, hit_count, execution_time_ms, chart_data, cached_exec_ms
+                FROM dbo.file_analysis_cache
+                WHERE file_id=? AND prompt_hash=?
+            ]
+[parameters: (6, 'b2ab3ea97ac555a6a2a9fe904169ebb67a3b42bb75be4cd891a8568c4fd283a0')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-08 23:09:26.757 | INFO  | [files] Rebuilt df: 50 rows x 5 cols, numeric: ['Units', 'Revenue']
+2026-06-08 23:09:26.761 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5:7b ...
+2026-06-08 23:09:39.882 | INFO  | [ollama] Response received (136 chars)
+2026-06-08 23:09:39.884 | INFO  | [files] AI plan: {'operation': 'top_n', 'metric_column': 'Revenue', 'group_by_column': 'Region', 'date_column': None, 'n': 1, 'agg': 'max'}
+2026-06-08 23:09:39.887 | INFO  | [files] Final: op=top_n, metric=Revenue, group_by=Region, agg=max, n=1
+2026-06-08 23:09:39.896 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5:7b ...
+2026-06-08 23:10:03.944 | INFO  | [ollama] Response received (460 chars)
+2026-06-08 23:10:03.947 | INFO  | [files] Analysis took 37189 ms
+2026-06-08 23:10:03.955 | INFO  | [files] save analysis error: (pyodbc.ProgrammingError) ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'file_id'. (207) (SQLExecDirectW); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'file_id'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'execution_time_ms'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chart_data'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Statement(s) could not be prepared. (8180)")
+[SQL: 
+                IF NOT EXISTS (SELECT 1 FROM dbo.file_analysis_cache
+                               WHERE file_id=? AND prompt_hash=?)
+                INSERT INTO dbo.file_analysis_cache
+                    (file_id, prompt_hash, prompt, analysis, provider, model,
+                     execution_time_ms, chart_data)
+                VALUES (?,?,?,?,?,?,
+                        ?,?)
+            ]
+[parameters: (6, 'b2ab3ea97ac555a6a2a9fe904169ebb67a3b42bb75be4cd891a8568c4fd283a0', 6, 'b2ab3ea97ac555a6a2a9fe904169ebb67a3b42bb75be4cd891a8568c4fd283a0', 'Which region generated the highest sales revenue?', 'SUMMARY: The East region generated the highest sales revenue of $48,555.13.\n\nKEY FINDINGS:\n1. The East region accounted for the maximum revenue wi ... (172 characters truncated) ...  high revenue in the East region.\n\nRISK FLAGS:\n1. The dominance of one region might indicate a risk if that region experiences economic downturns.', 'Ollama', 'qwen2.5:7b', 37188.567876815796, '{"columns": ["Region", "Revenue"], "rows": [["East", 48555.13]]}')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-08 23:12:16.818 | INFO  | [files] cache check error: (pyodbc.ProgrammingError) ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'file_id'. (207) (SQLExecDirectW); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'execution_time_ms'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chart_data'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'cached_exec_ms'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Statement(s) could not be prepared. (8180)")
+[SQL: 
+                SELECT id, analysis, hit_count, execution_time_ms, chart_data, cached_exec_ms
+                FROM dbo.file_analysis_cache
+                WHERE file_id=? AND prompt_hash=?
+            ]
+[parameters: (6, 'b2ab3ea97ac555a6a2a9fe904169ebb67a3b42bb75be4cd891a8568c4fd283a0')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-08 23:12:16.820 | INFO  | [files] Rebuilt df: 50 rows x 5 cols, numeric: ['Units', 'Revenue']
+2026-06-08 23:12:16.823 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5:7b ...
+2026-06-08 23:12:31.239 | INFO  | [ollama] Response received (136 chars)
+2026-06-08 23:12:31.241 | INFO  | [files] AI plan: {'operation': 'top_n', 'metric_column': 'Revenue', 'group_by_column': 'Region', 'date_column': None, 'n': 1, 'agg': 'max'}
+2026-06-08 23:12:31.242 | INFO  | [files] Final: op=top_n, metric=Revenue, group_by=Region, agg=max, n=1
+2026-06-08 23:12:31.245 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5:7b ...
+2026-06-08 23:12:51.977 | INFO  | [ollama] Response received (460 chars)
+2026-06-08 23:12:51.978 | INFO  | [files] Analysis took 35157 ms
+2026-06-08 23:12:51.984 | INFO  | [files] save analysis error: (pyodbc.ProgrammingError) ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'file_id'. (207) (SQLExecDirectW); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'file_id'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'execution_time_ms'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chart_data'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Statement(s) could not be prepared. (8180)")
+[SQL: 
+                IF NOT EXISTS (SELECT 1 FROM dbo.file_analysis_cache
+                               WHERE file_id=? AND prompt_hash=?)
+                INSERT INTO dbo.file_analysis_cache
+                    (file_id, prompt_hash, prompt, analysis, provider, model,
+                     execution_time_ms, chart_data)
+                VALUES (?,?,?,?,?,?,
+                        ?,?)
+            ]
+[parameters: (6, 'b2ab3ea97ac555a6a2a9fe904169ebb67a3b42bb75be4cd891a8568c4fd283a0', 6, 'b2ab3ea97ac555a6a2a9fe904169ebb67a3b42bb75be4cd891a8568c4fd283a0', 'Which region generated the highest sales revenue?', 'SUMMARY: The East region generated the highest sales revenue of $48,555.13.\n\nKEY FINDINGS:\n1. The East region accounted for the maximum revenue wi ... (172 characters truncated) ...  high revenue in the East region.\n\nRISK FLAGS:\n1. The dominance of one region might indicate a risk if that region experiences economic downturns.', 'Ollama', 'qwen2.5:7b', 35157.26923942566, '{"columns": ["Region", "Revenue"], "rows": [["East", 48555.13]]}')]
+(Background on this error at: https://sqlalche.me/e/20/f405)

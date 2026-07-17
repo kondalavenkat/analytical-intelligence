@@ -1,0 +1,38 @@
+fastapi
+uvicorn[standard]
+pyjwt
+python-multipart
+sqlalchemy
+pyodbc
+pandas
+openai
+sentence-transformers
+numpy
+requests
+faster-whisper
+slowapi
+prometheus-client
+
+# ── Universal Data Intake (Phase 1) ──────────────────────────────────────────
+
+# Structured extraction
+openpyxl          # Excel .xlsx read/write
+xlrd              # Excel .xls legacy support
+
+# Document extraction
+pdfplumber        # Digital PDF text + table extraction
+PyMuPDF           # Scanned PDF → images (also used for page rendering)
+python-docx       # Word (.docx) extraction
+python-pptx       # PowerPoint (.pptx) extraction
+
+# Image & OCR extraction
+Pillow            # Image preprocessing (grayscale, contrast)
+pytesseract       # Tesseract OCR Python wrapper
+# NOTE: Tesseract binary must be installed separately:
+#   Windows: https://github.com/UB-Mannheim/tesseract/wiki
+#   Ubuntu:  sudo apt install tesseract-ocr
+#   macOS:   brew install tesseract
+
+# Optional AI providers
+# google-generativeai   # Gemini
+# ollama                # Local LLM

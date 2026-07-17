@@ -1,0 +1,48 @@
+/* globals.css — base resets and design tokens only.
+   Fonts are loaded via next/font/google in layout.tsx (non-blocking).
+   The old @import url(Google Fonts) was removed — it was a render-blocking
+   network request on every page load. */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:          #f5f5f4;
+  --surface:     #ffffff;
+  --border:      rgba(0,0,0,0.09);
+  --border-mid:  rgba(0,0,0,0.16);
+  --text:        #1a1a18;
+  --text-2:      #5f5e5a;
+  --text-3:      #888780;
+  --blue:        #185FA5;
+  --blue-light:  #378ADD;
+  --blue-pale:   #E6F1FB;
+  --navy:        #042C53;
+  --radius:      8px;
+  --radius-lg:   12px;
+  /* CSS variables set by next/font injected class on <html> */
+  --font:        var(--font-sans, 'Space Grotesk', system-ui, sans-serif);
+  --mono:        var(--font-mono, 'IBM Plex Mono', monospace);
+}
+
+html, body { height: 100%; font-family: var(--font); background: var(--bg); color: var(--text); }
+
+a { color: var(--blue-light); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+input, button, select, textarea { font-family: var(--font); }
+
+@keyframes spin    { to { transform: rotate(360deg); } }
+@keyframes fadeIn  { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+@keyframes fadeUp  { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+@keyframes bounce  { 0%, 80%, 100% { transform: scale(0); } 40% { transform: scale(1); } }
+@keyframes pulse   { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.3; transform: scale(0.6); } }
+
+.fade-in { animation: fadeIn 0.25s ease forwards; }
+
+/* Slim custom scrollbars */
+::-webkit-scrollbar           { width: 4px; height: 4px; }
+::-webkit-scrollbar-track     { background: transparent; }
+::-webkit-scrollbar-thumb     { background: #d3d1c7; border-radius: 4px; }
+
+textarea { resize: none; }
+button:focus { outline: none; }

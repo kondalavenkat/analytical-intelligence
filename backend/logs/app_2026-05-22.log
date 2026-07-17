@@ -1,0 +1,120 @@
+2026-05-22 16:08:10.423 | INFO  | [startup] Logging initialized → C:\Users\qam04800.QUINTEFT\Downloads\SQL_Data_Analysis_Agent-master\backend\logs\app_2026-05-22.log
+2026-05-22 16:08:17.815 | INFO  | [startup] Logging initialized → C:\Users\qam04800.QUINTEFT\Downloads\SQL_Data_Analysis_Agent-master\backend\logs\app_2026-05-22.log
+2026-05-22 16:08:17.904 | INFO  | [embedding] Preloading embedding model...
+2026-05-22 16:08:17.905 | INFO  | [auth] ❌ Auth DB error: create_sql_server_connection() got an unexpected keyword argument 'windows_auth'
+2026-05-22 16:09:21.419 | INFO  | No device provided, using cpu
+2026-05-22 16:09:48.344 | INFO  | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-05-22 16:09:56.451 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-22 16:10:18.830 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-05-22 16:10:19.916 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+2026-05-22 16:10:21.345 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-22 16:10:23.788 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-05-22 16:10:24.331 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-22 16:10:24.333 | WARNING | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-22 16:10:25.497 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-05-22 16:10:26.041 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-05-22 16:10:29.017 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-22 16:10:30.297 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-05-22 16:10:32.358 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-05-22 16:10:33.699 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-22 16:10:36.110 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-22 16:10:39.016 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-22 16:10:47.039 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-22 16:10:47.617 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-22 16:10:48.991 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-22 16:10:50.436 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-05-22 16:10:52.499 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-22 16:10:53.752 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-05-22 16:11:01.056 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-22 16:11:01.694 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-22 16:11:11.664 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-22 16:11:22.723 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-22 16:11:23.670 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-22 16:11:24.046 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-05-22 16:11:39.891 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-05-22 16:11:40.103 | INFO  | [embedding] ✅ Model loaded and ready.
+2026-05-22 16:17:45.608 | INFO  | [login] Attempting: 'divya.v@quinteft.com'
+2026-05-22 16:17:45.609 | INFO  | [login] No auth DB available — using hardcoded users
+2026-05-22 16:17:45.611 | INFO  | [login] ✅ Hardcoded auth: divya.v@quinteft.com
+2026-05-22 16:45:24.078 | INFO  | [chat] get sessions error: (pyodbc.ProgrammingError) ('42S02', "[42S02] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'dbo.chat_sessions'. (208) (SQLExecDirectW); [42S02] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Statement(s) could not be prepared. (8180)")
+[SQL: 
+                SELECT s.id, s.title, s.created_at, s.updated_at,
+                       COUNT(h.id) AS message_count
+                FROM dbo.chat_sessions s
+                LEFT JOIN dbo.chat_history h ON h.session_id = s.id
+                WHERE s.user_id = ?
+                GROUP BY s.id, s.title, s.created_at, s.updated_at
+                ORDER BY s.updated_at DESC
+            ]
+[parameters: (2,)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-22 16:49:50.089 | INFO  | [cache] list error: Execution failed on sql '
+                SELECT id, user_question, provider, model, hit_count,
+                       ROUND(first_exec_ms,  0) AS first_exec_ms,
+                       ROUND(cached_exec_ms, 1) AS cached_exec_ms,
+                       created_at, last_accessed
+                FROM dbo.response_cache
+                ORDER BY last_accessed DESC
+            ': (pyodbc.ProgrammingError) ('42S02', "[42S02] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'dbo.response_cache'. (208) (SQLExecDirectW)")
+[SQL: 
+                SELECT id, user_question, provider, model, hit_count,
+                       ROUND(first_exec_ms,  0) AS first_exec_ms,
+                       ROUND(cached_exec_ms, 1) AS cached_exec_ms,
+                       created_at, last_accessed
+                FROM dbo.response_cache
+                ORDER BY last_accessed DESC
+            ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-22 16:49:51.456 | INFO  | [cache] list error: Execution failed on sql '
+                SELECT id, user_question, provider, model, hit_count,
+                       ROUND(first_exec_ms,  0) AS first_exec_ms,
+                       ROUND(cached_exec_ms, 1) AS cached_exec_ms,
+                       created_at, last_accessed
+                FROM dbo.response_cache
+                ORDER BY last_accessed DESC
+            ': (pyodbc.ProgrammingError) ('42S02', "[42S02] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'dbo.response_cache'. (208) (SQLExecDirectW)")
+[SQL: 
+                SELECT id, user_question, provider, model, hit_count,
+                       ROUND(first_exec_ms,  0) AS first_exec_ms,
+                       ROUND(cached_exec_ms, 1) AS cached_exec_ms,
+                       created_at, last_accessed
+                FROM dbo.response_cache
+                ORDER BY last_accessed DESC
+            ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-22 16:50:04.403 | INFO  | [files] list error: (pyodbc.ProgrammingError) ('42S02', "[42S02] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'dbo.uploaded_files'. (208) (SQLExecDirectW); [42S02] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Statement(s) could not be prepared. (8180)")
+[SQL: 
+                SELECT id, file_name, file_size, file_type, row_count,
+                       col_count, columns_json, uploaded_at, last_used, sheet_name
+                FROM dbo.uploaded_files WHERE user_id=?
+                ORDER BY COALESCE(last_used, uploaded_at) DESC
+            ]
+[parameters: (2,)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-22 16:50:04.442 | INFO  | [files] list error: (pyodbc.ProgrammingError) ('42S02', "[42S02] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'dbo.uploaded_files'. (208) (SQLExecDirectW); [42S02] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Statement(s) could not be prepared. (8180)")
+[SQL: 
+                SELECT id, file_name, file_size, file_type, row_count,
+                       col_count, columns_json, uploaded_at, last_used, sheet_name
+                FROM dbo.uploaded_files WHERE user_id=?
+                ORDER BY COALESCE(last_used, uploaded_at) DESC
+            ]
+[parameters: (2,)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-22 16:50:04.476 | INFO  | [files] list error: (pyodbc.ProgrammingError) ('42S02', "[42S02] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'dbo.uploaded_files'. (208) (SQLExecDirectW); [42S02] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Statement(s) could not be prepared. (8180)")
+[SQL: 
+                SELECT id, file_name, file_size, file_type, row_count,
+                       col_count, columns_json, uploaded_at, last_used, sheet_name
+                FROM dbo.uploaded_files WHERE user_id=?
+                ORDER BY COALESCE(last_used, uploaded_at) DESC
+            ]
+[parameters: (2,)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-22 16:50:04.511 | INFO  | [files] list error: (pyodbc.ProgrammingError) ('42S02', "[42S02] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'dbo.uploaded_files'. (208) (SQLExecDirectW); [42S02] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Statement(s) could not be prepared. (8180)")
+[SQL: 
+                SELECT id, file_name, file_size, file_type, row_count,
+                       col_count, columns_json, uploaded_at, last_used, sheet_name
+                FROM dbo.uploaded_files WHERE user_id=?
+                ORDER BY COALESCE(last_used, uploaded_at) DESC
+            ]
+[parameters: (2,)]
+(Background on this error at: https://sqlalche.me/e/20/f405)

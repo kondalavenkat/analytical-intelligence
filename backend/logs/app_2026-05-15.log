@@ -1,0 +1,642 @@
+2026-05-15 11:38:45.832 | INFO  | [startup] Logging initialized → C:\Users\qam04673\Documents\AI_SQL_AGENT_NextJS\sql-analyst-ui\backend\logs\app_2026-05-15.log
+2026-05-15 11:38:46.057 | INFO  | [embedding] Preloading embedding model...
+2026-05-15 11:38:46.058 | INFO  | [auth] ❌ Auth DB error: create_sql_server_connection() got an unexpected keyword argument 'windows_auth'
+2026-05-15 11:38:51.870 | INFO  | [startup] Logging initialized → C:\Users\qam04673\Documents\AI_SQL_AGENT_NextJS\sql-analyst-ui\backend\logs\app_2026-05-15.log
+2026-05-15 11:38:52.008 | INFO  | [embedding] Preloading embedding model...
+2026-05-15 11:38:52.009 | INFO  | [auth] ❌ Auth DB error: create_sql_server_connection() got an unexpected keyword argument 'windows_auth'
+2026-05-15 11:41:22.698 | INFO  | [startup] Logging initialized → C:\Users\qam04673\Documents\AI_SQL_AGENT_NextJS\sql-analyst-ui\backend\logs\app_2026-05-15.log
+2026-05-15 11:41:22.834 | INFO  | [embedding] Preloading embedding model...
+2026-05-15 11:41:22.835 | INFO  | [auth] ❌ Auth DB error: create_sql_server_connection() got an unexpected keyword argument 'windows_auth'
+2026-05-15 11:41:56.043 | INFO  | [login] Attempting: 'divya.v@quinteft.com'
+2026-05-15 11:41:56.043 | INFO  | [login] No auth DB available — using hardcoded users
+2026-05-15 11:42:00.186 | INFO  | [login] Attempting: 'divya.v@quinteft.com'
+2026-05-15 11:42:00.186 | INFO  | [login] No auth DB available — using hardcoded users
+2026-05-15 11:42:00.187 | INFO  | [login] ✅ Hardcoded auth: divya.v@quinteft.com
+2026-05-15 11:42:06.380 | INFO  | No device provided, using cpu
+2026-05-15 11:42:07.690 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-15 11:42:07.709 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-05-15 11:42:08.059 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-15 11:42:08.083 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-05-15 11:42:08.107 | INFO  | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-05-15 11:42:08.470 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-15 11:42:08.473 | WARNING | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-15 11:42:08.489 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-05-15 11:42:08.878 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-05-15 11:42:08.890 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+2026-05-15 11:42:09.186 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-15 11:42:09.198 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-05-15 11:42:09.493 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-15 11:42:09.509 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-05-15 11:42:09.901 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-05-15 11:42:10.208 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-15 11:42:10.222 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-05-15 11:42:11.541 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-05-15 11:42:11.816 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-15 11:42:12.094 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-15 11:42:12.361 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-15 11:42:12.667 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-15 11:42:12.680 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-15 11:42:13.043 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-15 11:42:13.054 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-05-15 11:42:13.343 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-15 11:42:13.355 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-05-15 11:42:13.723 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-15 11:42:13.734 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-15 11:42:14.044 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-15 11:42:14.420 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-15 11:42:14.867 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-15 11:42:14.878 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-05-15 11:42:15.239 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-05-15 11:42:15.265 | INFO  | [embedding] ✅ Model loaded and ready.
+2026-05-15 11:42:46.167 | INFO  | [files] Tables ready
+2026-05-15 11:42:47.338 | INFO  | [files] Excel sheets detected: ['Q1_Sales', 'Q2_Sales', 'Annual_Summary']
+2026-05-15 11:42:47.381 | INFO  | [files] Sheet 'Q1_Sales': 61 rows x 10 cols
+2026-05-15 11:42:47.406 | INFO  | [files] Sheet 'Q2_Sales': 61 rows x 10 cols
+2026-05-15 11:42:47.423 | INFO  | [files] Sheet 'Annual_Summary': 7 rows x 6 cols
+2026-05-15 11:42:47.471 | INFO  | [files] save error: (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]String or binary data would be truncated in table 'AdventureWorks2019.dbo.uploaded_files', column 'file_hash'. Truncated value: '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67'. (2628) (SQLParamData); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+[SQL: 
+                INSERT INTO dbo.uploaded_files
+                    (user_id, file_hash, file_name, file_size, file_type,
+                     row_count, col_count, columns_json, preview_json, sheet_name)
+                OUTPUT INSERTED.id
+                VALUES (?, ?, ?, ?, ?,
+                        ?, ?, ?, ?, ?)
+            ]
+[parameters: (2, '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67::Q1_Sales', 'sales_2024.xlsx', 16459, 'xlsx', 61, 10, '["Product", "Region", "Sales Rep", "Units Sold", "Unit Price (\\u20b9)", "Revenue (\\u20b9)", "COGS (\\u20b9)", "Gross Profit (\\u20b9)", "Margin %", "Sale Date"]', '[["Wireless Mouse", "North", "Karthik B", "36.0", "19594.34", "705396.24", "421329.11", "284067.13", "40.27", "2024-03-27"], ["External SSD 1TB", "No ... (7494 characters truncated) ... Ravi S", "105.0", "59847.62", "6284000.100000001", "3308578.49", "2975421.61", "47.35", "2024-01-05"], ["TOTAL", "", "", "", "", "", "", "", "", ""]]', 'Q1_Sales')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-15 11:42:47.473 | INFO  | [files] WARNING: could not get file_id for sheet 'Q1_Sales', skipping
+2026-05-15 11:42:47.483 | INFO  | [files] save error: (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]String or binary data would be truncated in table 'AdventureWorks2019.dbo.uploaded_files', column 'file_hash'. Truncated value: '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67'. (2628) (SQLParamData); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+[SQL: 
+                INSERT INTO dbo.uploaded_files
+                    (user_id, file_hash, file_name, file_size, file_type,
+                     row_count, col_count, columns_json, preview_json, sheet_name)
+                OUTPUT INSERTED.id
+                VALUES (?, ?, ?, ?, ?,
+                        ?, ?, ?, ?, ?)
+            ]
+[parameters: (2, '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67::Q2_Sales', 'sales_2024.xlsx', 16459, 'xlsx', 61, 10, '["Product", "Region", "Sales Rep", "Units Sold", "Unit Price (\\u20b9)", "Revenue (\\u20b9)", "COGS (\\u20b9)", "Gross Profit (\\u20b9)", "Margin %", "Sale Date"]', '[["Noise Cancelling Headphones", "South", "Neha T", "109.0", "87509.69", "9538556.21", "4959397.6", "4579158.610000001", "48.01", "2024-04-30"], ["Me ... (7452 characters truncated) ... th", "Venkat L", "53.0", "43381.32", "2299209.96", "1238226.19", "1060983.77", "46.15", "2024-06-15"], ["TOTAL", "", "", "", "", "", "", "", "", ""]]', 'Q2_Sales')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-15 11:42:47.485 | INFO  | [files] WARNING: could not get file_id for sheet 'Q2_Sales', skipping
+2026-05-15 11:42:47.495 | INFO  | [files] save error: (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]String or binary data would be truncated in table 'AdventureWorks2019.dbo.uploaded_files', column 'file_hash'. Truncated value: '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67'. (2628) (SQLExecDirectW); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+[SQL: 
+                INSERT INTO dbo.uploaded_files
+                    (user_id, file_hash, file_name, file_size, file_type,
+                     row_count, col_count, columns_json, preview_json, sheet_name)
+                OUTPUT INSERTED.id
+                VALUES (?, ?, ?, ?, ?,
+                        ?, ?, ?, ?, ?)
+            ]
+[parameters: (2, '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67::Annual_Summary', 'sales_2024.xlsx', 16459, 'xlsx', 7, 6, '["Metric", "Q1", "Q2", "Q3 (Est.)", "Q4 (Est.)", "Full Year"]', '[["Total Revenue (\\u20b9)", "4820000.0", "5390000.0", "5100000.0", "5800000.0", ""], ["Total Units Sold", "2840.0", "3210.0", "2950.0", "3400.0", "" ... (140 characters truncated) ...  ["Top Product", "", "", "", "", "\\u2014"], ["Best Region", "", "", "", "", "\\u2014"], ["No. of Transactions", "60.0", "60.0", "65.0", "70.0", ""]]', 'Annual_Summary')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-15 11:42:47.498 | INFO  | [files] WARNING: could not get file_id for sheet 'Annual_Summary', skipping
+2026-05-15 11:43:03.704 | INFO  | [files] Tables ready
+2026-05-15 11:43:03.710 | INFO  | [files] Parsed CSV: 1115 rows, encoding=utf-8
+2026-05-15 11:43:11.137 | INFO  | [chat] deleting session 1074 for user 2
+2026-05-15 11:43:11.181 | INFO  | [chat] deleted 1 messages, 1 sessions
+2026-05-15 11:43:12.359 | INFO  | [chat] deleting session 1073 for user 2
+2026-05-15 11:43:12.369 | INFO  | [chat] deleted 1 messages, 1 sessions
+2026-05-15 11:43:13.260 | INFO  | [chat] deleting session 1075 for user 2
+2026-05-15 11:43:13.265 | INFO  | [chat] deleted 0 messages, 1 sessions
+2026-05-15 11:43:14.430 | INFO  | [chat] deleting session 1081 for user 2
+2026-05-15 11:43:14.433 | INFO  | [chat] deleted 1 messages, 1 sessions
+2026-05-15 11:43:15.312 | INFO  | [chat] deleting session 1082 for user 2
+2026-05-15 11:43:15.314 | INFO  | [chat] deleted 0 messages, 1 sessions
+2026-05-15 11:43:23.703 | INFO  | [files] Tables ready
+2026-05-15 11:43:23.709 | INFO  | [files] Parsed CSV: 1115 rows, encoding=utf-8
+2026-05-15 11:44:39.750 | INFO  | [files] Tables ready
+2026-05-15 11:44:39.759 | INFO  | [files] Excel sheets detected: ['HR_Master', 'Payroll', 'Performance']
+2026-05-15 11:44:39.785 | INFO  | [files] Sheet 'HR_Master': 50 rows x 8 cols
+2026-05-15 11:44:39.804 | INFO  | [files] Sheet 'Payroll': 51 rows x 10 cols
+2026-05-15 11:44:39.828 | INFO  | [files] Sheet 'Performance': 50 rows x 10 cols
+2026-05-15 11:44:39.866 | INFO  | [files] save error: (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]String or binary data would be truncated in table 'AdventureWorks2019.dbo.uploaded_files', column 'file_hash'. Truncated value: '2fa56d58fddf9ac11ef7440bcd7ad680690b337ec27d6db6c02483219a95a91d'. (2628) (SQLParamData); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+[SQL: 
+                INSERT INTO dbo.uploaded_files
+                    (user_id, file_hash, file_name, file_size, file_type,
+                     row_count, col_count, columns_json, preview_json, sheet_name)
+                OUTPUT INSERTED.id
+                VALUES (?, ?, ?, ?, ?,
+                        ?, ?, ?, ?, ?)
+            ]
+[parameters: (2, '2fa56d58fddf9ac11ef7440bcd7ad680690b337ec27d6db6c02483219a95a91d::HR_Master', 'employee_data.xlsx', 15383, 'xlsx', 50, 8, '["Emp ID", "Full Name", "Department", "Designation", "Experience (Yrs)", "Date of Joining", "City", "Email"]', '[["EMP001", "Mohan Sharma", "Finance", "Senior Analyst", "10", "2020-07-22", "Bangalore", "mohan.sharma@company.com"], ["EMP002", "Sunita Singh", "HR ... (5388 characters truncated) ... ", "usha.reddy@company.com"], ["EMP050", "Deepa Sharma", "Operations", "Ops Executive", "12", "2023-09-11", "Hyderabad", "deepa.sharma@company.com"]]', 'HR_Master')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-15 11:44:39.869 | INFO  | [files] WARNING: could not get file_id for sheet 'HR_Master', skipping
+2026-05-15 11:44:39.881 | INFO  | [files] save error: (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]String or binary data would be truncated in table 'AdventureWorks2019.dbo.uploaded_files', column 'file_hash'. Truncated value: '2fa56d58fddf9ac11ef7440bcd7ad680690b337ec27d6db6c02483219a95a91d'. (2628) (SQLParamData); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+[SQL: 
+                INSERT INTO dbo.uploaded_files
+                    (user_id, file_hash, file_name, file_size, file_type,
+                     row_count, col_count, columns_json, preview_json, sheet_name)
+                OUTPUT INSERTED.id
+                VALUES (?, ?, ?, ?, ?,
+                        ?, ?, ?, ?, ?)
+            ]
+[parameters: (2, '2fa56d58fddf9ac11ef7440bcd7ad680690b337ec27d6db6c02483219a95a91d::Payroll', 'employee_data.xlsx', 15383, 'xlsx', 51, 10, '["Emp ID", "Full Name", "Department", "Base Salary (\\u20b9)", "HRA (\\u20b9)", "Transport (\\u20b9)", "Bonus (\\u20b9)", "Gross Salary (\\u20b9)", "Tax (\\u20b9)", "Net Salary (\\u20b9)"]', '[["EMP001", "Mohan Sharma", "Finance", "214200.0", "85700.0", "3000.0", "41700.0", "344600.0", "41400.0", "303200.0"], ["EMP002", "Sunita Singh", "HR ... (5669 characters truncated) ... Sharma", "Operations", "196600.0", "78600.0", "3000.0", "29500.0", "307700.0", "36900.0", "270800.0"], ["TOTAL", "", "", "", "", "", "", "", "", ""]]', 'Payroll')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-15 11:44:39.884 | INFO  | [files] WARNING: could not get file_id for sheet 'Payroll', skipping
+2026-05-15 11:44:39.894 | INFO  | [files] save error: (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]String or binary data would be truncated in table 'AdventureWorks2019.dbo.uploaded_files', column 'file_hash'. Truncated value: '2fa56d58fddf9ac11ef7440bcd7ad680690b337ec27d6db6c02483219a95a91d'. (2628) (SQLParamData); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+[SQL: 
+                INSERT INTO dbo.uploaded_files
+                    (user_id, file_hash, file_name, file_size, file_type,
+                     row_count, col_count, columns_json, preview_json, sheet_name)
+                OUTPUT INSERTED.id
+                VALUES (?, ?, ?, ?, ?,
+                        ?, ?, ?, ?, ?)
+            ]
+[parameters: (2, '2fa56d58fddf9ac11ef7440bcd7ad680690b337ec27d6db6c02483219a95a91d::Performance', 'employee_data.xlsx', 15383, 'xlsx', 50, 10, '["Emp ID", "Full Name", "Department", "Manager Rating (5)", "KRA Score (%)", "Attendance %", "Training Hrs", "Awards", "Performance Band", "Promotion Eligible"]', '[["EMP001", "Mohan Sharma", "Finance", "4.1", "71", "97.0", "11", "2", "Exceeds Expectations", "No"], ["EMP002", "Sunita Singh", "HR", "3.5", "99", " ... (4594 characters truncated) ... .5", "10", "0", "Exceeds Expectations", "Yes"], ["EMP050", "Deepa Sharma", "Operations", "3.3", "96", "92.4", "26", "0", "Meets Expectations", "No"]]', 'Performance')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-15 11:44:39.896 | INFO  | [files] WARNING: could not get file_id for sheet 'Performance', skipping
+2026-05-15 11:44:49.564 | INFO  | [files] Tables ready
+2026-05-15 11:44:49.594 | INFO  | [files] Parsed CSV: 10000 rows, encoding=utf-8
+2026-05-15 11:44:59.730 | INFO  | [files] Tables ready
+2026-05-15 11:44:59.733 | INFO  | [files] Parsed CSV: 1115 rows, encoding=utf-8
+2026-05-15 11:45:17.457 | INFO  | [files] Tables ready
+2026-05-15 11:45:17.471 | INFO  | [files] Excel sheets detected: ['Q1_Sales', 'Q2_Sales', 'Annual_Summary']
+2026-05-15 11:45:17.505 | INFO  | [files] Sheet 'Q1_Sales': 61 rows x 10 cols
+2026-05-15 11:45:17.533 | INFO  | [files] Sheet 'Q2_Sales': 61 rows x 10 cols
+2026-05-15 11:45:17.551 | INFO  | [files] Sheet 'Annual_Summary': 7 rows x 6 cols
+2026-05-15 11:45:17.607 | INFO  | [files] save error: (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]String or binary data would be truncated in table 'AdventureWorks2019.dbo.uploaded_files', column 'file_hash'. Truncated value: '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67'. (2628) (SQLParamData); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+[SQL: 
+                INSERT INTO dbo.uploaded_files
+                    (user_id, file_hash, file_name, file_size, file_type,
+                     row_count, col_count, columns_json, preview_json, sheet_name)
+                OUTPUT INSERTED.id
+                VALUES (?, ?, ?, ?, ?,
+                        ?, ?, ?, ?, ?)
+            ]
+[parameters: (2, '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67::Q1_Sales', 'sales_2024.xlsx', 16459, 'xlsx', 61, 10, '["Product", "Region", "Sales Rep", "Units Sold", "Unit Price (\\u20b9)", "Revenue (\\u20b9)", "COGS (\\u20b9)", "Gross Profit (\\u20b9)", "Margin %", "Sale Date"]', '[["Wireless Mouse", "North", "Karthik B", "36.0", "19594.34", "705396.24", "421329.11", "284067.13", "40.27", "2024-03-27"], ["External SSD 1TB", "No ... (7494 characters truncated) ... Ravi S", "105.0", "59847.62", "6284000.100000001", "3308578.49", "2975421.61", "47.35", "2024-01-05"], ["TOTAL", "", "", "", "", "", "", "", "", ""]]', 'Q1_Sales')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-15 11:45:17.611 | INFO  | [files] WARNING: could not get file_id for sheet 'Q1_Sales', skipping
+2026-05-15 11:45:17.622 | INFO  | [files] save error: (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]String or binary data would be truncated in table 'AdventureWorks2019.dbo.uploaded_files', column 'file_hash'. Truncated value: '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67'. (2628) (SQLParamData); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+[SQL: 
+                INSERT INTO dbo.uploaded_files
+                    (user_id, file_hash, file_name, file_size, file_type,
+                     row_count, col_count, columns_json, preview_json, sheet_name)
+                OUTPUT INSERTED.id
+                VALUES (?, ?, ?, ?, ?,
+                        ?, ?, ?, ?, ?)
+            ]
+[parameters: (2, '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67::Q2_Sales', 'sales_2024.xlsx', 16459, 'xlsx', 61, 10, '["Product", "Region", "Sales Rep", "Units Sold", "Unit Price (\\u20b9)", "Revenue (\\u20b9)", "COGS (\\u20b9)", "Gross Profit (\\u20b9)", "Margin %", "Sale Date"]', '[["Noise Cancelling Headphones", "South", "Neha T", "109.0", "87509.69", "9538556.21", "4959397.6", "4579158.610000001", "48.01", "2024-04-30"], ["Me ... (7452 characters truncated) ... th", "Venkat L", "53.0", "43381.32", "2299209.96", "1238226.19", "1060983.77", "46.15", "2024-06-15"], ["TOTAL", "", "", "", "", "", "", "", "", ""]]', 'Q2_Sales')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-15 11:45:17.624 | INFO  | [files] WARNING: could not get file_id for sheet 'Q2_Sales', skipping
+2026-05-15 11:45:17.634 | INFO  | [files] save error: (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]String or binary data would be truncated in table 'AdventureWorks2019.dbo.uploaded_files', column 'file_hash'. Truncated value: '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67'. (2628) (SQLExecDirectW); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+[SQL: 
+                INSERT INTO dbo.uploaded_files
+                    (user_id, file_hash, file_name, file_size, file_type,
+                     row_count, col_count, columns_json, preview_json, sheet_name)
+                OUTPUT INSERTED.id
+                VALUES (?, ?, ?, ?, ?,
+                        ?, ?, ?, ?, ?)
+            ]
+[parameters: (2, '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67::Annual_Summary', 'sales_2024.xlsx', 16459, 'xlsx', 7, 6, '["Metric", "Q1", "Q2", "Q3 (Est.)", "Q4 (Est.)", "Full Year"]', '[["Total Revenue (\\u20b9)", "4820000.0", "5390000.0", "5100000.0", "5800000.0", ""], ["Total Units Sold", "2840.0", "3210.0", "2950.0", "3400.0", "" ... (140 characters truncated) ...  ["Top Product", "", "", "", "", "\\u2014"], ["Best Region", "", "", "", "", "\\u2014"], ["No. of Transactions", "60.0", "60.0", "65.0", "70.0", ""]]', 'Annual_Summary')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-15 11:45:17.637 | INFO  | [files] WARNING: could not get file_id for sheet 'Annual_Summary', skipping
+2026-05-15 11:47:32.806 | INFO  | [files] Tables ready
+2026-05-15 11:47:32.815 | INFO  | [files] Excel sheets detected: ['Q1_Sales', 'Q2_Sales', 'Annual_Summary']
+2026-05-15 11:47:32.840 | INFO  | [files] Sheet 'Q1_Sales': 61 rows x 10 cols
+2026-05-15 11:47:32.862 | INFO  | [files] Sheet 'Q2_Sales': 61 rows x 10 cols
+2026-05-15 11:47:32.877 | INFO  | [files] Sheet 'Annual_Summary': 7 rows x 6 cols
+2026-05-15 11:47:32.921 | INFO  | [files] save error: (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]String or binary data would be truncated in table 'AdventureWorks2019.dbo.uploaded_files', column 'file_hash'. Truncated value: '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67'. (2628) (SQLParamData); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+[SQL: 
+                INSERT INTO dbo.uploaded_files
+                    (user_id, file_hash, file_name, file_size, file_type,
+                     row_count, col_count, columns_json, preview_json, sheet_name)
+                OUTPUT INSERTED.id
+                VALUES (?, ?, ?, ?, ?,
+                        ?, ?, ?, ?, ?)
+            ]
+[parameters: (2, '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67::Q1_Sales', 'sales_2024.xlsx', 16459, 'xlsx', 61, 10, '["Product", "Region", "Sales Rep", "Units Sold", "Unit Price (\\u20b9)", "Revenue (\\u20b9)", "COGS (\\u20b9)", "Gross Profit (\\u20b9)", "Margin %", "Sale Date"]', '[["Wireless Mouse", "North", "Karthik B", "36.0", "19594.34", "705396.24", "421329.11", "284067.13", "40.27", "2024-03-27"], ["External SSD 1TB", "No ... (7494 characters truncated) ... Ravi S", "105.0", "59847.62", "6284000.100000001", "3308578.49", "2975421.61", "47.35", "2024-01-05"], ["TOTAL", "", "", "", "", "", "", "", "", ""]]', 'Q1_Sales')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-15 11:47:32.924 | INFO  | [files] WARNING: could not get file_id for sheet 'Q1_Sales', skipping
+2026-05-15 11:47:32.934 | INFO  | [files] save error: (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]String or binary data would be truncated in table 'AdventureWorks2019.dbo.uploaded_files', column 'file_hash'. Truncated value: '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67'. (2628) (SQLParamData); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+[SQL: 
+                INSERT INTO dbo.uploaded_files
+                    (user_id, file_hash, file_name, file_size, file_type,
+                     row_count, col_count, columns_json, preview_json, sheet_name)
+                OUTPUT INSERTED.id
+                VALUES (?, ?, ?, ?, ?,
+                        ?, ?, ?, ?, ?)
+            ]
+[parameters: (2, '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67::Q2_Sales', 'sales_2024.xlsx', 16459, 'xlsx', 61, 10, '["Product", "Region", "Sales Rep", "Units Sold", "Unit Price (\\u20b9)", "Revenue (\\u20b9)", "COGS (\\u20b9)", "Gross Profit (\\u20b9)", "Margin %", "Sale Date"]', '[["Noise Cancelling Headphones", "South", "Neha T", "109.0", "87509.69", "9538556.21", "4959397.6", "4579158.610000001", "48.01", "2024-04-30"], ["Me ... (7452 characters truncated) ... th", "Venkat L", "53.0", "43381.32", "2299209.96", "1238226.19", "1060983.77", "46.15", "2024-06-15"], ["TOTAL", "", "", "", "", "", "", "", "", ""]]', 'Q2_Sales')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-15 11:47:32.936 | INFO  | [files] WARNING: could not get file_id for sheet 'Q2_Sales', skipping
+2026-05-15 11:47:32.945 | INFO  | [files] save error: (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]String or binary data would be truncated in table 'AdventureWorks2019.dbo.uploaded_files', column 'file_hash'. Truncated value: '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67'. (2628) (SQLExecDirectW); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+[SQL: 
+                INSERT INTO dbo.uploaded_files
+                    (user_id, file_hash, file_name, file_size, file_type,
+                     row_count, col_count, columns_json, preview_json, sheet_name)
+                OUTPUT INSERTED.id
+                VALUES (?, ?, ?, ?, ?,
+                        ?, ?, ?, ?, ?)
+            ]
+[parameters: (2, '346a72b797d65dd9eba4ed60029ca233660727a1e3894b9bc8bba0302aba0c67::Annual_Summary', 'sales_2024.xlsx', 16459, 'xlsx', 7, 6, '["Metric", "Q1", "Q2", "Q3 (Est.)", "Q4 (Est.)", "Full Year"]', '[["Total Revenue (\\u20b9)", "4820000.0", "5390000.0", "5100000.0", "5800000.0", ""], ["Total Units Sold", "2840.0", "3210.0", "2950.0", "3400.0", "" ... (140 characters truncated) ...  ["Top Product", "", "", "", "", "\\u2014"], ["Best Region", "", "", "", "", "\\u2014"], ["No. of Transactions", "60.0", "60.0", "65.0", "70.0", ""]]', 'Annual_Summary')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-15 11:47:32.948 | INFO  | [files] WARNING: could not get file_id for sheet 'Annual_Summary', skipping
+2026-05-15 11:48:22.272 | INFO  | [files] Tables ready
+2026-05-15 11:48:22.287 | INFO  | [files] Parsed CSV: 6435 rows, encoding=utf-8
+2026-05-15 11:48:32.348 | INFO  | [files] Tables ready
+2026-05-15 11:48:32.386 | INFO  | [files] Parsed CSV: 10000 rows, encoding=utf-8
+2026-05-15 11:48:40.212 | INFO  | [files] Rebuilt df: 10000 rows x 17 cols, numeric: ['age', 'balance', 'day', 'duration', 'campaign', 'pdays', 'previous']
+2026-05-15 11:48:40.228 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-15 11:49:11.843 | INFO  | [ollama] Response received (132 chars)
+2026-05-15 11:49:11.843 | INFO  | [files] AI plan: {'operation': 'top_n', 'metric_column': 'balance', 'group_by_column': None, 'date_column': None, 'n': 5, 'agg': 'sum'}
+2026-05-15 11:49:11.849 | INFO  | [files] Auto-picked group_by: job
+2026-05-15 11:49:11.849 | INFO  | [files] Final: op=top_n, metric=balance, group_by=job, agg=sum, n=5
+2026-05-15 11:49:11.853 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-15 11:49:45.102 | INFO  | [ollama] Response received (692 chars)
+2026-05-15 11:49:45.103 | INFO  | [files] Analysis took 64890 ms
+2026-05-15 11:51:45.048 | INFO  | [files] Tables ready
+2026-05-15 11:51:45.132 | INFO  | [files] Parsed CSV: 10000 rows, encoding=utf-8
+2026-05-15 11:51:45.573 | INFO  | [files] Tables ready
+2026-05-15 11:51:45.600 | INFO  | [files] Parsed CSV: 10000 rows, encoding=utf-8
+2026-05-15 11:52:02.862 | INFO  | [files] Common columns across 2 files: set()
+2026-05-15 11:52:02.862 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-15 11:52:20.533 | INFO  | [ollama] Response received (278 chars)
+2026-05-15 11:52:20.534 | INFO  | [files] Compare plan: {'operation': 'summary_comparison', 'metric_column': None, 'group_by_column': None, 'date_column': None, 'n': 5, 'explanation': 'No common numeric columns found for direct comparison. Use summary_comparison to get an overview of revenue across files.'}
+2026-05-15 11:52:20.537 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-15 11:53:04.506 | INFO  | [ollama] Response received (900 chars)
+2026-05-15 11:53:04.511 | INFO  | [files] Compare took 61691 ms
+2026-05-15 11:53:57.240 | INFO  | [files] Tables ready
+2026-05-15 11:53:57.257 | INFO  | [files] Excel sheets detected: ['HR_Master', 'Payroll', 'Performance']
+2026-05-15 11:53:57.323 | INFO  | [files] Sheet 'HR_Master': 50 rows x 8 cols
+2026-05-15 11:53:57.354 | INFO  | [files] Sheet 'Payroll': 51 rows x 10 cols
+2026-05-15 11:53:57.386 | INFO  | [files] Sheet 'Performance': 50 rows x 10 cols
+2026-05-15 11:53:57.426 | INFO  | [files] save error: (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]String or binary data would be truncated in table 'AdventureWorks2019.dbo.uploaded_files', column 'file_hash'. Truncated value: '2fa56d58fddf9ac11ef7440bcd7ad680690b337ec27d6db6c02483219a95a91d'. (2628) (SQLParamData); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+[SQL: 
+                INSERT INTO dbo.uploaded_files
+                    (user_id, file_hash, file_name, file_size, file_type,
+                     row_count, col_count, columns_json, preview_json, sheet_name)
+                OUTPUT INSERTED.id
+                VALUES (?, ?, ?, ?, ?,
+                        ?, ?, ?, ?, ?)
+            ]
+[parameters: (2, '2fa56d58fddf9ac11ef7440bcd7ad680690b337ec27d6db6c02483219a95a91d::HR_Master', 'employee_data.xlsx', 15383, 'xlsx', 50, 8, '["Emp ID", "Full Name", "Department", "Designation", "Experience (Yrs)", "Date of Joining", "City", "Email"]', '[["EMP001", "Mohan Sharma", "Finance", "Senior Analyst", "10", "2020-07-22", "Bangalore", "mohan.sharma@company.com"], ["EMP002", "Sunita Singh", "HR ... (5388 characters truncated) ... ", "usha.reddy@company.com"], ["EMP050", "Deepa Sharma", "Operations", "Ops Executive", "12", "2023-09-11", "Hyderabad", "deepa.sharma@company.com"]]', 'HR_Master')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-15 11:53:57.428 | INFO  | [files] WARNING: could not get file_id for sheet 'HR_Master', skipping
+2026-05-15 11:53:57.439 | INFO  | [files] save error: (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]String or binary data would be truncated in table 'AdventureWorks2019.dbo.uploaded_files', column 'file_hash'. Truncated value: '2fa56d58fddf9ac11ef7440bcd7ad680690b337ec27d6db6c02483219a95a91d'. (2628) (SQLParamData); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+[SQL: 
+                INSERT INTO dbo.uploaded_files
+                    (user_id, file_hash, file_name, file_size, file_type,
+                     row_count, col_count, columns_json, preview_json, sheet_name)
+                OUTPUT INSERTED.id
+                VALUES (?, ?, ?, ?, ?,
+                        ?, ?, ?, ?, ?)
+            ]
+[parameters: (2, '2fa56d58fddf9ac11ef7440bcd7ad680690b337ec27d6db6c02483219a95a91d::Payroll', 'employee_data.xlsx', 15383, 'xlsx', 51, 10, '["Emp ID", "Full Name", "Department", "Base Salary (\\u20b9)", "HRA (\\u20b9)", "Transport (\\u20b9)", "Bonus (\\u20b9)", "Gross Salary (\\u20b9)", "Tax (\\u20b9)", "Net Salary (\\u20b9)"]', '[["EMP001", "Mohan Sharma", "Finance", "214200.0", "85700.0", "3000.0", "41700.0", "344600.0", "41400.0", "303200.0"], ["EMP002", "Sunita Singh", "HR ... (5669 characters truncated) ... Sharma", "Operations", "196600.0", "78600.0", "3000.0", "29500.0", "307700.0", "36900.0", "270800.0"], ["TOTAL", "", "", "", "", "", "", "", "", ""]]', 'Payroll')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-15 11:53:57.442 | INFO  | [files] WARNING: could not get file_id for sheet 'Payroll', skipping
+2026-05-15 11:53:57.452 | INFO  | [files] save error: (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]String or binary data would be truncated in table 'AdventureWorks2019.dbo.uploaded_files', column 'file_hash'. Truncated value: '2fa56d58fddf9ac11ef7440bcd7ad680690b337ec27d6db6c02483219a95a91d'. (2628) (SQLParamData); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+[SQL: 
+                INSERT INTO dbo.uploaded_files
+                    (user_id, file_hash, file_name, file_size, file_type,
+                     row_count, col_count, columns_json, preview_json, sheet_name)
+                OUTPUT INSERTED.id
+                VALUES (?, ?, ?, ?, ?,
+                        ?, ?, ?, ?, ?)
+            ]
+[parameters: (2, '2fa56d58fddf9ac11ef7440bcd7ad680690b337ec27d6db6c02483219a95a91d::Performance', 'employee_data.xlsx', 15383, 'xlsx', 50, 10, '["Emp ID", "Full Name", "Department", "Manager Rating (5)", "KRA Score (%)", "Attendance %", "Training Hrs", "Awards", "Performance Band", "Promotion Eligible"]', '[["EMP001", "Mohan Sharma", "Finance", "4.1", "71", "97.0", "11", "2", "Exceeds Expectations", "No"], ["EMP002", "Sunita Singh", "HR", "3.5", "99", " ... (4594 characters truncated) ... .5", "10", "0", "Exceeds Expectations", "Yes"], ["EMP050", "Deepa Sharma", "Operations", "3.3", "96", "92.4", "26", "0", "Meets Expectations", "No"]]', 'Performance')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-15 11:53:57.454 | INFO  | [files] WARNING: could not get file_id for sheet 'Performance', skipping
+2026-05-15 14:20:27.974 | INFO  | [startup] Logging initialized → C:\Users\qam04673\Documents\AI_SQL_AGENT_NextJS\sql-analyst-ui\backend\logs\app_2026-05-15.log
+2026-05-15 14:20:28.102 | INFO  | [embedding] Preloading embedding model...
+2026-05-15 14:20:28.103 | INFO  | [auth] ❌ Auth DB error: create_sql_server_connection() got an unexpected keyword argument 'windows_auth'
+2026-05-15 14:20:44.100 | INFO  | No device provided, using cpu
+2026-05-15 14:20:45.204 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-15 14:20:45.205 | WARNING | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-15 14:20:45.218 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-05-15 14:20:45.493 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-15 14:20:45.537 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-05-15 14:20:45.545 | INFO  | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-05-15 14:20:45.835 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-15 14:20:45.847 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-05-15 14:20:46.128 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-05-15 14:20:46.143 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+2026-05-15 14:20:46.415 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-15 14:20:46.449 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-05-15 14:20:46.809 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-15 14:20:46.823 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-05-15 14:20:47.099 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-05-15 14:20:47.432 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-15 14:20:47.444 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-05-15 14:20:47.935 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-05-15 14:20:48.201 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-15 14:20:48.463 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-15 14:20:48.754 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-15 14:20:49.021 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-15 14:20:49.037 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-15 14:20:49.302 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-15 14:20:49.320 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-05-15 14:20:49.606 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-15 14:20:49.619 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-05-15 14:20:49.888 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-15 14:20:49.900 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-15 14:20:50.289 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-15 14:20:50.556 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-15 14:20:50.896 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-15 14:20:50.907 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-05-15 14:20:51.212 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-05-15 14:20:51.215 | INFO  | [embedding] ✅ Model loaded and ready.
+2026-05-15 14:26:14.885 | INFO  | [files] Tables ready
+2026-05-15 14:26:15.395 | INFO  | [files] Excel sheets detected: ['Q1_Sales', 'Q2_Sales', 'Annual_Summary']
+2026-05-15 14:26:15.426 | INFO  | [files] Sheet 'Q1_Sales': 61 rows x 10 cols
+2026-05-15 14:26:15.448 | INFO  | [files] Sheet 'Q2_Sales': 61 rows x 10 cols
+2026-05-15 14:26:15.462 | INFO  | [files] Sheet 'Annual_Summary': 7 rows x 6 cols
+2026-05-15 14:27:05.661 | INFO  | [files] Rebuilt df: 61 rows x 10 cols, numeric: ['Units Sold', 'Unit Price (₹)', 'Revenue (₹)', 'COGS (₹)', 'Gross Profit (₹)', 'Margin %']
+2026-05-15 14:27:05.666 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-15 14:27:36.199 | INFO  | [ollama] Response received (141 chars)
+2026-05-15 14:27:36.200 | INFO  | [files] AI plan: {'operation': 'top_n', 'metric_column': 'Revenue (₹)', 'group_by_column': 'Product', 'date_column': None, 'n': 5, 'agg': 'sum'}
+2026-05-15 14:27:36.200 | INFO  | [files] Final: op=top_n, metric=Revenue (₹), group_by=Product, agg=sum, n=5
+2026-05-15 14:27:36.241 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-15 14:28:18.609 | INFO  | [ollama] Response received (686 chars)
+2026-05-15 14:28:18.610 | INFO  | [files] Analysis took 72949 ms
+2026-05-15 14:28:44.666 | INFO  | [files] Rebuilt df: 61 rows x 10 cols, numeric: ['Units Sold', 'Unit Price (₹)', 'Revenue (₹)', 'COGS (₹)', 'Gross Profit (₹)', 'Margin %']
+2026-05-15 14:28:44.672 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-15 14:29:04.566 | INFO  | [ollama] Response received (145 chars)
+2026-05-15 14:29:04.566 | INFO  | [files] AI plan: {'operation': 'top_n', 'metric_column': 'Gross Profit (₹)', 'group_by_column': 'Region', 'date_column': None, 'n': 1, 'agg': 'max'}
+2026-05-15 14:29:04.567 | INFO  | [files] Final: op=top_n, metric=Gross Profit (₹), group_by=Region, agg=max, n=1
+2026-05-15 14:29:04.575 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-15 14:29:37.328 | INFO  | [ollama] Response received (510 chars)
+2026-05-15 14:29:37.330 | INFO  | [files] Analysis took 52663 ms
+2026-05-15 14:30:12.076 | INFO  | [files] Tables ready
+2026-05-15 14:30:12.085 | INFO  | [files] Excel sheets detected: ['HR_Master', 'Payroll', 'Performance']
+2026-05-15 14:30:12.107 | INFO  | [files] Sheet 'HR_Master': 50 rows x 8 cols
+2026-05-15 14:30:12.126 | INFO  | [files] Sheet 'Payroll': 51 rows x 10 cols
+2026-05-15 14:30:12.146 | INFO  | [files] Sheet 'Performance': 50 rows x 10 cols
+2026-05-15 14:30:49.798 | INFO  | [files] Rebuilt df: 50 rows x 10 cols, numeric: ['Manager Rating (5)', 'KRA Score (%)', 'Attendance %', 'Training Hrs', 'Awards']
+2026-05-15 14:30:49.802 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-15 14:31:08.670 | INFO  | [ollama] Response received (143 chars)
+2026-05-15 14:31:08.671 | INFO  | [files] AI plan: {'operation': 'top_n', 'metric_column': 'Manager Rating (5)', 'group_by_column': None, 'date_column': None, 'n': 5, 'agg': 'max'}
+2026-05-15 14:31:08.674 | INFO  | [files] Auto-picked group_by: Performance Band
+2026-05-15 14:31:08.674 | INFO  | [files] Final: op=top_n, metric=Manager Rating (5), group_by=Performance Band, agg=max, n=5
+2026-05-15 14:31:08.677 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-15 14:31:45.839 | INFO  | [ollama] Response received (601 chars)
+2026-05-15 14:31:45.840 | INFO  | [files] Analysis took 56042 ms
+2026-05-15 14:32:59.827 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-15 14:33:23.451 | INFO  | [ollama] Response received (143 chars)
+2026-05-15 14:33:23.455 | INFO  | [files] AI plan: {'operation': 'top_n', 'metric_column': 'Manager Rating (5)', 'group_by_column': None, 'date_column': None, 'n': 5, 'agg': 'max'}
+2026-05-15 14:33:23.458 | INFO  | [files] Auto-picked group_by: Full Name
+2026-05-15 14:33:23.458 | INFO  | [files] Final: op=top_n, metric=Manager Rating (5), group_by=Full Name, agg=max, n=5
+2026-05-15 14:33:23.466 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-15 14:34:16.527 | INFO  | [ollama] Response received (725 chars)
+2026-05-15 14:34:16.528 | INFO  | [files] Compare took 76706 ms
+2026-05-15 14:34:33.013 | INFO  | [files] Tables ready
+2026-05-15 14:34:33.022 | INFO  | [files] Excel sheets detected: ['Q1_Sales', 'Q2_Sales', 'Annual_Summary']
+2026-05-15 14:34:33.077 | INFO  | [files] Sheet 'Q1_Sales': 61 rows x 10 cols
+2026-05-15 14:34:33.133 | INFO  | [files] Sheet 'Q2_Sales': 61 rows x 10 cols
+2026-05-15 14:34:33.165 | INFO  | [files] Sheet 'Annual_Summary': 7 rows x 6 cols
+2026-05-15 14:34:48.140 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-15 14:35:12.798 | INFO  | [ollama] Response received (136 chars)
+2026-05-15 14:35:12.799 | INFO  | [files] AI plan: {'operation': 'top_n', 'metric_column': 'Revenue (₹)', 'group_by_column': None, 'date_column': None, 'n': 5, 'agg': 'sum'}
+2026-05-15 14:35:12.802 | INFO  | [files] Auto-picked group_by: Product
+2026-05-15 14:35:12.802 | INFO  | [files] Final: op=top_n, metric=Revenue (₹), group_by=Product, agg=sum, n=5
+2026-05-15 14:35:12.805 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-15 14:36:10.408 | INFO  | [ollama] Response received (657 chars)
+2026-05-15 14:36:10.410 | INFO  | [files] Compare took 82273 ms
+2026-05-15 14:37:57.215 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-15 14:38:22.271 | INFO  | [ollama] Response received (143 chars)
+2026-05-15 14:38:22.272 | INFO  | [files] AI plan: {'operation': 'top_n', 'metric_column': 'Revenue (₹)', 'group_by_column': 'Sales Rep', 'date_column': None, 'n': 5, 'agg': 'sum'}
+2026-05-15 14:38:22.273 | INFO  | [files] Final: op=top_n, metric=Revenue (₹), group_by=Sales Rep, agg=sum, n=5
+2026-05-15 14:38:22.276 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-15 14:39:19.512 | INFO  | [ollama] Response received (467 chars)
+2026-05-15 14:39:19.513 | INFO  | [files] Compare took 82304 ms
+2026-05-15 18:57:23.941 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-15 18:57:52.786 | INFO  | [ollama] Response received (148 chars)
+2026-05-15 18:57:52.787 | INFO  | [files] AI plan: {'operation': 'top_n', 'metric_column': 'Revenue (₹)', 'group_by_column': None, 'date_column': None, 'n': 5, 'agg': 'sum'}
+2026-05-15 18:57:52.789 | INFO  | [files] Auto-picked group_by: Product
+2026-05-15 18:57:52.789 | INFO  | [files] Final: op=top_n, metric=Revenue (₹), group_by=Product, agg=sum, n=5
+2026-05-15 18:57:52.791 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-15 18:58:29.189 | INFO  | [ollama] Response received (748 chars)
+2026-05-15 18:58:29.190 | INFO  | [files] Compare took 65255 ms
+2026-05-15 19:00:33.193 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-15 19:00:52.075 | INFO  | [ollama] Response received (141 chars)
+2026-05-15 19:00:52.076 | INFO  | [files] AI plan: {'operation': 'top_n', 'metric_column': 'Revenue (₹)', 'group_by_column': 'Product', 'date_column': None, 'n': 5, 'agg': 'sum'}
+2026-05-15 19:00:52.076 | INFO  | [files] Final: op=top_n, metric=Revenue (₹), group_by=Product, agg=sum, n=5
+2026-05-15 19:00:52.079 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-15 19:01:26.366 | INFO  | [ollama] Response received (703 chars)
+2026-05-15 19:01:26.367 | INFO  | [files] Compare took 53179 ms
+2026-05-15 19:03:04.203 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-15 19:03:22.559 | INFO  | [ollama] Response received (144 chars)
+2026-05-15 19:03:22.559 | INFO  | [files] AI plan: {'operation': 'top_n', 'metric_column': 'Revenue (₹)', 'group_by_column': 'Sales Rep', 'date_column': None, 'n': 10, 'agg': 'sum'}
+2026-05-15 19:03:22.560 | INFO  | [files] Final: op=top_n, metric=Revenue (₹), group_by=Sales Rep, agg=sum, n=10
+2026-05-15 19:03:22.562 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-15 19:04:08.614 | INFO  | [ollama] Response received (655 chars)
+2026-05-15 19:04:08.615 | INFO  | [files] Compare took 64416 ms
+2026-05-15 19:04:54.825 | INFO  | [query] provider=Ollama model=qwen2.5-coder:7b q=📎 sales_2024.xlsx · Q1_Sales
+📎 sales_2024.xlsx · Q2_Sales
+gi
+2026-05-15 19:04:56.570 | INFO  | [known_query] Candidate match (score=2): ['top', 'sales']
+2026-05-15 19:04:56.571 | INFO  | [known_query] Best match score=2 — using known-good SQL
+2026-05-15 19:04:56.571 | INFO  | [query] Known-good match — skipping AI
+2026-05-15 19:04:56.698 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-15 19:05:54.959 | INFO  | [ollama] Response received (792 chars)
+2026-05-15 19:05:54.960 | INFO  | [analysis] Generated 792 chars
+2026-05-15 19:05:55.055 | INFO  | [audit] ✅ Logged: divya.v@quinteft.com — SUCCESS — 📎 sales_2024.xlsx · Q1_Sales
+📎 sales_2024.xlsx · Q
+2026-05-15 19:34:53.862 | INFO  | [files] Tables ready
+2026-05-15 19:34:53.889 | INFO  | [files] Parsed CSV: 50 rows, encoding=utf-8
+2026-05-15 19:34:57.441 | INFO  | [chat] deleting session 1088 for user 2
+2026-05-15 19:34:57.518 | INFO  | [chat] deleted 0 messages, 1 sessions
+2026-05-15 19:34:59.869 | INFO  | [chat] deleting session 1087 for user 2
+2026-05-15 19:34:59.874 | INFO  | [chat] deleted 1 messages, 1 sessions
+2026-05-15 19:35:00.551 | INFO  | [chat] deleting session 1086 for user 2
+2026-05-15 19:35:00.553 | INFO  | [chat] deleted 0 messages, 1 sessions
+2026-05-15 19:35:01.235 | INFO  | [chat] deleting session 1085 for user 2
+2026-05-15 19:35:01.237 | INFO  | [chat] deleted 0 messages, 1 sessions
+2026-05-15 19:35:01.932 | INFO  | [chat] deleting session 1084 for user 2
+2026-05-15 19:35:01.934 | INFO  | [chat] deleted 0 messages, 1 sessions
+2026-05-15 19:35:02.507 | INFO  | [chat] deleting session 1083 for user 2
+2026-05-15 19:35:02.512 | INFO  | [chat] deleted 0 messages, 1 sessions
+2026-05-15 19:35:17.834 | INFO  | [login] Attempting: 'divya.v@quinteft.com'
+2026-05-15 19:35:17.840 | INFO  | [login] DB user found, hash match: F43CF994... vs F43CF994...
+2026-05-15 19:35:17.843 | INFO  | [login] ✅ DB auth: divya.v@quinteft.com role=Admin
+2026-05-15 19:35:33.439 | INFO  | [files] Tables ready
+2026-05-15 19:35:33.441 | INFO  | [files] Parsed CSV: 50 rows, encoding=utf-8
+2026-05-15 19:37:37.032 | INFO  | [files] Tables ready
+2026-05-15 19:37:37.034 | INFO  | [files] Parsed CSV: 50 rows, encoding=utf-8
+2026-05-15 19:37:56.875 | INFO  | [files] Rebuilt df: 50 rows x 5 cols, numeric: ['Units', 'Revenue']
+2026-05-15 19:37:56.878 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-15 19:38:20.062 | INFO  | [ollama] Response received (137 chars)
+2026-05-15 19:38:20.062 | INFO  | [files] AI plan: {'operation': 'top_n', 'metric_column': 'Revenue', 'group_by_column': 'Product', 'date_column': None, 'n': 3, 'agg': 'sum'}
+2026-05-15 19:38:20.063 | INFO  | [files] Final: op=top_n, metric=Revenue, group_by=Product, agg=sum, n=3
+2026-05-15 19:38:20.066 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-15 19:38:57.089 | INFO  | [ollama] Response received (574 chars)
+2026-05-15 19:38:57.090 | INFO  | [files] Analysis took 60214 ms
+2026-05-15 19:40:36.271 | INFO  | [files] Rebuilt df: 50 rows x 5 cols, numeric: ['Units', 'Revenue']
+2026-05-15 19:40:36.274 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-15 19:40:55.380 | INFO  | [ollama] Response received (142 chars)
+2026-05-15 19:40:55.380 | INFO  | [files] AI plan: {'operation': 'average', 'metric_column': 'Revenue', 'group_by_column': 'Region', 'date_column': None, 'n': None, 'agg': 'mean'}
+2026-05-15 19:40:55.381 | INFO  | [files] Final: op=average, metric=Revenue, group_by=Region, agg=mean, n=5
+2026-05-15 19:40:55.413 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-15 19:41:33.995 | INFO  | [ollama] Response received (569 chars)
+2026-05-15 19:41:33.996 | INFO  | [files] Analysis took 57725 ms
+2026-05-15 19:42:34.756 | INFO  | [files] Tables ready
+2026-05-15 19:42:34.758 | INFO  | [files] Parsed CSV: 30 rows, encoding=utf-8
+2026-05-15 19:42:44.249 | INFO  | [files] Rebuilt df: 30 rows x 4 cols, numeric: []
+2026-05-15 19:42:44.252 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-15 19:43:01.549 | INFO  | [ollama] Response received (126 chars)
+2026-05-15 19:43:01.550 | INFO  | [files] AI plan: {'operation': 'trend', 'metric_column': None, 'group_by_column': None, 'date_column': None, 'n': 5, 'agg': None}
+2026-05-15 19:43:01.552 | INFO  | [files] Auto-picked group_by: Name
+2026-05-15 19:43:01.552 | INFO  | [files] Final: op=trend, metric=None, group_by=Name, agg=sum, n=5
+2026-05-15 19:43:01.552 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-15 19:43:32.042 | INFO  | [ollama] Response received (442 chars)
+2026-05-15 19:43:32.043 | INFO  | [files] Analysis took 47794 ms
+2026-05-15 19:50:40.829 | INFO  | [startup] Logging initialized → C:\Users\qam04673\Documents\AI_SQL_AGENT_NextJS\sql-analyst-ui\backend\logs\app_2026-05-15.log
+2026-05-15 19:50:40.987 | INFO  | [embedding] Preloading embedding model...
+2026-05-15 19:50:40.987 | INFO  | [auth] ❌ Auth DB error: create_sql_server_connection() got an unexpected keyword argument 'windows_auth'
+2026-05-15 19:50:45.816 | INFO  | [startup] Logging initialized → C:\Users\qam04673\Documents\AI_SQL_AGENT_NextJS\sql-analyst-ui\backend\logs\app_2026-05-15.log
+2026-05-15 19:50:45.936 | INFO  | [embedding] Preloading embedding model...
+2026-05-15 19:50:45.936 | INFO  | [auth] ❌ Auth DB error: create_sql_server_connection() got an unexpected keyword argument 'windows_auth'
+2026-05-15 19:51:05.536 | INFO  | No device provided, using cpu
+2026-05-15 19:51:06.587 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-15 19:51:06.602 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-05-15 19:51:06.895 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-15 19:51:06.911 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-05-15 19:51:06.921 | INFO  | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-05-15 19:51:07.204 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-15 19:51:07.218 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-05-15 19:51:07.510 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-05-15 19:51:07.528 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+2026-05-15 19:51:07.815 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-15 19:51:07.828 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-05-15 19:51:08.123 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-15 19:51:08.136 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-05-15 19:51:08.431 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-05-15 19:51:08.432 | WARNING | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-15 19:51:08.738 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-15 19:51:08.753 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-05-15 19:51:09.351 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-05-15 19:51:09.661 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-15 19:51:09.967 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-15 19:51:10.274 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-15 19:51:10.582 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-15 19:51:10.600 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-15 19:51:10.967 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-15 19:51:10.980 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-05-15 19:51:11.297 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-15 19:51:11.309 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-05-15 19:51:11.606 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-15 19:51:11.617 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-15 19:51:11.913 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-15 19:51:12.218 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-15 19:51:12.628 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-15 19:51:12.640 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-05-15 19:51:12.937 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-05-15 19:51:12.940 | INFO  | [embedding] ✅ Model loaded and ready.
+2026-05-15 19:51:17.072 | INFO  | [files] Tables ready
+2026-05-15 19:51:17.090 | INFO  | [files] Parsed CSV: 30 rows, encoding=utf-8
+2026-05-15 19:51:38.340 | INFO  | [files] Cache hit — first run 47794 ms, cached lookup 0.0 ms, hit #0
+2026-05-15 19:53:49.278 | INFO  | [query] provider=Ollama model=qwen2.5-coder:7b q=📎 no_numeric.csv
+"What are the top trends?"
+2026-05-15 19:53:50.238 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-15 19:55:04.326 | INFO  | [ollama] Response received (219 chars)
+2026-05-15 19:55:04.338 | INFO  | [query] SQL failed: Execution failed on sql 'SELECT TOP 10 [SalesOrderID], [OrderDate], SUM([LineTotal]) AS TotalRevenue FROM [Sales].[SalesOrderDetail] GROUP BY [SalesOrderID], [OrderDate] ORDER BY TotalRevenue DESC': (
+2026-05-15 19:55:04.339 | INFO  | [query] Auto-correcting: OrderDate
+2026-05-15 19:55:04.339 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-15 19:55:50.388 | INFO  | [ollama] Response received (172 chars)
+2026-05-15 19:55:50.391 | INFO  | [query] Retry failed: Execution failed on sql 'SELECT TOP 10 [SalesOrderID], [OrderDate], SUM([LineTotal]) AS TotalRevenue FROM [Sales].[SalesOrderDetail] GROUP BY [SalesOrderID], [OrderDate] ORDER BY TotalRevenue DESC': (pyodbc.ProgrammingError) ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'OrderDate'. (207) (SQLExecDirectW); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'OrderDate'. (207)")
+[SQL: SELECT TOP 10 [SalesOrderID], [OrderDate], SUM([LineTotal]) AS TotalRevenue FROM [Sales].[SalesOrderDetail] GROUP BY [SalesOrderID], [OrderDate] ORDER BY TotalRevenue DESC]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-15 19:55:50.421 | INFO  | [audit] ✅ Logged: divya.v@quinteft.com — FAILURE — 📎 no_numeric.csv
+"What are the top trends?"
+2026-05-15 19:56:46.545 | INFO  | [files] Tables ready
+2026-05-15 19:56:46.547 | INFO  | [files] Parsed CSV: 30 rows, encoding=utf-8
+2026-05-15 19:57:00.377 | INFO  | [files] Rebuilt df: 30 rows x 4 cols, numeric: []
+2026-05-15 19:57:00.382 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-15 19:57:17.692 | INFO  | [ollama] Response received (126 chars)
+2026-05-15 19:57:17.692 | INFO  | [files] AI plan: {'operation': 'trend', 'metric_column': None, 'group_by_column': None, 'date_column': None, 'n': 5, 'agg': None}
+2026-05-15 19:57:17.694 | INFO  | [files] Auto-picked group_by: Name
+2026-05-15 19:57:17.694 | INFO  | [files] Final: op=trend, metric=None, group_by=Name, agg=sum, n=5
+2026-05-15 19:57:17.701 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-15 19:57:58.229 | INFO  | [ollama] Response received (695 chars)
+2026-05-15 19:57:58.230 | INFO  | [files] Analysis took 57853 ms
+2026-05-15 20:00:15.517 | INFO  | [files] Tables ready
+2026-05-15 20:00:15.519 | INFO  | [files] Parsed CSV: 30 rows, encoding=utf-8
+2026-05-15 20:00:19.507 | INFO  | [files] Rebuilt df: 30 rows x 4 cols, numeric: ['Qty', 'Price', 'Total']
+2026-05-15 20:00:19.510 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-15 20:00:37.639 | INFO  | [ollama] Response received (131 chars)
+2026-05-15 20:00:37.639 | INFO  | [files] AI plan: {'operation': 'sum', 'metric_column': 'Total', 'group_by_column': None, 'date_column': None, 'n': None, 'agg': 'sum'}
+2026-05-15 20:00:37.640 | INFO  | [files] Auto-picked group_by: Item
+2026-05-15 20:00:37.641 | INFO  | [files] Final: op=sum, metric=Total, group_by=Item, agg=sum, n=5
+2026-05-15 20:00:37.644 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-15 20:01:21.606 | INFO  | [ollama] Response received (626 chars)
+2026-05-15 20:01:21.607 | INFO  | [files] Analysis took 62100 ms
+2026-05-15 20:02:51.991 | INFO  | [files] Tables ready
+2026-05-15 20:02:51.993 | INFO  | [files] Parsed CSV: 20 rows, encoding=utf-8
+2026-05-15 20:02:56.872 | INFO  | [files] Rebuilt df: 20 rows x 1 cols, numeric: []
+2026-05-15 20:02:56.873 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-15 20:03:12.983 | INFO  | [ollama] Response received (131 chars)
+2026-05-15 20:03:12.984 | INFO  | [files] AI plan: {'operation': 'summary', 'metric_column': None, 'group_by_column': None, 'date_column': None, 'n': None, 'agg': None}
+2026-05-15 20:03:12.985 | INFO  | [files] Final: op=summary, metric=None, group_by=None, agg=sum, n=5
+2026-05-15 20:03:12.988 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-15 20:03:42.381 | INFO  | [ollama] Response received (484 chars)
+2026-05-15 20:03:42.382 | INFO  | [files] Analysis took 45510 ms
+2026-05-15 20:05:30.490 | INFO  | [files] Tables ready
+2026-05-15 20:05:31.125 | INFO  | [files] Excel sheets detected: ['Revenue', 'Headcount']
+2026-05-15 20:05:31.135 | INFO  | [files] Sheet 'Revenue': 6 rows x 3 cols
+2026-05-15 20:05:31.147 | INFO  | [files] Sheet 'Headcount': 5 rows x 3 cols
+2026-05-15 20:06:06.415 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-15 20:06:24.532 | INFO  | [ollama] Response received (149 chars)
+2026-05-15 20:06:24.532 | INFO  | [files] AI plan: {'operation': 'average', 'metric_column': 'Avg_Salary', 'group_by_column': 'Department', 'date_column': None, 'n': None, 'agg': 'mean'}
+2026-05-15 20:06:24.533 | INFO  | [files] Final: op=average, metric=Avg_Salary, group_by=Department, agg=mean, n=5
+2026-05-15 20:06:24.538 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-15 20:07:22.758 | INFO  | [ollama] Response received (1119 chars)
+2026-05-15 20:07:22.759 | INFO  | [files] Compare took 76345 ms
+2026-05-15 20:10:19.300 | INFO  | [files] Tables ready
+2026-05-15 20:10:19.305 | INFO  | [files] Excel sheets detected: ['Data', 'Empty_Sheet', 'Headers_Only']
+2026-05-15 20:10:19.314 | INFO  | [files] Sheet 'Data': 20 rows x 3 cols
+2026-05-15 20:10:19.318 | INFO  | [files] Sheet 'Empty_Sheet': 0 rows x 0 cols
+2026-05-15 20:10:19.327 | INFO  | [files] Sheet 'Headers_Only': 0 rows x 0 cols
+2026-05-15 20:11:11.079 | INFO  | [files] Tables ready
+2026-05-15 20:11:11.089 | INFO  | [files] Excel sheets detected: ['Q1_Sales', 'Q2_Sales', 'Annual_Summary']
+2026-05-15 20:11:11.131 | INFO  | [files] Sheet 'Q1_Sales': 61 rows x 10 cols
+2026-05-15 20:11:11.179 | INFO  | [files] Sheet 'Q2_Sales': 61 rows x 10 cols
+2026-05-15 20:11:11.210 | INFO  | [files] Sheet 'Annual_Summary': 7 rows x 6 cols
+2026-05-15 20:11:57.559 | INFO  | [files] Tables ready
+2026-05-15 20:11:57.560 | INFO  | [files] Parsed CSV: 20 rows, encoding=utf-8
+2026-05-15 20:11:57.603 | INFO  | [files] Tables ready
+2026-05-15 20:11:57.605 | INFO  | [files] Parsed CSV: 50 rows, encoding=utf-8
+2026-05-15 20:12:16.279 | INFO  | [files] Common columns across 2 files: set()
+2026-05-15 20:12:16.279 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-15 20:12:35.224 | INFO  | [ollama] Response received (204 chars)
+2026-05-15 20:12:35.225 | INFO  | [files] Compare plan: {'operation': 'summary_comparison', 'metric_column': None, 'group_by_column': None, 'date_column': None, 'n': 5, 'explanation': 'No common numeric columns found for comparison.'}
+2026-05-15 20:12:35.227 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-15 20:13:14.870 | INFO  | [ollama] Response received (655 chars)
+2026-05-15 20:13:14.874 | INFO  | [files] Compare took 58607 ms
+2026-05-15 23:37:39.125 | INFO  | [files] Rebuilt df: 50 rows x 5 cols, numeric: ['Units', 'Revenue']
+2026-05-15 23:37:39.134 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-15 23:38:10.173 | INFO  | [ollama] Response received (137 chars)
+2026-05-15 23:38:10.174 | INFO  | [files] AI plan: {'operation': 'top_n', 'metric_column': 'Revenue', 'group_by_column': 'Region', 'date_column': None, 'n': 10, 'agg': 'sum'}
+2026-05-15 23:38:10.175 | INFO  | [files] Final: op=top_n, metric=Revenue, group_by=Region, agg=sum, n=10
+2026-05-15 23:38:10.190 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-15 23:38:57.711 | INFO  | [ollama] Response received (626 chars)
+2026-05-15 23:38:57.713 | INFO  | [files] Analysis took 78586 ms
+2026-05-15 23:40:27.644 | INFO  | [files] Tables ready
+2026-05-15 23:40:27.675 | INFO  | [files] Excel sheets detected: ['Q1_Sales', 'Q2_Sales', 'Annual_Summary']
+2026-05-15 23:40:27.729 | INFO  | [files] Sheet 'Q1_Sales': 61 rows x 10 cols
+2026-05-15 23:40:27.767 | INFO  | [files] Sheet 'Q2_Sales': 61 rows x 10 cols
+2026-05-15 23:40:27.794 | INFO  | [files] Sheet 'Annual_Summary': 7 rows x 6 cols
+2026-05-15 23:40:52.425 | INFO  | [files] Tables ready
+2026-05-15 23:40:52.451 | INFO  | [files] Excel sheets detected: ['Q1_Sales', 'Q2_Sales', 'Annual_Summary']
+2026-05-15 23:40:52.480 | INFO  | [files] Sheet 'Q1_Sales': 61 rows x 10 cols
+2026-05-15 23:40:52.514 | INFO  | [files] Sheet 'Q2_Sales': 61 rows x 10 cols
+2026-05-15 23:40:52.539 | INFO  | [files] Sheet 'Annual_Summary': 7 rows x 6 cols
+2026-05-15 23:41:33.363 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-15 23:41:57.503 | INFO  | [ollama] Response received (143 chars)
+2026-05-15 23:41:57.504 | INFO  | [files] AI plan: {'operation': 'top_n', 'metric_column': 'Revenue (₹)', 'group_by_column': 'Sales Rep', 'date_column': None, 'n': 5, 'agg': 'sum'}
+2026-05-15 23:41:57.505 | INFO  | [files] Final: op=top_n, metric=Revenue (₹), group_by=Sales Rep, agg=sum, n=5
+2026-05-15 23:41:57.514 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-15 23:43:00.844 | INFO  | [ollama] Response received (858 chars)
+2026-05-15 23:43:00.845 | INFO  | [files] Compare took 87488 ms
+2026-05-15 23:50:42.503 | INFO  | [chat] deleting session 34 for user 2
+2026-05-15 23:50:42.520 | INFO  | [chat] deleted 1 messages, 1 sessions
+2026-05-15 23:50:54.185 | INFO  | [chat] deleting session 36 for user 2
+2026-05-15 23:50:54.197 | INFO  | [chat] deleted 1 messages, 1 sessions
+2026-05-16 00:02:37.807 | INFO  | [login] Attempting: 'divya.v@quinteft.com'
+2026-05-16 00:02:37.830 | INFO  | [login] DB user found, hash match: F43CF994... vs F43CF994...
+2026-05-16 00:02:37.834 | INFO  | [login] ✅ DB auth: divya.v@quinteft.com role=Admin
+2026-05-16 00:04:55.466 | INFO  | [files] Tables ready
+2026-05-16 00:04:55.476 | INFO  | [files] Excel sheets detected: ['Chennai_Store', 'Bangalore_Store']
+2026-05-16 00:04:55.513 | INFO  | [files] Sheet 'Chennai_Store': 81 rows x 11 cols
+2026-05-16 00:04:55.549 | INFO  | [files] Sheet 'Bangalore_Store': 81 rows x 11 cols
+2026-05-16 00:06:01.639 | INFO  | [files] Tables ready
+2026-05-16 00:06:01.644 | INFO  | [files] Excel sheets detected: ['Revenue', 'Headcount']
+2026-05-16 00:06:01.656 | INFO  | [files] Sheet 'Revenue': 6 rows x 3 cols
+2026-05-16 00:06:01.668 | INFO  | [files] Sheet 'Headcount': 5 rows x 3 cols

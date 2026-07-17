@@ -1,0 +1,718 @@
+2026-05-08 16:55:28.998 | INFO  | [startup] Logging initialized → C:\Users\qam04673\Documents\AI_SQL_AGENT_NextJS\sql-analyst-ui\backend\logs\app_2026-05-08.log
+2026-05-08 16:55:29.117 | INFO  | [embedding] Preloading embedding model...
+2026-05-08 16:55:29.117 | INFO  | [auth] ❌ Auth DB error: create_sql_server_connection() got an unexpected keyword argument 'windows_auth'
+2026-05-08 16:56:02.203 | INFO  | [login] Attempting: 'divya.v@quinteft.com'
+2026-05-08 16:56:02.203 | INFO  | [login] No auth DB available — using hardcoded users
+2026-05-08 16:56:02.204 | INFO  | [login] ✅ Hardcoded auth: divya.v@quinteft.com
+2026-05-08 16:56:06.363 | INFO  | No device provided, using cpu
+2026-05-08 16:56:07.498 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 16:56:07.532 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-05-08 16:56:07.875 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 16:56:07.910 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-05-08 16:56:07.916 | INFO  | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-05-08 16:56:08.315 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 16:56:08.315 | WARNING | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-08 16:56:08.349 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-05-08 16:56:08.643 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 16:56:08.705 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+2026-05-08 16:56:09.043 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 16:56:09.078 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-05-08 16:56:09.441 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 16:56:09.476 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-05-08 16:56:09.851 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-05-08 16:56:10.261 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 16:56:10.299 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-05-08 16:56:10.873 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-05-08 16:56:11.283 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-08 16:56:11.693 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-08 16:56:12.103 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-08 16:56:12.512 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 16:56:12.551 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-08 16:56:12.921 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 16:56:12.958 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-05-08 16:56:13.331 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 16:56:13.366 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-05-08 16:56:13.741 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 16:56:13.778 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-08 16:56:14.152 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-08 16:56:14.458 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-08 16:56:14.869 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 16:56:14.909 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-05-08 16:56:15.277 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-05-08 16:56:15.288 | INFO  | [embedding] ✅ Model loaded and ready.
+2026-05-08 16:56:48.816 | INFO  | [files] Tables ready
+2026-05-08 16:56:48.921 | INFO  | [files] Parsed CSV: 1465 rows, encoding=utf-8
+2026-05-08 16:56:48.932 | INFO  | [files] Dropping long text column: about_product (avg 729 chars)
+2026-05-08 16:56:48.938 | INFO  | [files] Dropping long text column: review_content (avg 1394 chars)
+2026-05-08 16:56:48.942 | INFO  | [files] Saving to DB: 4,744,481 bytes, 1,465 rows
+2026-05-08 16:56:58.801 | INFO  | [files] Tables ready
+2026-05-08 16:56:59.129 | INFO  | [files] Parsed CSV: 10000 rows, encoding=utf-8
+2026-05-08 16:56:59.160 | INFO  | [files] Dropping long text column: product_specifications (avg 595 chars)
+2026-05-08 16:56:59.165 | INFO  | [files] Saving to DB: 38,114,963 bytes, 10,000 rows
+2026-05-08 16:57:27.464 | INFO  | [files] cache check error: (pyodbc.ProgrammingError) ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'execution_time_ms'. (207) (SQLExecDirectW); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chart_data'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'cached_exec_ms'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Statement(s) could not be prepared. (8180)")
+[SQL: 
+                SELECT id, analysis, hit_count, execution_time_ms, chart_data, cached_exec_ms
+                FROM dbo.file_analysis_cache
+                WHERE file_id=? AND prompt_hash=?
+            ]
+[parameters: (5, 'eb650a5feeafff919ca3be01aee7067a4430550e0b54449c12cd81e263008398')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-08 16:57:27.539 | INFO  | [files] Rebuilt df: 1465 rows x 16 cols, numeric: ['rating']
+2026-05-08 16:57:27.693 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-08 16:58:14.479 | INFO  | [ollama] Response received (350 chars)
+2026-05-08 16:58:14.480 | INFO  | [files] AI plan: {'operation': 'top_n', 'metric_column': 'actual_price', 'group_by_column': 'product_name', 'date_column': None, 'filter_column': None, 'filter_condition': None, 'n': 10, 'agg': 'sum', 'explanation': "The question asks for the top 10 most expensive products, so we need to aggregate by 'actual_price' and group by 'product_name'."}
+2026-05-08 16:58:14.485 | INFO  | [files] computation error: dtype 'str' does not support operation 'mean'
+2026-05-08 16:58:14.524 | INFO  | [files] No concrete data computed — running fallback top-N
+2026-05-08 16:58:14.536 | INFO  | [files] Fallback used rating grouped by category
+2026-05-08 16:58:14.536 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-08 16:58:42.140 | INFO  | [ollama] Response received (341 chars)
+2026-05-08 16:58:42.145 | INFO  | [files] chart data error: could not convert string to float: '₹999₹999₹999'
+2026-05-08 16:58:42.146 | INFO  | [files] Analysis took 74606 ms
+2026-05-08 16:58:42.150 | INFO  | [files] save analysis error: (pyodbc.ProgrammingError) ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'execution_time_ms'. (207) (SQLExecDirectW); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'chart_data'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Statement(s) could not be prepared. (8180)")
+[SQL: 
+                IF NOT EXISTS (SELECT 1 FROM dbo.file_analysis_cache
+                               WHERE file_id=? AND prompt_hash=?)
+                INSERT INTO dbo.file_analysis_cache
+                    (file_id, prompt_hash, prompt, analysis, provider, model,
+                     execution_time_ms, chart_data)
+                VALUES (?,?,?,?,?,?,
+                        ?,?)
+            ]
+[parameters: (5, 'eb650a5feeafff919ca3be01aee7067a4430550e0b54449c12cd81e263008398', 5, 'eb650a5feeafff919ca3be01aee7067a4430550e0b54449c12cd81e263008398', 'show me top 10 most expensive products in amazon', 'SUMMARY: The data does not contain ranked product information for this query.\nKEY FINDINGS:\n1. Average price of products on Amazon: $207.56\n2. Max ... (49 characters truncated) ... nimum price of a product on Amazon: $8.99\n4. Standard deviation of product prices on Amazon: $274.12\n5. Median price of products on Amazon: $150.00', 'Ollama', 'qwen2.5-coder:7b', 74605.89861869812, '{"columns": ["product_name", "actual_price"], "rows": []}')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-08 17:00:22.782 | INFO  | [files] Rebuilt df: 1465 rows x 16 cols, numeric: ['rating']
+2026-05-08 17:00:22.932 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-08 17:00:55.315 | INFO  | [ollama] Response received (340 chars)
+2026-05-08 17:00:55.316 | INFO  | [files] AI plan: {'operation': 'top_n', 'metric_column': 'actual_price', 'group_by_column': None, 'date_column': None, 'filter_column': None, 'filter_condition': None, 'n': 10, 'agg': 'sum', 'explanation': "The question asks for the top 10 most expensive products, so we need to aggregate by 'actual_price' and find the highest values."}
+2026-05-08 17:00:55.322 | INFO  | [files] Auto-filled group_by: product_name (was None)
+2026-05-08 17:00:55.326 | INFO  | [files] computation error: dtype 'str' does not support operation 'mean'
+2026-05-08 17:00:55.332 | INFO  | [files] No concrete data computed — running fallback top-N
+2026-05-08 17:00:55.343 | INFO  | [files] Fallback used rating grouped by category
+2026-05-08 17:00:55.344 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-08 17:01:21.231 | INFO  | [ollama] Response received (283 chars)
+2026-05-08 17:01:21.236 | INFO  | [files] chart data error: could not convert string to float: '₹999₹999₹999'
+2026-05-08 17:01:21.237 | INFO  | [files] Analysis took 58454 ms
+2026-05-08 17:06:35.695 | INFO  | [startup] Logging initialized → C:\Users\qam04673\Documents\AI_SQL_AGENT_NextJS\sql-analyst-ui\backend\logs\app_2026-05-08.log
+2026-05-08 17:06:35.780 | INFO  | [embedding] Preloading embedding model...
+2026-05-08 17:06:35.781 | INFO  | [auth] ❌ Auth DB error: create_sql_server_connection() got an unexpected keyword argument 'windows_auth'
+2026-05-08 17:06:40.415 | INFO  | [startup] Logging initialized → C:\Users\qam04673\Documents\AI_SQL_AGENT_NextJS\sql-analyst-ui\backend\logs\app_2026-05-08.log
+2026-05-08 17:06:40.564 | INFO  | [embedding] Preloading embedding model...
+2026-05-08 17:06:40.565 | INFO  | [auth] ❌ Auth DB error: create_sql_server_connection() got an unexpected keyword argument 'windows_auth'
+2026-05-08 17:06:52.423 | INFO  | [startup] Logging initialized → C:\Users\qam04673\Documents\AI_SQL_AGENT_NextJS\sql-analyst-ui\backend\logs\app_2026-05-08.log
+2026-05-08 17:06:52.565 | INFO  | [embedding] Preloading embedding model...
+2026-05-08 17:06:52.566 | INFO  | [auth] ❌ Auth DB error: create_sql_server_connection() got an unexpected keyword argument 'windows_auth'
+2026-05-08 17:07:14.493 | INFO  | No device provided, using cpu
+2026-05-08 17:07:16.227 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:07:16.277 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-05-08 17:07:16.738 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:07:16.740 | WARNING | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-08 17:07:16.794 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-05-08 17:07:16.807 | INFO  | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-05-08 17:07:17.250 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:07:17.312 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-05-08 17:07:17.631 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:07:17.696 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+2026-05-08 17:07:17.995 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:07:18.053 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-05-08 17:07:18.581 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:07:18.636 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-05-08 17:07:18.953 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-05-08 17:07:19.246 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:07:19.315 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-05-08 17:07:19.912 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-05-08 17:07:20.424 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-08 17:07:20.833 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-08 17:07:21.152 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-08 17:07:21.857 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:07:21.938 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-08 17:07:22.370 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:07:22.429 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-05-08 17:07:22.751 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:07:22.807 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-05-08 17:07:23.291 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:07:23.355 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-08 17:07:23.672 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-08 17:07:24.101 | INFO  | [files] Tables ready
+2026-05-08 17:07:24.239 | INFO  | [files] Parsed CSV: 1465 rows, encoding=utf-8
+2026-05-08 17:07:24.261 | INFO  | [files] Dropping long text column: about_product (avg 729 chars)
+2026-05-08 17:07:24.274 | INFO  | [files] Dropping long text column: review_content (avg 1394 chars)
+2026-05-08 17:07:24.284 | INFO  | [files] Saving to DB: 4,744,481 bytes, 1,465 rows
+2026-05-08 17:07:24.316 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-08 17:07:24.853 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:07:24.914 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-05-08 17:07:25.235 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-05-08 17:07:25.240 | INFO  | [embedding] ✅ Model loaded and ready.
+2026-05-08 17:07:41.067 | INFO  | [files] Rebuilt df: 1465 rows x 16 cols, numeric: ['rating']
+2026-05-08 17:07:41.252 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-08 17:08:29.322 | INFO  | [ollama] Response received (340 chars)
+2026-05-08 17:08:29.322 | INFO  | [files] AI plan: {'operation': 'top_n', 'metric_column': 'actual_price', 'group_by_column': None, 'date_column': None, 'filter_column': None, 'filter_condition': None, 'n': 10, 'agg': 'sum', 'explanation': "The question asks for the top 10 most expensive products, so we need to aggregate by 'actual_price' and find the highest values."}
+2026-05-08 17:08:29.334 | INFO  | [files] Auto-filled group_by: product_name (was None)
+2026-05-08 17:08:29.345 | INFO  | [files] Pre-computed top 1212 product_name by rating (desc)
+2026-05-08 17:08:29.351 | INFO  | [files] No concrete data computed — running fallback top-N
+2026-05-08 17:08:29.363 | INFO  | [files] Fallback used rating grouped by category
+2026-05-08 17:08:29.363 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-08 17:13:31.668 | INFO  | [startup] Logging initialized → C:\Users\qam04673\Documents\AI_SQL_AGENT_NextJS\sql-analyst-ui\backend\logs\app_2026-05-08.log
+2026-05-08 17:13:31.822 | INFO  | [embedding] Preloading embedding model...
+2026-05-08 17:13:31.823 | INFO  | [auth] ❌ Auth DB error: create_sql_server_connection() got an unexpected keyword argument 'windows_auth'
+2026-05-08 17:13:56.896 | INFO  | [files] Tables ready
+2026-05-08 17:13:57.139 | INFO  | [files] Parsed CSV: 1465 rows, encoding=utf-8
+2026-05-08 17:13:57.176 | INFO  | [files] Dropping long text column: about_product (avg 729 chars)
+2026-05-08 17:13:57.194 | INFO  | [files] Dropping long text column: review_content (avg 1394 chars)
+2026-05-08 17:13:57.210 | INFO  | [files] Saving to DB: 4,744,481 bytes, 1,465 rows
+2026-05-08 17:13:58.363 | INFO  | No device provided, using cpu
+2026-05-08 17:13:59.851 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:13:59.914 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-05-08 17:14:00.292 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:14:00.384 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-05-08 17:14:00.389 | INFO  | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-05-08 17:14:00.689 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:14:00.751 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-05-08 17:14:01.829 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:14:01.831 | WARNING | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-08 17:14:01.903 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+2026-05-08 17:14:02.210 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:14:02.266 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-05-08 17:14:02.649 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:14:02.718 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-05-08 17:14:03.348 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-05-08 17:14:03.755 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:14:03.814 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-05-08 17:14:04.469 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-05-08 17:14:04.798 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-08 17:14:05.208 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-08 17:14:05.548 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-08 17:14:06.027 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:14:06.074 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-08 17:14:06.538 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:14:06.589 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-05-08 17:14:07.109 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:14:07.160 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-05-08 17:14:07.767 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:14:07.826 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-08 17:14:08.586 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-08 17:14:09.162 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-08 17:14:09.712 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:14:09.792 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-05-08 17:14:10.154 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-05-08 17:14:10.163 | INFO  | [embedding] ✅ Model loaded and ready.
+2026-05-08 17:14:14.404 | INFO  | [files] Rebuilt df: 1465 rows x 14 cols, numeric: ['rating']
+2026-05-08 17:14:14.506 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-08 17:14:48.473 | INFO  | [chat] deleting session 1062 for user 2
+2026-05-08 17:14:48.489 | INFO  | [chat] deleted 0 messages, 1 sessions
+2026-05-08 17:14:49.768 | INFO  | [chat] deleting session 1061 for user 2
+2026-05-08 17:14:49.771 | INFO  | [chat] deleted 0 messages, 1 sessions
+2026-05-08 17:14:51.409 | INFO  | [chat] deleting session 64 for user 2
+2026-05-08 17:14:51.414 | INFO  | [chat] deleted 0 messages, 1 sessions
+2026-05-08 17:15:03.851 | INFO  | [ollama] Response received (435 chars)
+2026-05-08 17:15:03.853 | INFO  | [files] AI plan: {'operation': 'top_n', 'metric_column': 'actual_price', 'group_by_column': 'product_name', 'date_column': None, 'filter_column': None, 'filter_condition': None, 'n': 10, 'agg': 'sum', 'explanation': "The question asks for the top 10 most expensive products. The 'actual_price' column contains numeric values representing the price of each product, and 'product_name' provides a unique identifier for each product."}
+2026-05-08 17:15:03.866 | INFO  | [files] Pre-computed top 1194 product_name by rating (desc)
+2026-05-08 17:15:03.877 | INFO  | [files] No concrete data computed — running fallback top-N
+2026-05-08 17:15:03.890 | INFO  | [files] Fallback used rating grouped by category
+2026-05-08 17:15:03.891 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-08 17:16:59.110 | INFO  | [startup] Logging initialized → C:\Users\qam04673\Documents\AI_SQL_AGENT_NextJS\sql-analyst-ui\backend\logs\app_2026-05-08.log
+2026-05-08 17:16:59.278 | INFO  | [embedding] Preloading embedding model...
+2026-05-08 17:16:59.279 | INFO  | [auth] ❌ Auth DB error: create_sql_server_connection() got an unexpected keyword argument 'windows_auth'
+2026-05-08 17:17:24.321 | INFO  | No device provided, using cpu
+2026-05-08 17:17:26.219 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:17:26.308 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-05-08 17:17:26.840 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:17:26.843 | WARNING | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-08 17:17:27.037 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-05-08 17:17:27.050 | INFO  | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-05-08 17:17:27.350 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:17:27.402 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-05-08 17:17:27.728 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:17:27.788 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+2026-05-08 17:17:28.146 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:17:28.225 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-05-08 17:17:28.665 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:17:28.880 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-05-08 17:17:29.243 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-05-08 17:17:29.699 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:17:29.904 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-05-08 17:17:30.826 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-05-08 17:17:31.339 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-08 17:17:31.746 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-08 17:17:32.156 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-08 17:17:32.566 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:17:32.647 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-08 17:17:33.386 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:17:33.462 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-05-08 17:17:34.205 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:17:34.410 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-05-08 17:17:34.820 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:17:34.889 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-08 17:17:35.332 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-08 17:17:35.741 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-08 17:17:36.310 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:17:36.458 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-05-08 17:17:36.524 | INFO  | [files] Tables ready
+2026-05-08 17:17:36.687 | INFO  | [files] Parsed CSV: 1465 rows, encoding=utf-8
+2026-05-08 17:17:36.705 | INFO  | [files] Dropping long text column: about_product (avg 729 chars)
+2026-05-08 17:17:36.717 | INFO  | [files] Dropping long text column: review_content (avg 1394 chars)
+2026-05-08 17:17:36.725 | INFO  | [files] Saving to DB: 4,744,481 bytes, 1,465 rows
+2026-05-08 17:17:36.866 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-05-08 17:17:36.871 | INFO  | [embedding] ✅ Model loaded and ready.
+2026-05-08 17:17:51.862 | INFO  | [files] Rebuilt df: 1465 rows x 14 cols, numeric: ['rating']
+2026-05-08 17:17:51.973 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-08 17:18:39.668 | INFO  | [ollama] Response received (345 chars)
+2026-05-08 17:18:39.669 | INFO  | [files] AI plan: {'operation': 'top_n', 'metric_column': 'actual_price', 'group_by_column': 'product_name', 'date_column': None, 'filter_column': None, 'filter_condition': None, 'n': 10, 'agg': 'sum', 'explanation': "The question asks for the top 10 expensive products, so we need to aggregate by 'actual_price' and group by 'product_name'."}
+2026-05-08 17:18:39.679 | INFO  | [files] Pre-computed top 1194 product_name by rating (desc)
+2026-05-08 17:18:39.687 | INFO  | [files] No concrete data computed — running fallback top-N
+2026-05-08 17:18:39.697 | INFO  | [files] Fallback used rating grouped by category
+2026-05-08 17:18:39.698 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-08 17:22:03.420 | INFO  | [ollama] Response received (2072 chars)
+2026-05-08 17:22:03.427 | INFO  | [files] Analysis took 251564 ms
+2026-05-08 17:22:54.217 | INFO  | [files] Tables ready
+2026-05-08 17:22:55.190 | INFO  | [files] Parsed CSV: 10000 rows, encoding=utf-8
+2026-05-08 17:22:55.297 | INFO  | [files] Dropping long text column: product_specifications (avg 595 chars)
+2026-05-08 17:22:55.315 | INFO  | [files] Saving to DB: 38,114,963 bytes, 10,000 rows
+2026-05-08 17:22:55.779 | INFO  | [files] Sampled down to 5000 rows (storage size limit)
+2026-05-08 17:23:08.741 | INFO  | [files] Rebuilt df: 5000 rows x 14 cols, numeric: ['retail_price', 'discounted_price']
+2026-05-08 17:23:08.988 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-08 17:24:00.941 | INFO  | [ollama] Response received (471 chars)
+2026-05-08 17:24:00.949 | INFO  | [files] AI plan: {'operation': 'top_n', 'metric_column': 'retail_price', 'group_by_column': 'product_name', 'date_column': None, 'filter_column': None, 'filter_condition': None, 'n': 5, 'agg': 'sum', 'explanation': "The question asks for the top 5 products, which implies a ranking based on some metric. The retail price is a numeric column that can be used to determine the 'top' products. Product name is chosen as it provides a unique identifier for each product."}
+2026-05-08 17:24:01.016 | INFO  | [files] Pre-computed top 1251 product_name by retail_price (desc)
+2026-05-08 17:24:01.032 | INFO  | [files] No concrete data computed — running fallback top-N
+2026-05-08 17:24:01.067 | INFO  | [files] Fallback used retail_price grouped by is_FK_Advantage_product
+2026-05-08 17:24:01.069 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-08 17:31:43.016 | INFO  | [startup] Logging initialized → C:\Users\qam04673\Documents\AI_SQL_AGENT_NextJS\sql-analyst-ui\backend\logs\app_2026-05-08.log
+2026-05-08 17:31:43.170 | INFO  | [embedding] Preloading embedding model...
+2026-05-08 17:31:43.171 | INFO  | [auth] ❌ Auth DB error: create_sql_server_connection() got an unexpected keyword argument 'windows_auth'
+2026-05-08 17:32:21.494 | INFO  | No device provided, using cpu
+2026-05-08 17:32:22.711 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:32:22.711 | WARNING | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-08 17:32:22.745 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-05-08 17:32:23.043 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:32:23.080 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-05-08 17:32:23.086 | INFO  | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-05-08 17:32:23.363 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:32:23.397 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-05-08 17:32:23.688 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:32:23.723 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+2026-05-08 17:32:24.022 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:32:24.055 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-05-08 17:32:24.341 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:32:24.398 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-05-08 17:32:24.699 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-05-08 17:32:24.985 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:32:25.018 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-05-08 17:32:25.489 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-05-08 17:32:25.777 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-08 17:32:26.068 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-08 17:32:26.359 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-08 17:32:26.645 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:32:26.679 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-08 17:32:26.982 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:32:27.021 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-05-08 17:32:27.311 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:32:27.347 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-05-08 17:32:27.646 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:32:27.680 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-08 17:32:27.990 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-08 17:32:28.286 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-08 17:32:28.696 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:32:28.729 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-05-08 17:32:29.026 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-05-08 17:32:29.030 | INFO  | [embedding] ✅ Model loaded and ready.
+2026-05-08 17:33:14.385 | INFO  | [files] Tables ready
+2026-05-08 17:33:14.857 | INFO  | [files] Parsed CSV: 10000 rows, encoding=utf-8
+2026-05-08 17:33:14.901 | INFO  | [files] Dropping long text column: product_specifications (avg 595 chars)
+2026-05-08 17:33:14.909 | INFO  | [files] Saving to DB: 38,114,963 bytes, 10,000 rows
+2026-05-08 17:33:29.535 | INFO  | [files] Rebuilt df: 5000 rows x 14 cols, numeric: ['retail_price', 'discounted_price']
+2026-05-08 17:33:29.622 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-08 17:34:20.438 | INFO  | [ollama] Response received (373 chars)
+2026-05-08 17:34:20.438 | INFO  | [files] AI plan: {'operation': 'top_n', 'metric_column': 'retail_price', 'group_by_column': None, 'date_column': None, 'filter_column': None, 'filter_condition': None, 'n': 10, 'agg': 'sum', 'explanation': "The question asks for the top 10 expensive products, so we use 'retail_price' as the metric column and sum up the prices to get the total cost of these products."}
+2026-05-08 17:34:20.457 | INFO  | [files] Auto-filled group_by: product_name (was None)
+2026-05-08 17:34:20.477 | INFO  | [files] Pre-computed top 1251 product_name by retail_price (desc)
+2026-05-08 17:34:20.486 | INFO  | [files] No concrete data computed — running fallback top-N
+2026-05-08 17:34:20.503 | INFO  | [files] Fallback used retail_price grouped by is_FK_Advantage_product
+2026-05-08 17:34:20.503 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-08 17:37:06.342 | INFO  | [ollama] Response received (1530 chars)
+2026-05-08 17:37:06.356 | INFO  | [files] Analysis took 216821 ms
+2026-05-08 17:42:34.639 | INFO  | [startup] Logging initialized → C:\Users\qam04673\Documents\AI_SQL_AGENT_NextJS\sql-analyst-ui\backend\logs\app_2026-05-08.log
+2026-05-08 17:42:47.760 | INFO  | [embedding] Preloading embedding model...
+2026-05-08 17:42:47.760 | INFO  | [auth] ❌ Auth DB error: create_sql_server_connection() got an unexpected keyword argument 'windows_auth'
+2026-05-08 17:42:52.694 | INFO  | [startup] Logging initialized → C:\Users\qam04673\Documents\AI_SQL_AGENT_NextJS\sql-analyst-ui\backend\logs\app_2026-05-08.log
+2026-05-08 17:42:52.838 | INFO  | [embedding] Preloading embedding model...
+2026-05-08 17:42:52.839 | INFO  | [auth] ❌ Auth DB error: create_sql_server_connection() got an unexpected keyword argument 'windows_auth'
+2026-05-08 17:43:04.741 | INFO  | [startup] Logging initialized → C:\Users\qam04673\Documents\AI_SQL_AGENT_NextJS\sql-analyst-ui\backend\logs\app_2026-05-08.log
+2026-05-08 17:43:04.919 | INFO  | [embedding] Preloading embedding model...
+2026-05-08 17:43:04.920 | INFO  | [auth] ❌ Auth DB error: create_sql_server_connection() got an unexpected keyword argument 'windows_auth'
+2026-05-08 17:43:07.942 | INFO  | [files] Tables ready
+2026-05-08 17:43:25.074 | INFO  | No device provided, using cpu
+2026-05-08 17:43:26.366 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:43:26.395 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-05-08 17:43:26.672 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:43:26.703 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-05-08 17:43:26.707 | INFO  | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-05-08 17:43:26.980 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:43:26.981 | WARNING | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-08 17:43:27.006 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-05-08 17:43:27.242 | INFO  | [files] Tables ready
+2026-05-08 17:43:27.297 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:43:27.324 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+2026-05-08 17:43:27.609 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:43:27.652 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-05-08 17:43:27.907 | INFO  | [files] Parsed CSV: 10000 rows, encoding=utf-8
+2026-05-08 17:43:27.986 | INFO  | [files] Dropping long text column: product_specifications (avg 595 chars)
+2026-05-08 17:43:28.093 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:43:28.170 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-05-08 17:43:28.849 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-05-08 17:43:29.452 | INFO  | [files] Saving to DB: 38,114,963 bytes, 10,000 rows
+2026-05-08 17:43:29.703 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:43:29.728 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-05-08 17:43:30.265 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-05-08 17:43:30.555 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-08 17:43:30.838 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-08 17:43:31.121 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-08 17:43:31.413 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:43:31.459 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-08 17:43:31.758 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:43:31.794 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-05-08 17:43:32.085 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:43:32.108 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-05-08 17:43:32.392 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:43:32.414 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-08 17:43:32.721 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-08 17:43:33.000 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-08 17:43:33.422 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 17:43:33.444 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-05-08 17:43:33.721 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-05-08 17:43:33.726 | INFO  | [embedding] ✅ Model loaded and ready.
+2026-05-08 17:43:40.746 | INFO  | [files] Rebuilt df: 5000 rows x 14 cols, numeric: ['retail_price', 'discounted_price']
+2026-05-08 17:43:40.770 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-08 17:44:14.264 | INFO  | [ollama] Response received (138 chars)
+2026-05-08 17:44:14.264 | INFO  | [files] AI plan: {'operation': 'top_n', 'metric_column': 'retail_price', 'group_by_column': None, 'date_column': None, 'n': 10, 'agg': 'max'}
+2026-05-08 17:44:14.282 | INFO  | [files] Auto-picked group_by: product_name
+2026-05-08 17:44:14.283 | INFO  | [files] Final: op=top_n, metric=retail_price, group_by=product_name, agg=max, n=10
+2026-05-08 17:44:14.292 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-08 17:46:28.053 | INFO  | [ollama] Response received (1332 chars)
+2026-05-08 17:46:28.055 | INFO  | [files] Analysis took 167309 ms
+2026-05-08 17:47:13.737 | INFO  | [files] Cache hit — first run 167309 ms, cached lookup 0.0 ms, hit #0
+2026-05-08 17:48:09.530 | INFO  | [files] Tables ready
+2026-05-08 17:48:09.652 | INFO  | [files] Parsed CSV: 1465 rows, encoding=utf-8
+2026-05-08 17:48:09.665 | INFO  | [files] Dropping long text column: about_product (avg 729 chars)
+2026-05-08 17:48:09.675 | INFO  | [files] Dropping long text column: review_content (avg 1394 chars)
+2026-05-08 17:48:09.723 | INFO  | [files] Converted 'discounted_price' to numeric (cleaned currency/commas)
+2026-05-08 17:48:09.730 | INFO  | [files] Converted 'actual_price' to numeric (cleaned currency/commas)
+2026-05-08 17:48:09.736 | INFO  | [files] Converted 'discount_percentage' to numeric (cleaned currency/commas)
+2026-05-08 17:48:09.742 | INFO  | [files] Converted 'rating' to numeric (cleaned currency/commas)
+2026-05-08 17:48:09.752 | INFO  | [files] Converted 'rating_count' to numeric (cleaned currency/commas)
+2026-05-08 17:48:09.861 | INFO  | [files] Saving to DB: 4,744,481 bytes, 1,465 rows
+2026-05-08 17:48:51.390 | INFO  | [files] Rebuilt df: 5000 rows x 14 cols, numeric: ['retail_price', 'discounted_price']
+2026-05-08 17:48:51.435 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-08 17:49:19.968 | INFO  | [ollama] Response received (139 chars)
+2026-05-08 17:49:19.969 | INFO  | [files] AI plan: {'operation': 'average', 'metric_column': 'retail_price', 'group_by_column': None, 'date_column': None, 'n': 1, 'agg': 'max'}
+2026-05-08 17:49:19.985 | INFO  | [files] Auto-picked group_by: product_name
+2026-05-08 17:49:19.985 | INFO  | [files] Final: op=average, metric=retail_price, group_by=product_name, agg=max, n=1
+2026-05-08 17:49:19.999 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-08 17:50:03.670 | INFO  | [ollama] Response received (623 chars)
+2026-05-08 17:50:03.672 | INFO  | [files] Analysis took 72282 ms
+2026-05-08 17:52:17.646 | INFO  | [files] Tables ready
+2026-05-08 17:52:17.796 | INFO  | [files] Parsed CSV: 1465 rows, encoding=utf-8
+2026-05-08 17:52:17.813 | INFO  | [files] Dropping long text column: about_product (avg 729 chars)
+2026-05-08 17:52:17.824 | INFO  | [files] Dropping long text column: review_content (avg 1394 chars)
+2026-05-08 17:52:17.878 | INFO  | [files] Converted 'discounted_price' to numeric (cleaned currency/commas)
+2026-05-08 17:52:17.886 | INFO  | [files] Converted 'actual_price' to numeric (cleaned currency/commas)
+2026-05-08 17:52:17.893 | INFO  | [files] Converted 'discount_percentage' to numeric (cleaned currency/commas)
+2026-05-08 17:52:17.900 | INFO  | [files] Converted 'rating' to numeric (cleaned currency/commas)
+2026-05-08 17:52:17.909 | INFO  | [files] Converted 'rating_count' to numeric (cleaned currency/commas)
+2026-05-08 17:52:18.031 | INFO  | [files] Saving to DB: 4,744,481 bytes, 1,465 rows
+2026-05-08 17:52:28.853 | INFO  | [files] Tables ready
+2026-05-08 17:52:29.694 | INFO  | [files] Parsed CSV: 10000 rows, encoding=utf-8
+2026-05-08 17:52:29.800 | INFO  | [files] Dropping long text column: product_specifications (avg 595 chars)
+2026-05-08 17:52:31.484 | INFO  | [files] Saving to DB: 38,114,963 bytes, 10,000 rows
+2026-05-08 17:52:40.825 | INFO  | [files] Common columns across 2 files: {'discounted_price', 'product_name'}
+2026-05-08 17:52:40.825 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-08 17:53:08.085 | INFO  | [ollama] Response received (385 chars)
+2026-05-08 17:53:08.085 | INFO  | [files] Compare plan: {'operation': 'top_n_per_file', 'metric_column': 'retail_price', 'group_by_column': None, 'date_column': None, 'n': 5, 'explanation': "The question asks for the platform with more expensive products on average. The 'retail_price' column is present in both files and represents the price of products, making it suitable for comparing the average prices across platforms."}
+2026-05-08 17:53:08.088 | INFO  | [files] Compare auto-filled group_by: product_name
+2026-05-08 17:53:08.088 | INFO  | [files] Metric 'retail_price' missing in ['amazon.csv'] - searching for similar
+2026-05-08 17:53:08.089 | INFO  | [files] Fallback metric: None
+2026-05-08 17:53:08.098 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-08 17:53:58.079 | INFO  | [ollama] Response received (755 chars)
+2026-05-08 17:53:58.090 | INFO  | [files] Compare took 77352 ms
+2026-05-08 17:55:12.684 | INFO  | [files] Rebuilt df: 1465 rows x 14 cols, numeric: ['rating']
+2026-05-08 17:55:12.694 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-08 17:55:40.822 | INFO  | [ollama] Response received (147 chars)
+2026-05-08 17:55:40.822 | INFO  | [files] AI plan: {'operation': 'top_n', 'metric_column': 'actual_price', 'group_by_column': 'product_name', 'date_column': None, 'n': 5, 'agg': 'min'}
+2026-05-08 17:55:40.824 | INFO  | [files] Auto-picked metric: rating
+2026-05-08 17:55:40.824 | INFO  | [files] Final: op=top_n, metric=rating, group_by=product_name, agg=min, n=5
+2026-05-08 17:55:40.832 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-08 17:57:18.580 | INFO  | [ollama] Response received (1785 chars)
+2026-05-08 17:57:18.582 | INFO  | [files] Analysis took 125897 ms
+2026-05-08 19:50:19.580 | INFO  | [chat] deleting session 1066 for user 2
+2026-05-08 19:50:19.640 | INFO  | [chat] deleted 0 messages, 1 sessions
+2026-05-08 19:50:20.661 | INFO  | [chat] deleting session 1065 for user 2
+2026-05-08 19:50:20.663 | INFO  | [chat] deleted 0 messages, 1 sessions
+2026-05-08 19:50:24.504 | INFO  | [chat] deleting session 1064 for user 2
+2026-05-08 19:50:24.508 | INFO  | [chat] deleted 0 messages, 1 sessions
+2026-05-08 19:50:25.319 | INFO  | [chat] deleting session 1063 for user 2
+2026-05-08 19:50:25.323 | INFO  | [chat] deleted 0 messages, 1 sessions
+2026-05-08 19:50:28.502 | INFO  | [chat] deleting session 63 for user 2
+2026-05-08 19:50:28.506 | INFO  | [chat] deleted 0 messages, 1 sessions
+2026-05-08 19:50:29.318 | INFO  | [chat] deleting session 62 for user 2
+2026-05-08 19:50:29.323 | INFO  | [chat] deleted 0 messages, 1 sessions
+2026-05-08 19:50:30.928 | INFO  | [chat] deleting session 61 for user 2
+2026-05-08 19:50:30.932 | INFO  | [chat] deleted 0 messages, 1 sessions
+2026-05-08 19:50:34.612 | INFO  | [chat] deleting session 60 for user 2
+2026-05-08 19:50:34.627 | INFO  | [chat] deleted 0 messages, 1 sessions
+2026-05-08 19:50:35.099 | INFO  | [chat] deleting session 59 for user 2
+2026-05-08 19:50:35.105 | INFO  | [chat] deleted 0 messages, 1 sessions
+2026-05-08 19:50:37.836 | INFO  | [chat] deleting session 58 for user 2
+2026-05-08 19:50:37.994 | INFO  | [chat] deleted 0 messages, 1 sessions
+2026-05-08 19:50:39.924 | INFO  | [chat] deleting session 57 for user 2
+2026-05-08 19:50:39.937 | INFO  | [chat] deleted 0 messages, 1 sessions
+2026-05-08 19:50:41.614 | INFO  | [chat] deleting session 56 for user 2
+2026-05-08 19:50:41.618 | INFO  | [chat] deleted 0 messages, 1 sessions
+2026-05-08 19:50:43.144 | INFO  | [chat] deleting session 55 for user 2
+2026-05-08 19:50:43.148 | INFO  | [chat] deleted 0 messages, 1 sessions
+2026-05-08 19:50:51.379 | INFO  | [chat] deleting session 54 for user 2
+2026-05-08 19:50:51.381 | INFO  | [chat] deleted 0 messages, 1 sessions
+2026-05-08 19:50:51.504 | INFO  | [chat] deleting session 39 for user 2
+2026-05-08 19:50:51.509 | INFO  | [chat] deleted 3 messages, 1 sessions
+2026-05-08 19:50:51.646 | INFO  | [chat] deleting session 53 for user 2
+2026-05-08 19:50:51.650 | INFO  | [chat] deleted 0 messages, 1 sessions
+2026-05-08 19:50:52.164 | INFO  | [chat] deleting session 52 for user 2
+2026-05-08 19:50:52.166 | INFO  | [chat] deleted 0 messages, 1 sessions
+2026-05-08 19:50:52.742 | INFO  | [chat] deleting session 38 for user 2
+2026-05-08 19:50:52.743 | INFO  | [chat] deleted 1 messages, 1 sessions
+2026-05-08 19:50:53.247 | INFO  | [chat] deleting session 37 for user 2
+2026-05-08 19:50:53.251 | INFO  | [chat] deleted 1 messages, 1 sessions
+2026-05-08 19:54:11.946 | INFO  | [files] Tables ready
+2026-05-08 19:54:11.977 | INFO  | [files] Parsed CSV: 10000 rows, encoding=utf-8
+2026-05-08 19:54:12.054 | INFO  | [files] Saving to DB: 684,858 bytes, 10,000 rows
+2026-05-08 19:55:51.790 | INFO  | [files] Tables ready
+2026-05-08 19:55:51.835 | INFO  | [files] Parsed CSV: 10000 rows, encoding=utf-8
+2026-05-08 19:55:51.990 | INFO  | [files] Saving to DB: 1,510,880 bytes, 10,000 rows
+2026-05-08 19:55:55.786 | INFO  | [files] Rebuilt df: 10000 rows x 23 cols, numeric: ['CLIENTNUM', 'Customer_Age', 'Dependent_count', 'Months_on_book', 'Total_Relationship_Count', 'Months_Inactive_12_mon', 'Contacts_Count_12_mon', 'Credit_Limit', 'Total_Revolving_Bal', 'Avg_Open_To_Buy', 'Total_Amt_Chng_Q4_Q1', 'Total_Trans_Amt', 'Total_Trans_Ct', 'Total_Ct_Chng_Q4_Q1', 'Avg_Utilization_Ratio', 'Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_1', 'Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2']
+2026-05-08 19:55:55.796 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-08 19:56:25.874 | INFO  | [ollama] Response received (138 chars)
+2026-05-08 19:56:25.876 | INFO  | [files] AI plan: {'operation': 'top_n', 'metric_column': 'Credit_Limit', 'group_by_column': None, 'date_column': None, 'n': 10, 'agg': 'max'}
+2026-05-08 19:56:25.926 | INFO  | [files] Auto-picked group_by: Income_Category
+2026-05-08 19:56:25.927 | INFO  | [files] Final: op=top_n, metric=Credit_Limit, group_by=Income_Category, agg=max, n=10
+2026-05-08 19:56:25.952 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-08 19:57:06.402 | INFO  | [ollama] Response received (779 chars)
+2026-05-08 19:57:06.403 | INFO  | [files] Analysis took 70617 ms
+2026-05-08 20:00:58.126 | INFO  | [files] Tables ready
+2026-05-08 20:00:58.239 | INFO  | [files] Parsed CSV: 10000 rows, encoding=utf-8
+2026-05-08 20:00:58.503 | INFO  | [files] Saving to DB: 684,858 bytes, 10,000 rows
+2026-05-08 20:01:12.957 | INFO  | [files] Rebuilt df: 10000 rows x 14 cols, numeric: ['RowNumber', 'CustomerId', 'CreditScore', 'Age', 'Tenure', 'Balance', 'NumOfProducts', 'HasCrCard', 'IsActiveMember', 'EstimatedSalary', 'Exited']
+2026-05-08 20:01:12.966 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-08 20:01:32.700 | INFO  | [ollama] Response received (140 chars)
+2026-05-08 20:01:32.701 | INFO  | [files] AI plan: {'operation': 'top_n', 'metric_column': 'EstimatedSalary', 'group_by_column': None, 'date_column': None, 'n': 5, 'agg': 'max'}
+2026-05-08 20:01:32.705 | INFO  | [files] Auto-picked group_by: Surname
+2026-05-08 20:01:32.705 | INFO  | [files] Final: op=top_n, metric=EstimatedSalary, group_by=Surname, agg=max, n=5
+2026-05-08 20:01:32.724 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-08 20:02:04.909 | INFO  | [ollama] Response received (523 chars)
+2026-05-08 20:02:04.910 | INFO  | [files] Analysis took 51953 ms
+2026-05-08 20:09:36.095 | INFO  | [files] Tables ready
+2026-05-08 20:09:36.160 | INFO  | [files] Parsed CSV: 10000 rows, encoding=utf-8
+2026-05-08 20:09:36.532 | INFO  | [files] Saving to DB: 918,960 bytes, 10,000 rows
+2026-05-08 20:09:44.881 | INFO  | [files] Rebuilt df: 10000 rows x 17 cols, numeric: ['age', 'balance', 'day', 'duration', 'campaign', 'pdays', 'previous']
+2026-05-08 20:09:44.896 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-08 20:10:08.990 | INFO  | [ollama] Response received (136 chars)
+2026-05-08 20:10:08.990 | INFO  | [files] AI plan: {'operation': 'group_by', 'metric_column': None, 'group_by_column': 'job', 'date_column': None, 'n': None, 'agg': 'count'}
+2026-05-08 20:10:08.993 | INFO  | [files] Auto-picked metric: age
+2026-05-08 20:10:08.993 | INFO  | [files] Final: op=group_by, metric=age, group_by=job, agg=count, n=5
+2026-05-08 20:10:08.997 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-08 20:10:37.721 | INFO  | [ollama] Response received (442 chars)
+2026-05-08 20:10:37.722 | INFO  | [files] Analysis took 52840 ms
+2026-05-08 20:15:19.573 | INFO  | [query] provider=Ollama model=qwen2.5-coder:7b q=📎 bank.csv
+Compare customer count by job type
+2026-05-08 20:15:44.473 | INFO  | [files] Cache hit — first run 52840 ms, cached lookup 0.0 ms, hit #0
+2026-05-08 20:18:16.929 | INFO  | [query] provider=Ollama model=qwen2.5-coder:7b q=📎 bank.csv
+Compare customer count by job type
+2026-05-08 20:18:38.098 | INFO  | [files] Tables ready
+2026-05-08 20:18:38.155 | INFO  | [files] Parsed CSV: 10000 rows, encoding=utf-8
+2026-05-08 20:18:38.865 | INFO  | [files] Saving to DB: 918,960 bytes, 10,000 rows
+2026-05-08 20:19:10.364 | INFO  | [files] Rebuilt df: 10000 rows x 17 cols, numeric: ['age', 'balance', 'day', 'duration', 'campaign', 'pdays', 'previous']
+2026-05-08 20:19:10.385 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-08 20:19:35.833 | INFO  | [ollama] Response received (128 chars)
+2026-05-08 20:19:35.834 | INFO  | [files] AI plan: {'operation': 'count', 'metric_column': None, 'group_by_column': 'job', 'date_column': None, 'n': 5, 'agg': 'sum'}
+2026-05-08 20:19:35.836 | INFO  | [files] Auto-picked metric: age
+2026-05-08 20:19:35.836 | INFO  | [files] Final: op=count, metric=age, group_by=job, agg=sum, n=5
+2026-05-08 20:19:35.866 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-08 20:20:05.774 | INFO  | [ollama] Response received (573 chars)
+2026-05-08 20:20:05.776 | INFO  | [files] Analysis took 55411 ms
+2026-05-08 21:09:05.631 | INFO  | [chat] deleting session 1069 for user 2
+2026-05-08 21:09:05.658 | INFO  | [chat] deleted 0 messages, 1 sessions
+2026-05-08 21:25:03.140 | INFO  | [files] Tables ready
+2026-05-08 21:25:03.171 | INFO  | [files] Parsed CSV: 10000 rows, encoding=utf-8
+2026-05-08 21:25:03.250 | INFO  | [files] Saving to DB: 684,858 bytes, 10,000 rows
+2026-05-08 21:25:07.780 | INFO  | [files] Common columns across 2 files: set()
+2026-05-08 21:25:07.780 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-08 21:25:41.732 | INFO  | [ollama] Response received (324 chars)
+2026-05-08 21:25:41.733 | INFO  | [files] Compare plan: {'operation': 'summary_comparison', 'metric_column': None, 'group_by_column': None, 'date_column': None, 'n': 5, 'explanation': 'The datasets do not have a common numeric column for financial risk exposure. A summary comparison is needed to provide an overview of the key metrics in each dataset.'}
+2026-05-08 21:25:41.739 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-08 21:26:46.296 | INFO  | [ollama] Response received (886 chars)
+2026-05-08 21:26:46.302 | INFO  | [files] Compare took 98562 ms
+2026-05-08 21:27:08.993 | INFO  | [files] Common columns across 2 files: set()
+2026-05-08 21:27:08.993 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-08 21:27:34.671 | INFO  | [ollama] Response received (327 chars)
+2026-05-08 21:27:34.672 | INFO  | [files] Compare plan: {'operation': 'summary_comparison', 'metric_column': None, 'group_by_column': None, 'date_column': None, 'n': 5, 'explanation': 'The datasets do not have common numeric columns for direct comparison. A summary comparison is needed to understand the overall structure and key metrics of each dataset.'}
+2026-05-08 21:27:34.677 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-08 21:28:48.875 | INFO  | [ollama] Response received (1017 chars)
+2026-05-08 21:28:48.880 | INFO  | [files] Compare took 99939 ms
+2026-05-08 21:29:35.240 | INFO  | [files] Common columns across 2 files: set()
+2026-05-08 21:29:35.240 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-08 21:30:01.099 | INFO  | [ollama] Response received (337 chars)
+2026-05-08 21:30:01.100 | INFO  | [files] Compare plan: {'operation': 'summary_comparison', 'metric_column': None, 'group_by_column': None, 'date_column': None, 'n': 5, 'explanation': 'The datasets do not have common numeric columns for direct comparison. A summary comparison is needed to understand the overall wealth and engagement patterns across both datasets.'}
+2026-05-08 21:30:01.107 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-08 21:31:07.044 | INFO  | [ollama] Response received (955 chars)
+2026-05-08 21:31:07.051 | INFO  | [files] Compare took 91846 ms
+2026-05-08 21:32:59.958 | INFO  | [files] Compare cache hit — first run 91846 ms, cached lookup 0.1 ms, hit #0
+2026-05-08 21:34:45.340 | INFO  | [files] Rebuilt df: 10000 rows x 17 cols, numeric: ['age', 'balance', 'day', 'duration', 'campaign', 'pdays', 'previous']
+2026-05-08 21:34:45.373 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-08 21:35:12.924 | INFO  | [ollama] Response received (142 chars)
+2026-05-08 21:35:12.925 | INFO  | [files] AI plan: {'operation': 'filter', 'metric_column': None, 'group_by_column': None, 'date_column': None, 'n': None, 'agg': None}
+2026-05-08 21:35:12.927 | INFO  | [files] Auto-picked metric: age
+2026-05-08 21:35:12.940 | INFO  | [files] Auto-picked group_by: job
+2026-05-08 21:35:12.940 | INFO  | [files] Final: op=filter, metric=age, group_by=job, agg=sum, n=5
+2026-05-08 21:35:12.947 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-08 21:36:47.769 | INFO  | [ollama] Response received (841 chars)
+2026-05-08 21:36:47.770 | INFO  | [files] Analysis took 122430 ms
+2026-05-08 21:37:35.193 | INFO  | [files] Common columns across 2 files: set()
+2026-05-08 21:37:35.194 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-08 21:38:05.109 | INFO  | [ollama] Response received (361 chars)
+2026-05-08 21:38:05.110 | INFO  | [files] Compare plan: {'operation': 'summary_comparison', 'metric_column': None, 'group_by_column': None, 'date_column': None, 'n': 5, 'explanation': 'The user is asking to compare missing-value patterns between the datasets, but there are no common columns in the provided files. Therefore, a summary comparison of the datasets as a whole is appropriate.'}
+2026-05-08 21:38:05.119 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-08 21:39:21.521 | INFO  | [ollama] Response received (969 chars)
+2026-05-08 21:39:21.529 | INFO  | [files] Compare took 106370 ms
+2026-05-08 21:40:56.040 | INFO  | [files] Common columns across 2 files: set()
+2026-05-08 21:40:56.041 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-08 21:41:27.024 | INFO  | [ollama] Response received (401 chars)
+2026-05-08 21:41:27.025 | INFO  | [files] Compare plan: {'operation': 'summary_comparison', 'metric_column': None, 'group_by_column': None, 'date_column': None, 'n': 5, 'explanation': 'The user is asking to compare product adoption and customer loyalty trends, but there are no common columns between the provided datasets. Therefore, a summary comparison of the overall characteristics of each dataset would be most appropriate.'}
+2026-05-08 21:41:27.032 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-08 21:42:49.924 | INFO  | [ollama] Response received (1135 chars)
+2026-05-08 21:42:49.930 | INFO  | [files] Compare took 113915 ms
+2026-05-08 21:44:12.236 | INFO  | [files] Common columns across 2 files: set()
+2026-05-08 21:44:12.237 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-08 21:44:41.771 | INFO  | [ollama] Response received (335 chars)
+2026-05-08 21:44:41.773 | INFO  | [files] Compare plan: {'operation': 'summary_comparison', 'metric_column': None, 'group_by_column': None, 'date_column': None, 'n': 5, 'explanation': 'The question asks to compare inactive customer percentages across both files, but there are no common columns between the two datasets. Therefore, a summary comparison is needed.'}
+2026-05-08 21:44:41.781 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-08 21:45:49.521 | INFO  | [ollama] Response received (1076 chars)
+2026-05-08 21:45:49.527 | INFO  | [files] Compare took 97328 ms
+2026-05-08 21:46:31.725 | INFO  | [query] provider=Ollama model=qwen2.5-coder:7b q=Generate a rolling 12-month revenue analysis
+2026-05-08 21:46:51.912 | INFO  | [query] provider=Ollama model=qwen2.5-coder:7b q=how year-over-year sales growth using window functions
+2026-05-08 21:47:07.311 | INFO  | [query] provider=Ollama model=qwen2.5-coder:7b q=ank top 3 products per category using ROW_NUMBER()
+2026-05-08 21:47:16.576 | INFO  | [query] provider=Ollama model=qwen2.5-coder:7b q=Rank top 3 products per category using ROW_NUMBER()
+2026-05-08 21:48:10.141 | INFO  | [query] provider=Ollama model=qwen2.5-coder:7b q=show mt top 10 customers by total sales reveu
+2026-05-08 21:48:11.116 | INFO  | [query] Cache hit — semantic match
+2026-05-08 21:48:11.261 | INFO  | [audit] ✅ Logged: divya.v@quinteft.com — SUCCESS — show mt top 10 customers by total sales reveu
+2026-05-08 21:49:30.396 | INFO  | [query] provider=Ollama model=qwen2.5-coder:7b q=Compare sales revenue by sales territory
+2026-05-08 21:52:28.560 | INFO  | [startup] Logging initialized → C:\Users\qam04673\Documents\AI_SQL_AGENT_NextJS\sql-analyst-ui\backend\logs\app_2026-05-08.log
+2026-05-08 21:52:28.728 | INFO  | [embedding] Preloading embedding model...
+2026-05-08 21:52:28.729 | INFO  | [auth] ❌ Auth DB error: create_sql_server_connection() got an unexpected keyword argument 'windows_auth'
+2026-05-08 21:52:49.545 | INFO  | [query] provider=Ollama model=qwen2.5-coder:7b q=Compare sales revenue by sales territory
+2026-05-08 21:52:58.059 | INFO  | No device provided, using cpu
+2026-05-08 21:52:58.060 | INFO  | No device provided, using cpu
+2026-05-08 21:52:59.182 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 21:52:59.207 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-05-08 21:52:59.487 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 21:52:59.513 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-05-08 21:52:59.519 | INFO  | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-05-08 21:52:59.792 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 21:53:00.125 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-05-08 21:53:00.144 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 21:53:00.145 | WARNING | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-08 21:53:00.170 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-05-08 21:53:00.430 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 21:53:00.448 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 21:53:00.464 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+2026-05-08 21:53:00.477 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-05-08 21:53:00.484 | INFO  | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-05-08 21:53:00.492 | INFO  | [chat] deleting session 1071 for user 2
+2026-05-08 21:53:00.498 | INFO  | [chat] deleted 1 messages, 1 sessions
+2026-05-08 21:53:00.762 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 21:53:00.786 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-05-08 21:53:00.805 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 21:53:00.827 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-05-08 21:53:01.104 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 21:53:01.126 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 21:53:01.130 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+2026-05-08 21:53:01.153 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-05-08 21:53:01.412 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 21:53:01.437 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-05-08 21:53:01.449 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-05-08 21:53:01.732 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 21:53:01.748 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 21:53:01.756 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-05-08 21:53:01.859 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-05-08 21:53:02.147 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-05-08 21:53:02.195 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-05-08 21:53:02.426 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 21:53:02.472 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-05-08 21:53:02.492 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-08 21:53:02.782 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-08 21:53:02.842 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-05-08 21:53:03.079 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-08 21:53:03.120 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-08 21:53:03.363 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 21:53:03.389 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-08 21:53:03.407 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-08 21:53:03.672 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 21:53:03.691 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-08 21:53:03.696 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-05-08 21:53:04.073 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 21:53:04.074 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 21:53:04.101 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-08 21:53:04.119 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-05-08 21:53:04.386 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 21:53:04.405 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 21:53:04.411 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-05-08 21:53:04.436 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-08 21:53:04.699 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 21:53:04.720 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-05-08 21:53:04.787 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-08 21:53:05.008 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 21:53:05.038 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-08 21:53:05.314 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-08 21:53:05.456 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-08 21:53:05.607 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-08 21:53:05.850 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 21:53:05.875 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-05-08 21:53:05.930 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-08 21:53:05.954 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-05-08 21:53:06.160 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-05-08 21:53:06.167 | INFO  | [embedding] ✅ Model loaded and ready.
+2026-05-08 21:53:06.222 | INFO  | [known_query] Candidate match (score=2): ['revenue', 'sales']
+2026-05-08 21:53:06.223 | INFO  | [known_query] Candidate match (score=3): ['sales', 'territory', 'sales territory']
+2026-05-08 21:53:06.223 | INFO  | [known_query] Best match score=3 — using known-good SQL
+2026-05-08 21:53:06.223 | INFO  | [query] Known-good match — skipping AI
+2026-05-08 21:53:06.236 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-05-08 21:53:06.251 | INFO  | [embedding] ✅ Model loaded and ready.
+2026-05-08 21:53:06.471 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-08 21:53:17.084 | INFO  | [chat] deleting session 1072 for user 2
+2026-05-08 21:53:19.016 | INFO  | [chat] deleting session 1072 for user 2
+2026-05-08 21:53:19.590 | INFO  | [chat] deleting session 1072 for user 2
+2026-05-08 21:53:19.792 | INFO  | [chat] deleting session 1072 for user 2
+2026-05-08 21:53:19.986 | INFO  | [chat] deleting session 1072 for user 2
+2026-05-08 21:53:20.208 | INFO  | [chat] deleting session 1072 for user 2
+2026-05-08 21:53:20.351 | INFO  | [chat] deleted 0 messages, 1 sessions
+2026-05-08 21:53:20.352 | INFO  | [chat] deleted 0 messages, 0 sessions
+2026-05-08 21:53:20.354 | INFO  | [chat] deleted 0 messages, 0 sessions
+2026-05-08 21:53:20.356 | INFO  | [chat] deleted 0 messages, 0 sessions
+2026-05-08 21:53:20.358 | INFO  | [chat] deleted 0 messages, 0 sessions
+2026-05-08 21:53:20.359 | INFO  | [chat] deleted 0 messages, 0 sessions
+2026-05-08 21:53:21.723 | INFO  | [chat] deleting session 1070 for user 2
+2026-05-08 21:53:21.724 | INFO  | [chat] deleted 0 messages, 1 sessions
+2026-05-08 21:53:23.074 | INFO  | [chat] deleting session 1068 for user 2
+2026-05-08 21:53:23.078 | INFO  | [chat] deleted 0 messages, 1 sessions
+2026-05-08 21:53:24.316 | INFO  | [chat] deleting session 1067 for user 2
+2026-05-08 21:53:24.318 | INFO  | [chat] deleted 0 messages, 1 sessions
+2026-05-08 21:53:50.899 | INFO  | [query] provider=Ollama model=qwen2.5-coder:7b q=Identify inactive customers who haven’t ordered recently
+2026-05-08 21:53:52.670 | INFO  | [known_query] Candidate match (score=2): ['customer', 'order']
+2026-05-08 21:53:52.671 | INFO  | [known_query] Best match score=2 — using known-good SQL
+2026-05-08 21:53:52.671 | INFO  | [query] Known-good match — skipping AI
+2026-05-08 21:53:52.828 | INFO  | [ollama] Calling http://localhost:11434 model=qwen2.5-coder:7b ...
+2026-05-08 21:54:11.134 | INFO  | [ollama] Response received (960 chars)
+2026-05-08 21:54:11.135 | INFO  | [analysis] Generated 960 chars
+2026-05-08 21:54:11.185 | INFO  | [audit] ✅ Logged: divya.v@quinteft.com — SUCCESS — Compare sales revenue by sales territory
+2026-05-08 21:55:02.869 | INFO  | [ollama] Response received (891 chars)
+2026-05-08 21:55:02.869 | INFO  | [analysis] Generated 891 chars
+2026-05-08 21:55:02.951 | INFO  | [audit] ✅ Logged: divya.v@quinteft.com — SUCCESS — Identify inactive customers who haven’t ordered re
+2026-05-08 22:04:39.645 | INFO  | [login] Attempting: 'divya.v@quinteft.com'
+2026-05-08 22:04:39.665 | INFO  | [login] DB user found, hash match: F43CF994... vs F43CF994...
+2026-05-08 22:04:39.669 | INFO  | [login] ✅ DB auth: divya.v@quinteft.com role=Admin
