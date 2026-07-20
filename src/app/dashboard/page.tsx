@@ -38,6 +38,8 @@ interface Message {
   result?:   QueryResult;
   loading?:  boolean;
   errorInfo?: import("@/lib/types").MessageErrorInfo;
+  attachedFiles?: AttachedFile[];
+  rawPrompt?: string;
 }
 interface AttachedFile {
   id: number;
@@ -507,15 +509,15 @@ export default function Dashboard() {
   }, [activeSessionId, connected, apiKey, provider, model, simThreshold, sending, sessions]);
 
   // ── File analysis ─────────────────────────────────────────────────────────
-  async function handleFileAnalysis(prompt: string) {
-    // NOTE: No !connected guard — file analysis uses auth DB, not the user query DB
-    if (attachedFiles.length === 0 || !prompt.trim()) return;
+  async function handleFileAnalysis(prompt: string, cutoffMsgId?: string, overrideFiles?: AttachedFile[]) {
+    const filesToUse = overrideFiles || attachedFiles;
+    if (filesToUse.length === 0 || !prompt.trim()) return;
     if (!apiKey && provider !== "Ollama") { alert("Enter an API key first."); return; }
     const q = prompt.trim();
     const qLower = q.toLowerCase();
 
-    let targetFiles = attachedFiles;
-    if (attachedFiles.length > 1) {
+    let targetFiles = filesToUse;
+    if (filesToUse.length > 1) {
       const compareKeywords = ["compare", "comparison", "vs ", " vs.", "versus", "between", "difference", "differences", "both ", "all files", "each file", "which platform", "which file", "which one", "which has", "higher", "lower", "more than", "less than", "across the files", "across files"];
       const wantsCompare = compareKeywords.some(k => qLower.includes(k));
       if (!wantsCompare) {
@@ -526,7 +528,7 @@ export default function Dashboard() {
           const parts = baseName.split(/[\-_\.\s]+/).filter(p => p.length > 3);
           return qLower.includes(baseName) || parts.some(p => qLower.includes(p)) || (sheetLower && qLower.includes(sheetLower));
         });
-        targetFiles = matched.length >= 1 ? matched : attachedFiles;
+        targetFiles = matched.length >= 1 ? matched : filesToUse;
       }
     }
     const isCompare = targetFiles.length > 1;
@@ -549,14 +551,18 @@ export default function Dashboard() {
     }
 
 
-    const fileLabels = attachedFiles.map(f => `📎 ${f.name}`).join("\n");
-    const userMsg: Message = { id: uid(), role: "user", content: `${fileLabels}\n${q}` };
+    const fileLabels = filesToUse.map(f => `📎 ${f.name}`).join("\n");
+    const userMsg: Message = { id: uid(), role: "user", content: `${fileLabels}\n${q}`, attachedFiles: filesToUse, rawPrompt: q };
     const loadMsg: Message = { id: uid(), role: "assistant", content: "", loading: true };
-    setSessions(prev => prev.map(s => s.id === sid
-      ? { ...s, title: s.messages.length === 0 ? truncate(q, 32) : s.title, messages: [...s.messages, userMsg, loadMsg] }
-      : s
-    ));
-    setInput(""); setSending(true);
+    setSessions(prev => prev.map(s => {
+      if (s.id !== sid) return s;
+      const msgs = cutoffMsgId ? s.messages.slice(0, s.messages.findIndex(m => m.id === cutoffMsgId)) : s.messages;
+      return { ...s, title: msgs.length === 0 ? truncate(q, 32) : s.title, messages: [...msgs, userMsg, loadMsg] };
+    }));
+    if (!overrideFiles) {
+      setInput(""); 
+    }
+    setSending(true);
 
     try {
       let analysisText = ""; let cached = false; let summaryText = "";
@@ -938,7 +944,13 @@ export default function Dashboard() {
                   key={msg.id} 
                   msg={msg} 
                   onEdit={(text) => setInput(text)} 
-                  onRetry={(text) => sendMessage(text, msg.id)} 
+                  onRetry={(text) => {
+                    if (msg.attachedFiles && msg.attachedFiles.length > 0) {
+                      handleFileAnalysis(msg.rawPrompt || text.replace(/^📎 .*\n/gm, ''), msg.id, msg.attachedFiles);
+                    } else {
+                      sendMessage(text, msg.id);
+                    }
+                  }} 
                   onDelete={() => setSessions(prev => prev.map(s => {
                     if (s.id !== activeSessionId) return s;
                     const idx = s.messages.findIndex(m => m.id === msg.id);
@@ -1046,7 +1058,7 @@ export default function Dashboard() {
               <div style={{ display: "flex", alignItems: "flex-end", gap: 8, background: "#f5f5f4", border: "1.5px solid #d3d1c7", borderRadius: 14, padding: "8px 10px", transition: "border-color 0.15s" }} onClick={() => inputRef.current?.focus()}>
 
                 {/* Hidden file input */}
-                <input ref={fileInputRef} type="file" accept=".csv,.xlsx,.xls,.json,.tsv,.txt,.pdf,.doc,.docx,.ppt,.pptx,.png,.jpg,.jpeg,.webp,.bmp,.tiff" style={{ display: "none" }} multiple
+                <input ref={fileInputRef} type="file" accept=".csv,.xlsx,.xls,.json,.tsv,.xml,.txt,.pdf,.doc,.docx,.ppt,.pptx,.png,.jpg,.jpeg,.webp,.bmp,.tiff" style={{ display: "none" }} multiple
                   onChange={async e => {
                     const files = Array.from(e.target.files || []);
                     if (files.length === 0 || !connected) return;

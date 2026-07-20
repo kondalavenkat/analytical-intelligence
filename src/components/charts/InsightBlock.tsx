@@ -102,10 +102,10 @@ export function InsightBlock({ analysis }: { analysis: string }) {
       )}
       <div
         style={{
-          background: "#f8fbff",
-          border: "1px solid #B5D4F4",
+          background: sections.length > 0 ? "#f8fbff" : "transparent",
+          border: sections.length > 0 ? "1px solid #B5D4F4" : "none",
           borderRadius: summaryMatch ? "0 0 10px 10px" : 10,
-          padding: "14px 16px",
+          padding: sections.length > 0 ? "14px 16px" : "4px 0",
         }}
       >
         {sections.length > 0 ? (
@@ -177,34 +177,8 @@ export function InsightBlock({ analysis }: { analysis: string }) {
             ))}
           </div>
         ) : (
-          <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
-            {fallback.map((item, i) => (
-              <div
-                key={i}
-                style={{ display: "flex", gap: 10, alignItems: "flex-start" }}
-              >
-                <span
-                  style={{
-                    flexShrink: 0,
-                    width: 20,
-                    height: 20,
-                    background: "#185FA5",
-                    color: "#fff",
-                    borderRadius: "50%",
-                    fontSize: 10,
-                    fontWeight: 700,
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                  }}
-                >
-                  {i + 1}
-                </span>
-                <span style={{ fontSize: 13, color: "#1a1a18", lineHeight: 1.6 }}>
-                  {item}
-                </span>
-              </div>
-            ))}
+          <div style={{ whiteSpace: "pre-wrap", color: "#1a1a18", fontSize: 14, lineHeight: 1.6 }}>
+            {cleaned}
           </div>
         )}
       </div>

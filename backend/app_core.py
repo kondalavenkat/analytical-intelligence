@@ -498,6 +498,7 @@ def _ollama_completion(system_prompt, user_prompt, model="llama3", base_url="htt
         "num_ctx": 16384,
         "num_predict": 1024
     }
+    options.update(kwargs)
     
     resp = requests.post(
         f"{base_url.rstrip('/')}/api/chat",
@@ -512,7 +513,13 @@ def _ollama_completion(system_prompt, user_prompt, model="llama3", base_url="htt
         },
         timeout=300   # 5 min — local LLMs can be slow on first run
     )
-    resp.raise_for_status()
+    if not resp.ok:
+        try:
+            err_detail = resp.json().get("error", resp.text)
+            raise Exception(f"Ollama Error ({resp.status_code}): {err_detail}")
+        except ValueError:
+            resp.raise_for_status()
+
     result = resp.json()["message"]["content"].strip()
     print(f"[ollama] Response received ({len(result)} chars)")
     return result
@@ -1969,26 +1976,12 @@ CRITICAL RULES:
 
 Python has computed exact values comparing multiple files. Write a clear comparison using the EXACT numbers shown.
 
-OUTPUT FORMAT:
-SUMMARY: [One sentence comparing the files with the key takeaway]
-
-KEY FINDINGS:
-1. [comparison point with exact values from both/all files]
-2. [comparison point]
-3. [comparison point]
-4. [comparison point]
-
-OPPORTUNITIES:
-1. [actionable insight from the comparison]
-2. [actionable insight]
-
-RISK FLAGS:
-1. [concern or notable difference between files]
-
 RULES:
-- Use EXACT numbers from the computed data.
-- Reference each file by name when comparing.
-- No markdown symbols (no ** or # or backticks)."""
+- Answer the user's implicit or explicit question clearly and accurately based on the pre-computed data.
+- Use ACTUAL numbers, names, and values from the computed data.
+- Use rich markdown formatting (tables, bullet points, bold text) to make your answer beautiful and easy to read.
+- Do not use placeholder text.
+- Be specific, data-driven, and concise."""
 
     analysis_text = get_ai_completion(
         summary_system, computed,
@@ -2620,23 +2613,12 @@ def analyse_file_with_ai(df, prompt: str, provider_cfg: dict,
 
     system_prompt = """You are a senior data analyst. Analyse the uploaded file data and answer the user's question.
 
-STRICT OUTPUT FORMAT:
-SUMMARY: One sentence summary.
-
-KEY FINDINGS:
-1. [finding with specific numbers]
-2. [finding]
-3. [finding]
-4. [finding]
-
-OPPORTUNITIES:
-1. [recommendation]
-2. [recommendation]
-
-RISK FLAGS:
-1. [risk or anomaly]
-
-Rules: Use actual numbers. No markdown, no backticks, no headers with #."""
+RULES:
+- Answer the user's question directly and accurately based on the provided data.
+- Use rich markdown formatting to make your answer beautiful and easy to read.
+- Use markdown tables if the user asks you to extract data, list items, or if the information is tabular.
+- Use bullet points or numbered lists where appropriate.
+- Be concise but comprehensive. Use actual numbers."""
 
     user_prompt = (
         f"File: {row_count} rows × {len(columns)} columns\n"

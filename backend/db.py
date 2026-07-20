@@ -177,8 +177,17 @@ def _ensure_chat_log(engine):
                 provider         NVARCHAR(100) NULL,
                 model            NVARCHAR(100) NULL,
                 exec_ms          FLOAT         NULL,
+                hit_count        INT           NOT NULL DEFAULT 1,
                 created_at       DATETIME      NOT NULL DEFAULT GETDATE()
             )
+        """))
+        # Ensure hit_count column exists for existing dbs
+        c.execute(text("""
+            IF NOT EXISTS (
+                SELECT 1 FROM sys.columns 
+                WHERE object_id = OBJECT_ID('dbo.chat_log') AND name = 'hit_count'
+            )
+            ALTER TABLE dbo.chat_log ADD hit_count INT NOT NULL DEFAULT 1
         """))
 
 
@@ -641,20 +650,23 @@ def save_chat_log(engine, session_key: str, user_id: int, user_email: str,
     try:
         with engine.begin() as c:
             c.execute(text("""
+                DECLARE @hc INT;
+                SELECT @hc = ISNULL(MAX(hit_count), 0) + 1 FROM dbo.chat_log WHERE question = :q;
+
                 INSERT INTO dbo.chat_log
                     (session_key, session_title, user_id, user_email,
                      question, input_source,
                      sql_query, analysis, row_count, columns_json,
                      cache_id, source,
                      execution_status, error,
-                     provider, model, exec_ms)
+                     provider, model, exec_ms, hit_count)
                 VALUES
                     (:sk, :st, :uid, :email,
                      :q, :src,
                      :sql, :an, :rc, :cols,
                      :cid, :source,
                      :status, :err,
-                     :pv, :mo, :ms)
+                     :pv, :mo, :ms, @hc)
             """), {
                 "sk":    session_key,
                 "st":    session_title,

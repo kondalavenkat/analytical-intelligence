@@ -188,6 +188,7 @@ CREATE TABLE dbo.chat_log (
     provider         NVARCHAR(100) NULL,
     model            NVARCHAR(100) NULL,
     exec_ms          FLOAT         NULL,
+    hit_count        INT           NOT NULL DEFAULT 1,
 
     created_at       DATETIME      NOT NULL DEFAULT GETDATE()
 );
