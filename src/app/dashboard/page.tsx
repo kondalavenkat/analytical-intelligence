@@ -40,6 +40,7 @@ interface Message {
   errorInfo?: import("@/lib/types").MessageErrorInfo;
   attachedFiles?: AttachedFile[];
   rawPrompt?: string;
+  sources?: string[];
 }
 interface AttachedFile {
   id: number;
@@ -116,6 +117,7 @@ export default function Dashboard() {
   const [historyLoaded, setHistoryLoaded]         = useState(false);
   const [input, setInput]                         = useState("");
   const [sending, setSending]                     = useState(false);
+  const abortControllerRef = useRef<AbortController | null>(null);
 
   // ── Voice ─────────────────────────────────────────────────────────────────
   const [isRecording, setIsRecording]       = useState(false);
@@ -235,6 +237,47 @@ export default function Dashboard() {
     window.addEventListener("paste", handlePaste);
     return () => window.removeEventListener("paste", handlePaste);
   }, [connected]);
+
+  // ── First Impression Engine ───────────────────────────────────────────────
+  const handleFirstImpression = async (fileId: number, fileName: string) => {
+    try {
+      const { getFirstImpression, createSession } = await import("@/lib/api");
+      const res = await getFirstImpression(fileId);
+      if (res.ok && res.impression) {
+        const imp = res.impression;
+        let content = `I've analyzed **${fileName}**.\n\n`;
+        content += `${imp.summary}\n\n`;
+        if (imp.top_insights && imp.top_insights.length > 0) {
+          content += `**Top Insights:**\n`;
+          imp.top_insights.forEach((insight: string) => content += `- ${insight}\n`);
+          content += `\n`;
+        }
+        if (imp.suggested_questions && imp.suggested_questions.length > 0) {
+          content += `**Suggested Questions:**\n`;
+          imp.suggested_questions.forEach((q: string) => content += `- ${q}\n`);
+        }
+
+        const aiMsg: Message = {
+          id: crypto.randomUUID(),
+          role: "assistant",
+          content: content,
+        };
+
+        let targetId = activeSessionId;
+        if (!targetId) {
+          const sRes = await createSession();
+          targetId = String(sRes.session_id);
+          const newSess: Session = { id: targetId, dbId: sRes.session_id, title: "New Chat", createdAt: new Date().toISOString(), messages: [] };
+          setSessions(prev => [newSess, ...prev]);
+          setActiveSessionId(targetId);
+        }
+
+        setSessions(prev => prev.map(s => s.id === targetId ? { ...s, messages: [...s.messages, aiMsg] } : s));
+      }
+    } catch (e) {
+      console.error("First impression error:", e);
+    }
+  };
 
   // ── Auto-reconnect ────────────────────────────────────────────────────────
   useEffect(() => {
@@ -485,17 +528,30 @@ export default function Dashboard() {
       return { ...s, title: msgs.length === 0 ? truncate(q, 32) : s.title, messages: [...msgs, userMsg, loadMsg] };
     }));
     setInput(""); setSending(true);
+    const abortCtrl = new AbortController();
+    abortControllerRef.current = abortCtrl;
 
     try {
-      const result = await runQuery({ question: q, provider, model, api_key: provider !== "Ollama" ? apiKey : undefined, similarity_threshold: simThreshold, session_id: dbSessionId });
+      // Build chat history from current session — last 10 messages (5 turns)
+      const currentSession = sessions.find(s => s.id === sid);
+      const chatHistory = (currentSession?.messages ?? [])
+        .filter(m => !m.loading && m.content)
+        .slice(-10)
+        .map(m => ({ role: m.role, content: String(m.content).slice(0, 400) }));
+
+      const result = await runQuery({ question: q, provider, model, api_key: provider !== "Ollama" ? apiKey : undefined, similarity_threshold: simThreshold, session_id: dbSessionId, chat_history: chatHistory });
+      if (abortCtrl.signal.aborted) return;
+      if (result.error) throw new Error(result.error);
+      
       const summary = result.row_count === 0
         ? "The query returned no results."
         : result.source === "cache"
-          ? `Retrieved from cache in ${Number(result.timing.cache_ms ?? 0).toFixed(0)} ms (${String(result.timing.match_type)} match, ${(Number(result.timing.similarity ?? 1) * 100).toFixed(0)}% similar). Found ${result.row_count.toLocaleString()} records.`
-          : `Query executed in ${Number(result.timing.model_ms).toFixed(0)} ms. Found ${result.row_count.toLocaleString()} records across ${result.columns.length} columns.`;
+          ? `Retrieved from cache in ${Number(result.timing?.cache_ms ?? 0).toFixed(0)} ms (${String(result.timing?.match_type)} match, ${(Number(result.timing?.similarity ?? 1) * 100).toFixed(0)}% similar). Found ${result.row_count.toLocaleString()} records.`
+          : `Query executed in ${Number(result.timing?.model_ms ?? 0).toFixed(0)} ms. Found ${result.row_count.toLocaleString()} records across ${result.columns.length} columns.`;
       const assistantMsg: Message = { id: loadMsg.id, role: "assistant", content: summary, result };
       setSessions(prev => prev.map(s => s.id === sid ? { ...s, messages: s.messages.map(m => m.id === loadMsg.id ? assistantMsg : m) } : s));
     } catch (e: unknown) {
+      if (abortCtrl.signal.aborted) return;
       const rawMsg = e instanceof Error ? e.message : "Query failed";
       const errInfo = { ...parseQueryError(rawMsg), question: q };
       const errMsg: Message = {
@@ -505,7 +561,7 @@ export default function Dashboard() {
         errorInfo: errInfo,
       };
       setSessions(prev => prev.map(s => s.id === sid ? { ...s, messages: s.messages.map(m => m.id === loadMsg.id ? errMsg : m) } : s));
-    } finally { setSending(false); }
+    } finally { abortControllerRef.current = null; setSending(false); }
   }, [activeSessionId, connected, apiKey, provider, model, simThreshold, sending, sessions]);
 
   // ── File analysis ─────────────────────────────────────────────────────────
@@ -563,6 +619,8 @@ export default function Dashboard() {
       setInput(""); 
     }
     setSending(true);
+    const abortCtrl = new AbortController();
+    abortControllerRef.current = abortCtrl;
 
     try {
       let analysisText = ""; let cached = false; let summaryText = "";
@@ -570,20 +628,37 @@ export default function Dashboard() {
       let execMs = 0; let cacheMs = 0;
       const totalRows = targetFiles.reduce((s, f) => s + f.rowCount, 0);
 
+      // Build chat history from current session — last 10 messages (5 turns)
+      const currentSession2 = sessions.find(s => s.id === sid);
+      const chatHistory2 = (currentSession2?.messages ?? [])
+        .filter(m => !m.loading && m.content)
+        .slice(-10)
+        .map(m => ({ role: m.role, content: String(m.content).slice(0, 400) }));
+
       if (isCompare) {
         const { compareFiles } = await import("@/lib/api");
-        const result = await compareFiles({ file_ids: targetFiles.map(f => f.id), prompt: q, provider, model, api_key: provider !== "Ollama" ? apiKey : undefined, base_url: "http://localhost:11434", session_id: dbSessionId });
-        analysisText = result.analysis; cached = result.cached;
+        const result = await compareFiles({ file_ids: targetFiles.map(f => f.id ?? 0), prompt: q, provider, model, api_key: provider !== "Ollama" ? apiKey : undefined, base_url: "http://localhost:11434", session_id: dbSessionId ? String(dbSessionId) : undefined, chat_history: chatHistory2 });
+        if (abortCtrl.signal.aborted) return;
         execMs = result.execution_time_ms ?? 0; cacheMs = result.cache_ms ?? 0;
         const labels = targetFiles.map(f => f.name).join(", ");
         summaryText = `${cached ? "⚡ Cached · " : ""}Compared ${result.file_count} file${result.file_count !== 1 ? "s" : ""} — ${labels}`;
         chartCols = result.chart_data?.columns ?? []; chartRows = result.chart_data?.rows ?? [];
+        analysisText = result.analysis ?? "";
+        const assistantMsg: Message = { 
+          id: loadMsg.id, 
+          role: "assistant", 
+          content: analysisText, 
+          result: { question: q, asked_at: new Date().toISOString(), completed_at: new Date().toISOString(), sql_query: "", source: cached ? "cache" : "model", timing: { cache_ms: cacheMs, exec_ms: execMs }, analysis: analysisText, columns: chartCols, rows: chartRows, row_count: chartRows.length },
+          sources: (result as any).sources
+        };
+        setSessions(prev => prev.map(s => s.id === sid ? { ...s, messages: s.messages.map(m => m.id === loadMsg.id ? assistantMsg : m) } : s));
       } else {
         const { analyzeFile } = await import("@/lib/api");
-        const result = await analyzeFile({ file_id: targetFiles[0].id, prompt: q, provider, model, api_key: provider !== "Ollama" ? apiKey : undefined, base_url: "http://localhost:11434", session_id: dbSessionId });
-        analysisText = result.analysis; cached = result.cached;
+        const result = await analyzeFile({ file_id: targetFiles[0].id ?? 0, prompt: q, provider, model, api_key: provider !== "Ollama" ? apiKey : undefined, base_url: "http://localhost:11434", session_id: dbSessionId ? String(dbSessionId) : undefined, chat_history: chatHistory2 });
+        if (abortCtrl.signal.aborted) return;
         execMs = result.execution_time_ms ?? 0; cacheMs = result.cache_ms ?? 0;
         chartCols = result.chart_data?.columns ?? []; chartRows = result.chart_data?.rows ?? [];
+        analysisText = result.analysis ?? "";
 
         // Dynamic summary — depends on what the AI actually returned, not file type
         const hasTable = chartCols.length > 0 && chartRows.length > 0;
@@ -614,12 +689,13 @@ export default function Dashboard() {
       };
       setSessions(prev => prev.map(s => s.id === sid ? { ...s, messages: s.messages.map(m => m.id === loadMsg.id ? assistantMsg : m) } : s));
     } catch (e: unknown) {
+      if (abortCtrl.signal.aborted) return;
       const rawMsg = e instanceof Error ? e.message : "Analysis failed";
       const { parseQueryError } = await import("@/components/chat/ErrorCard");
       const errInfo = { ...parseQueryError(rawMsg), question: q };
       const errMsg: Message = { id: loadMsg.id, role: "assistant", content: "I encountered an error analysing that file.", errorInfo: errInfo };
       setSessions(prev => prev.map(s => s.id === sid ? { ...s, messages: s.messages.map(m => m.id === loadMsg.id ? errMsg : m) } : s));
-    } finally { setSending(false); }
+    } finally { abortControllerRef.current = null; setSending(false); }
   }
 
   async function handleConnect() {
@@ -1088,6 +1164,7 @@ export default function Dashboard() {
                             ? { id: res.file_id, name: res.file_name, type: res.file_type, rowCount: res.row_count, colCount: res.col_count, columns: res.columns, sheetName: null, imagePreviewUrl: previewUrl }
                             : f
                           ));
+                          handleFirstImpression(res.file_id, res.file_name);
                         } else {
                           const res = await uploadFile(file);
                           if (res.is_multi_sheet && res.sheets && res.sheets.length > 0) {
@@ -1097,6 +1174,7 @@ export default function Dashboard() {
                               if (prev.some(p => p.id === res.file_id)) return prev;
                               return [...prev, { id: res.file_id, name: res.file_name, type: res.file_type, rowCount: res.row_count, colCount: res.col_count, columns: res.columns, sheetName: res.sheet_names?.[0] ?? null }];
                             });
+                            handleFirstImpression(res.file_id, res.file_name);
                           }
                         }
                       }
@@ -1197,12 +1275,37 @@ export default function Dashboard() {
                   onInput={e => { const t = e.target as HTMLTextAreaElement; t.style.height = "auto"; t.style.height = Math.min(t.scrollHeight, 140) + "px"; }}
                 />
 
-                {/* Send button */}
-                <button onClick={() => { if (attachedFiles.length > 0 && input.trim()) handleFileAnalysis(input.trim()); else sendMessage(input); }}
-                  disabled={!input.trim() || sending || !connected}
-                  style={{ width: 34, height: 34, borderRadius: 9, flexShrink: 0, background: input.trim() && connected && !sending ? "#185FA5" : "#d3d1c7", border: "none", cursor: input.trim() && connected ? "pointer" : "not-allowed", display: "flex", alignItems: "center", justifyContent: "center", transition: "background 0.15s" }}>
+                {/* Send / Cancel button */}
+                <button
+                  onClick={() => {
+                    if (sending) {
+                      // Cancel the running request
+                      abortControllerRef.current?.abort();
+                      abortControllerRef.current = null;
+                      setSending(false);
+                      // Remove the loading bubble from the active session
+                      setSessions(prev => prev.map(s => {
+                        if (s.id !== activeSessionId) return s;
+                        return { ...s, messages: s.messages.filter(m => !m.loading) };
+                      }));
+                    } else {
+                      if (attachedFiles.length > 0 && input.trim()) handleFileAnalysis(input.trim());
+                      else sendMessage(input);
+                    }
+                  }}
+                  disabled={!sending && (!input.trim() || !connected)}
+                  title={sending ? "Cancel" : "Send"}
+                  style={{
+                    width: 34, height: 34, borderRadius: 9, flexShrink: 0,
+                    background: sending ? "#D92D20" : (input.trim() && connected ? "#185FA5" : "#d3d1c7"),
+                    border: "none",
+                    cursor: sending || (input.trim() && connected) ? "pointer" : "not-allowed",
+                    display: "flex", alignItems: "center", justifyContent: "center",
+                    transition: "background 0.2s",
+                    boxShadow: sending ? "0 0 0 3px rgba(217,45,32,0.18)" : "none",
+                  }}>
                   {sending
-                    ? <div style={{ width: 14, height: 14, border: "2px solid rgba(255,255,255,0.3)", borderTopColor: "#fff", borderRadius: "50%", animation: "spin 0.65s linear infinite" }} />
+                    ? <svg width="12" height="12" viewBox="0 0 24 24" fill="#fff"><rect x="4" y="4" width="16" height="16" rx="2" /></svg>
                     : <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="19" x2="12" y2="5" /><polyline points="5 12 12 5 19 12" /></svg>
                   }
                 </button>
@@ -1262,7 +1365,7 @@ export default function Dashboard() {
                 else if (["png", "jpg", "jpeg", "webp", "bmp", "tiff", "tif", "gif"].includes(ext)) category = "image_ocr";
                 
                 setAttachedFiles(prev => [...prev, {
-                  id: table.file_id!,
+                  id: table.file_id ?? -(table.id),
                   name: table.file_name,
                   type: ext,
                   category: category as any,

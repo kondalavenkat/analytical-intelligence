@@ -1,0 +1,13 @@
+{
+  "_comment": "Human Resources domain vocabulary",
+  "employee": ["staff", "worker", "associate", "personnel", "headcount", "resource", "team member"],
+  "department": ["division", "business unit", "team", "unit", "section", "function", "cost center"],
+  "salary": ["compensation", "pay", "wages", "remuneration", "ctc", "package", "earnings"],
+  "grade": ["level", "band", "tier", "rank", "designation"],
+  "attrition": ["turnover", "churn", "resignation", "exit", "departure"],
+  "tenure": ["years of service", "experience", "seniority", "duration"],
+  "headcount": ["count", "number of employees", "strength", "workforce size"],
+  "leave": ["absence", "vacation", "pto", "time off"],
+  "performance": ["rating", "appraisal", "review", "score", "kpi"],
+  "recruitment": ["hiring", "onboarding", "joining", "new hire"]
+}

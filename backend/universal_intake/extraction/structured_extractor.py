@@ -1,7 +1,7 @@
 import io
 import re
 import pandas as pd
-from .service import BaseExtractor
+from .service import BaseExtractor, get_extension
 from ..models.standard_document import StandardDocument, FileType, ExtractionStrategy
 
 MAX_PARSE_ROWS = 10_000
@@ -78,7 +78,7 @@ class StructuredExtractor(BaseExtractor):
     """
 
     def extract(self, data: bytes, filename: str) -> StandardDocument:
-        ext = filename.lower().rsplit(".", 1)[-1]
+        ext = get_extension(filename)
         doc = StandardDocument(
             file_type_ext=ext,
             technical_file_type=FileType.STRUCTURED,

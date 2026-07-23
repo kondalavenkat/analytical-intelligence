@@ -143,6 +143,7 @@ export interface QueryParams {
   base_url?:             string;
   similarity_threshold?: number;
   session_id?:           number;
+  chat_history?:         { role: string; content: string }[];  // multi-turn memory
 }
 
 export async function runQuery(params: QueryParams): Promise<QueryResult> {
@@ -302,10 +303,11 @@ export interface FileAnalysisResult {
   file_name:          string;
   row_count:          number;
   col_count:          number;
-  file_category:      "structured" | "document" | "image_ocr" | "unknown"; // NEW — drives render mode
+  file_category:      "structured" | "document" | "image_ocr" | "unknown";
   chart_data?:        { columns: string[]; rows: (string | number)[][] };
   execution_time_ms?: number;
   cache_ms?:          number;
+  sources?:           string[]; // NEW — for evidence engine
 }
 
 export async function uploadFile(
@@ -351,27 +353,43 @@ export async function listFiles(): Promise<{ files: UploadedFile[]; count: numbe
   return request("/files");
 }
 
+export interface FirstImpression {
+  summary: string;
+  doc_type: string;
+  key_entities: string[];
+  top_insights: string[];
+  suggested_questions: string[];
+}
+
+export async function getFirstImpression(fileId: number | string): Promise<{ ok: boolean; impression?: FirstImpression; error?: string }> {
+  return request(`/files/${fileId}/first-impression`);
+}
+
 // IMPORTANT: /files/analyse — British spelling — matches @app.post("/files/analyse") in main.py
 export async function analyzeFile(params: {
-  file_id:   number;
-  prompt:    string;
-  provider:  string;
-  model:     string;
-  api_key?:  string;
-  base_url?: string;
-  session_id?: string;
+  file_id:        number;
+  prompt:         string;
+  provider:       string;
+  model:          string;
+  api_key?:       string;
+  base_url?:      string;
+  session_id?:    string;
+  analysis_mode?: "sql" | "ai_research";   // NEW — switches intelligence mode
+  chat_history?:  { role: string; content: string }[];  // NEW — multi-turn memory
 }): Promise<FileAnalysisResult> {
   return request("/files/analyse", { method: "POST", body: JSON.stringify(params) });
 }
 
 export async function compareFiles(params: {
-  file_ids:  number[];
-  prompt:    string;
-  provider:  string;
-  model:     string;
-  api_key?:  string;
-  base_url?: string;
-  session_id?: string;
+  file_ids:       number[];
+  prompt:         string;
+  provider:       string;
+  model:          string;
+  api_key?:       string;
+  base_url?:      string;
+  session_id?:    string;
+  analysis_mode?: "sql" | "ai_research";
+  chat_history?:  { role: string; content: string }[];
 }): Promise<{
   analysis:          string;
   cached:            boolean;

@@ -1559,13 +1559,70 @@ KEY RULES:
 
     print(f"[files] Final: op={op}, metric={metric}, group_by={group_by}, agg={agg}, n={n}")
 
+    # ── BUSINESS CONTEXT OVERRIDE ─────────────────────────────────────────
+    # If the user is asking a conceptual / business-perspective question
+    # (not a data lookup), force direct_qa so we get a narrative answer
+    # instead of a count/aggregation table — even on structured (CSV) files.
+    BUSINESS_SIGNALS = [
+        "analyse", "analyze", "analysis", "insights", "insight", "overview",
+        "summary", "summarise", "summarize", "business", "perspective",
+        "recommend", "recommendation", "suggest", "suggestion", "advise",
+        "what does this mean", "what can you tell", "tell me about",
+        "explain", "understand", "interpret", "key findings", "findings",
+        "takeaway", "takeaways", "conclusion", "risk", "opportunity",
+        "pattern", "trend", "overall", "highlight", "profile",
+    ]
+    if op not in ("filter", "return_all") and any(sig in prompt_lower for sig in BUSINESS_SIGNALS):
+        op = "direct_qa"
+        print(f"[files] Business-context override -> direct_qa")
+
     # ── Execute Direct QA immediately if chosen ───────────────────────────
-    if op == "direct_qa" and text_content:
-        summary_system = """You are a helpful analyst. Answer the user's question based on the provided text.
-Format your response clearly using rich markdown. Use markdown tables if extracting data, or bullet points if listing items."""
+    if op == "direct_qa":
+        # Build a rich context block using both numeric stats from the df
+        # AND any extracted text (for documents/images).
+        context_parts = []
+
+        if df is not None and not df.empty:
+            num_df = df.select_dtypes(include=["number"])
+            cat_df = df.select_dtypes(include=["object"])
+            stats_block = ""
+            for col in num_df.columns[:10]:
+                s = num_df[col].dropna()
+                if len(s):
+                    stats_block += f"  {col}: total={s.sum():,.2f}, avg={s.mean():,.2f}, min={s.min():,.2f}, max={s.max():,.2f}\n"
+            cat_block = ""
+            for col in cat_df.columns[:6]:
+                vc = df[col].value_counts().head(8)
+                cat_block += f"  {col}: {', '.join(f'{k}={v}' for k,v in vc.items())}\n"
+            sample_block = df.head(20).to_string(index=False)
+            context_parts.append(
+                f"Dataset: {len(df):,} rows x {len(df.columns)} columns\n"
+                f"Columns: {', '.join(df.columns)}\n\n"
+                f"Numeric summaries:\n{stats_block or '  (none)'}\n"
+                f"Categorical breakdowns:\n{cat_block or '  (none)'}\n"
+                f"Sample rows (first 20):\n{sample_block}"
+            )
+
+        if text_content:
+            context_parts.append(f"Extracted document text:\n{text_content[:6000]}")
+
+        full_context = "\n\n---\n\n".join(context_parts) or "No data available."
+
+        summary_system = """You are a senior business analyst providing expert-level insights.
+The user has uploaded a data file. Your job is to answer their question from a business perspective.
+
+RULES:
+- Think like a business analyst. Do NOT talk about COUNT queries or SQL.
+- Use the EXACT numbers from the data provided. Never make up values.
+- Structure your response with clear headings, bullet points, and bold key figures.
+- Include: key highlights, patterns, risks/anomalies, and actionable takeaways where relevant.
+- Use rich markdown formatting (headings, bold, bullet lists, tables where helpful).
+- Be comprehensive but concise. Match the depth of your answer to what the user asked."""
+
         analysis = get_ai_completion(
-            summary_system, f"Text:\n{text_content}\n\nQuestion: {prompt}",
-            provider=provider_cfg["provider"], temperature=0.0, max_tokens=1200,
+            summary_system,
+            f"Data Context:\n{full_context}\n\nUser Question: {prompt}",
+            provider=provider_cfg["provider"], temperature=0.1, max_tokens=1600,
             **{k:v for k,v in provider_cfg.items() if k not in ("provider","temperature","max_tokens")}
         )
         return {"analysis": analysis, "chart_data": {"columns": [], "rows": []}}
@@ -1727,7 +1784,7 @@ RULES:
 
     analysis = get_ai_completion(
         summary_system, computed,
-        provider=provider_cfg["provider"], temperature=0.0, max_tokens=1200,
+        provider=provider_cfg["provider"], temperature=0.0, max_tokens=2000,
         **{k:v for k,v in provider_cfg.items() if k not in ("provider","temperature","max_tokens")}
     )
 
@@ -1819,7 +1876,7 @@ CRITICAL RULES:
     try:
         plan_raw = get_ai_completion(
             plan_system, f"User question: {prompt}\n{profile_text}",
-            provider=provider_cfg["provider"], temperature=0.0, max_tokens=400,
+            provider=provider_cfg["provider"], temperature=0.0, max_tokens=900,
             **{k:v for k,v in provider_cfg.items() if k not in ("provider","temperature","max_tokens")}
         )
         clean = plan_raw.strip()

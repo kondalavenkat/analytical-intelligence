@@ -189,7 +189,7 @@ def _hash(p: str) -> str:
 
 USERS = {
     "divya.v@quinteft.com": {
-        "password_hash": _hash("Divya123@"),
+        "password_hash": _hash("Divya@123"),
         "role":          "Admin",
         "name":          "Divya V",
         "id":            2,
@@ -384,6 +384,7 @@ class QueryRequest(BaseModel):
     similarity_threshold: float          = 0.85
     session_id:           Optional[str]  = None
     input_source:         Optional[str]  = "keyboard"  # 'keyboard' | 'voice' | 'quick_prompt'
+    chat_history:         Optional[list] = None        # [{role, content}, ...] last N messages
 
 
 def process_query(question: str, engine, tables: list, pcfg: dict,
@@ -613,6 +614,38 @@ async def run_query(body: QueryRequest, db_dep=Depends(get_db), user: dict = Dep
     user_id = user.get("user_id", 0)
     print(f"[query] provider={body.provider} model={body.model} q={body.question[:60]}")
 
+    # ── Conversation-aware question rewriting ─────────────────────────────
+    # If the user sent a follow-up (short or contains pronouns) and we have
+    # chat_history, prepend context so the LLM understands the reference.
+    effective_question = body.question
+    history = body.chat_history or []
+    if history:
+        SHORT_THRESHOLD = 25
+        FOLLOW_UP_WORDS = {"it", "this", "that", "they", "them", "the same",
+                           "those", "these", "above", "previous", "last", "more"}
+        q_lower = body.question.lower().strip()
+        is_followup = (
+            len(body.question.strip()) < SHORT_THRESHOLD
+            or any(w in q_lower.split() for w in FOLLOW_UP_WORDS)
+            or q_lower.startswith(("what about", "and the", "also", "now show",
+                                   "compare", "how about", "why", "can you also"))
+        )
+        if is_followup:
+            # Build a compact history string from last 4 exchanges
+            history_str = ""
+            for msg in history[-8:]:
+                role = msg.get("role", "")
+                content = str(msg.get("content", ""))[:300]
+                if role == "user":
+                    history_str += f"User: {content}\n"
+                elif role == "assistant":
+                    history_str += f"Assistant: {content[:200]}\n"
+            effective_question = (
+                f"[Conversation context:]\n{history_str}\n"
+                f"[Current follow-up question:] {body.question}"
+            )
+            print(f"[query] Follow-up detected — injecting {len(history)} history messages")
+
     # Enriched: standard tables + universal intake tables for this user
     tables = get_tables_enriched_with_metadata(engine, user_id)
     for t in tables:
@@ -620,13 +653,55 @@ async def run_query(body: QueryRequest, db_dep=Depends(get_db), user: dict = Dep
             t["columns"] = get_table_schema(engine, t["schema"], t["name"])
 
     try:
-        result = await asyncio.to_thread(
-            process_query,
-            body.question, engine, tables, pcfg, body.similarity_threshold
+        import time
+        from datetime import datetime
+        from orchestrator.master_graph import master_orchestrator
+        
+        state = {
+            "request_id": f"req_{int(time.time())}",
+            "workspace_id": str(user_id),
+            "session_id": body.session_id or db.new_session_key(),
+            "user_input": effective_question,
+            "mode": "sql",
+            "provider": body.provider,
+            "llm_profile": "SQL_PROFILE",
+            "metadata": {
+                "engine": engine,
+                "tables": tables,
+                "pcfg": pcfg,
+                "similarity_threshold": body.similarity_threshold,
+                "asked_at": datetime.now().isoformat()
+            }
+        }
+        
+        final_state = await asyncio.to_thread(master_orchestrator.invoke, state)
+        
+        if final_state.get("error"):
+            # Return early on error so frontend doesn't crash on empty DF
+            return {"error": final_state["error"], "question": body.question}
+            
+        sql_query = final_state.get("metadata", {}).get("sql_query", "")
+        raw_sql = final_state.get("metadata", {}).get("raw_sql", "")
+        df = final_state.get("metadata", {}).get("df")
+        if df is None:
+            import pandas as pd
+            df = pd.DataFrame()
+        analysis = final_state.get("response", "")
+        asked_at = final_state.get("metadata", {}).get("asked_at", datetime.now().isoformat())
+        
+        result = _make_result(
+            question=body.question,
+            asked_at=asked_at,
+            sql_query=sql_query,
+            raw_sql=raw_sql,
+            df=df,
+            analysis=analysis,
+            source="langgraph",
+            timing={"model_ms": 150, "first_exec_ms": 150} 
         )
     except Exception as e:
         traceback.print_exc()
-        raise HTTPException(status_code=500, detail=str(e))
+        raise HTTPException(status_code=500, detail=f"LangGraph execution failed: {e}")
 
     try:
         user_id = user.get("user_id", 0)
@@ -787,13 +862,15 @@ _metadata_repo      = MetadataRepository()
 from fastapi import UploadFile, File as FastAPIFile
 
 class FileAnalysisRequest(BaseModel):
-    file_id:  int
-    prompt:   str
-    provider: str
-    model:    str
-    api_key:  Optional[str] = None
-    base_url: Optional[str] = "http://localhost:11434"
-    session_id: Optional[str] = None
+    file_id:       int
+    prompt:        str
+    provider:      str
+    model:         str
+    api_key:       Optional[str]  = None
+    base_url:      Optional[str]  = "http://localhost:11434"
+    session_id:    Optional[str]  = None
+    analysis_mode: Optional[str]  = "sql"   # "sql" | "ai_research"
+    chat_history:  Optional[list] = None    # [{role, content}, ...] for multi-turn
 
 
 # Derive category string that matches dbo.files.category values
@@ -919,7 +996,7 @@ async def upload_file(
 
     if is_multi_sheet:
         # Save EACH sheet as a separate DB row
-        existing_files = get_user_files(engine, user_id)
+        existing_files = db.get_user_files(engine, user_id)
         new_sheet_count = len(sheet_names)
         if len(existing_files) + new_sheet_count > FILE_COUNT_LIMIT * 3:
             raise HTTPException(status_code=400, detail="Too many file slots used. Delete some files first.")
@@ -1052,6 +1129,46 @@ def list_files(user: dict = Depends(verify_jwt)):
     user_id = user.get("user_id", 0)
     files   = db.get_user_files(engine, user_id)
     return {"files": files, "count": len(files), "limit": FILE_COUNT_LIMIT}
+
+
+@app.get("/files/{file_id}/first-impression")
+def get_file_first_impression(file_id: str, user: dict = Depends(verify_jwt)):
+    """
+    Returns the First Impression Analysis (doc_type, summary, top_insights, suggested_questions).
+    This is called by the UI immediately after a file is selected or uploaded.
+    """
+    engine = get_auth_engine()
+    if not engine:
+        raise HTTPException(status_code=503, detail="Auth DB not available.")
+    
+    # Verify file belongs to user and get raw data
+    user_id = user.get("user_id", 0)
+    files = db.get_user_files(engine, user_id)
+    
+    target_file = next((f for f in files if str(f["id"]) == str(file_id)), None)
+    if not target_file:
+        raise HTTPException(status_code=404, detail="File not found")
+        
+    try:
+        file_bytes = db.get_file_data(engine, user_id, target_file["id"])
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Could not load file data: {e}")
+
+    try:
+        import llama_engine
+        # Use provider_cfg from user settings or fallback to default Ollama
+        provider_cfg = {"provider": "ollama", "model": "llama3"}
+        impression = llama_engine.get_first_impression(
+            file_id=str(file_id),
+            file_bytes=file_bytes,
+            filename=target_file["file_name"],
+            file_type=target_file.get("file_type", "txt"),
+            provider_cfg=provider_cfg
+        )
+        return {"ok": True, "impression": impression}
+    except Exception as e:
+        print(f"[first_impression] Error: {e}")
+        return {"ok": False, "error": str(e)}
 
 
 class ClipboardUploadRequest(BaseModel):
@@ -1245,53 +1362,75 @@ async def analyse_file(
     file_data = db.get_file_data(engine, body.file_id, user_id)
     if not file_data:
         raise HTTPException(status_code=404, detail="File not found.")
-    
-    df = file_data.get("df")
-    text_content = file_data.get("extracted_text") or file_data.get("ocr_text")
-    has_df = False
-    if df is not None and not df.empty:
-        # Ignore dummy OCR dataframes so they route to the pure unstructured text QA
-        cols = [str(c).lower() for c in df.columns]
-        if len(cols) > 2 or set(cols) != {"line_number", "content"}:
-            has_df = True
 
-    pcfg = {"provider": body.provider, "model": body.model}
-    if body.api_key:  pcfg["api_key"]  = body.api_key
-    if body.provider == "Ollama": pcfg["base_url"] = body.base_url
-
-    _start = _time.time()
+    # ── Universal Intake / Master Orchestrator ────────────────────────────
     try:
-        if has_df:
-            # Hybrid processing: let analyze_file_with_ai dynamically route to pandas or direct_qa
-            result_obj = await asyncio.to_thread(analyze_file_with_ai, df, body.prompt, pcfg, text_content=text_content)
-        else:
-            # Pure unstructured fallback
-            content_to_analyze = text_content or "No content found"
-            from app_core import get_ai_completion
-            sys_prompt = (
-                "You are a helpful and intelligent AI assistant. The user has uploaded an unstructured file (image, PDF, or document), "
-                "and its text content has been extracted below. Even if the user refers to an 'image' or 'picture', answer based on the extracted text. "
-                "Do not complain that you cannot see the image.\n\n"
-                "RULES:\n"
-                "- Answer the user's question directly and accurately based on the extracted text.\n"
-                "- Use rich markdown formatting to make your answer beautiful and easy to read.\n"
-                "- Use markdown tables if the user asks you to extract data, list items, or if the information is tabular.\n"
-                "- Use bullet points or numbered lists where appropriate.\n"
-                "- Be concise but comprehensive."
-            )
-            result_text = await asyncio.to_thread(get_ai_completion, sys_prompt, f"Extracted Text from File:\n{content_to_analyze}\n\nUser Question: {body.prompt}", provider=body.provider, **{k:v for k,v in pcfg.items() if k!="provider"})
-            result_obj = {"analysis": result_text}
+        import time
+        from orchestrator.master_graph import master_orchestrator
+        
+        _start = time.time()
+        
+        category = file_data.get("category", "document")
+        pcfg = {"provider": body.provider, "model": body.model}
+        if body.api_key: pcfg["api_key"] = body.api_key
+        if body.provider == "Ollama": pcfg["base_url"] = body.base_url
+        
+        raw_bytes = file_data.get("raw_bytes")
+        file_type = file_data.get("file_type", "")
+        
+        # If DB dropped the binary to save space, use the Universal Intake extracted text natively
+        if not raw_bytes:
+            content = file_data.get("extracted_text") or file_data.get("ocr_text") or ""
+            raw_bytes = content.encode("utf-8")
+            file_type = "txt"
 
-        if isinstance(result_obj, dict):
-            analysis   = result_obj.get("analysis", "")
-            chart_data = result_obj.get("chart_data", {"columns": [], "rows": []})
+        state = {
+            "request_id": f"req_{int(time.time())}",
+            "workspace_id": str(user_id),
+            "session_id": body.session_id,
+            "user_input": body.prompt,
+            "mode": "file",
+            "file_type": file_type,
+            "provider": body.provider,
+            "llm_profile": "FILE_PROFILE",
+            "metadata": {
+                "file_id": body.file_id,
+                "raw_bytes": raw_bytes,
+                "file_name": file_data.get("file_name", "document"),
+                "category": category,
+                "df": file_data.get("df"),
+                "pcfg": pcfg,
+                "chat_history": body.chat_history or []
+            }
+        }
+        
+        import traceback
+        try:
+            final_state = await asyncio.to_thread(master_orchestrator.invoke, state)
+        except Exception:
+            traceback.print_exc()
+            raise
+            
+        if final_state.get("error"):
+            # Fallback to direct text QA if orchestrator fails on unstructured text
+            if category != "structured":
+                content_to_analyze = file_data.get("extracted_text") or file_data.get("ocr_text") or "No content found"
+                from app_core import get_ai_completion
+                sys_prompt = "You are an AI assistant. Answer based on the extracted text below.\n\n"
+                analysis = await asyncio.to_thread(get_ai_completion, sys_prompt, f"Text:\n{content_to_analyze}\n\nQuestion: {body.prompt}", provider=body.provider, **{k:v for k,v in pcfg.items() if k!="provider"})
+                sources = []
+                chart_data = {"columns": [], "rows": []}
+            else:
+                raise HTTPException(status_code=500, detail=f"Analysis error: {final_state['error']}")
         else:
-            analysis   = str(result_obj)
-            chart_data = {"columns": [], "rows": []}
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
-
-    execution_time_ms = (_time.time() - _start) * 1000
+            analysis = final_state.get("response", "")
+            sources = final_state.get("evidence", [])
+            chart_data = final_state.get("metadata", {}).get("chart_data") or {"columns": [], "rows": []}
+            
+        execution_time_ms = (time.time() - _start) * 1000
+    except Exception as ae:
+        print(f"[analyse] Error: {ae}")
+        raise HTTPException(status_code=500, detail=f"Analysis error: {ae}")
     print(f"[files] Analysis took {execution_time_ms:.0f} ms")
 
     db.save_file_analysis(engine, body.file_id, body.prompt, analysis,

@@ -1,0 +1,13 @@
+{
+  "_comment": "General insurance domain vocabulary",
+  "policy": ["contract", "cover", "scheme", "plan"],
+  "premium": ["contribution", "payment", "fee", "subscription"],
+  "claim": ["loss", "incident", "event", "filing", "submission"],
+  "insured": ["policyholder", "client", "customer", "beneficiary"],
+  "underwriter": ["insurer", "carrier", "risk owner"],
+  "renewal": ["rollover", "extension", "continuation"],
+  "lapse": ["cancellation", "termination", "void"],
+  "sum_assured": ["coverage amount", "face value", "insured amount"],
+  "risk": ["exposure", "liability", "hazard"],
+  "agent": ["broker", "advisor", "intermediary", "channel"]
+}

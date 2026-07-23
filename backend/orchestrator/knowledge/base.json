@@ -1,0 +1,13 @@
+{
+  "_comment": "Universal business vocabulary — loaded by all domains",
+  "revenue": ["sales", "turnover", "earnings", "income", "net revenue", "gross revenue", "proceeds", "receipts", "top line", "total sales", "total revenue", "net sales", "gross sales"],
+  "profit": ["margin", "net income", "gain", "net profit", "gross profit", "bottom line", "net earnings", "profit margin"],
+  "cost": ["expense", "expenditure", "spend", "outlay", "charges", "overhead", "operating cost"],
+  "price": ["rate", "fee", "tariff", "unit price", "selling price", "list price"],
+  "amount": ["value", "sum", "total", "balance", "outstanding", "payment", "disbursement"],
+  "quantity": ["volume", "units", "count", "qty", "pieces", "items sold", "units sold"],
+  "date": ["period", "time", "month", "year", "quarter", "day", "week", "timestamp", "sale date", "order date"],
+  "category": ["segment", "class", "type", "kind", "classification", "bucket", "tier"],
+  "status": ["state", "stage", "condition", "flag", "indicator"],
+  "region": ["area", "zone", "territory", "location", "district", "geography", "site"]
+}

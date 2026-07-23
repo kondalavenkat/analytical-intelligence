@@ -39,13 +39,13 @@ class FileClassifier:
 
     @staticmethod
     def _has_text(data: bytes) -> bool:
-        """Check if PDF has extractable text (not scanned image)."""
+        """Check if PDF has extractable text (not scanned image) using unstructured fast strategy."""
         try:
-            import pdfplumber
-            with pdfplumber.open(io.BytesIO(data)) as pdf:
-                # Check up to first 3 pages
-                text = "".join(p.extract_text() or "" for p in pdf.pages[:3])
-                return len(text.strip()) > 100
+            from unstructured.partition.pdf import partition_pdf
+            # Use 'fast' strategy to just grab text quickly without OCR
+            elements = partition_pdf(file=io.BytesIO(data), strategy="fast")
+            text = "".join(str(el) for el in elements)
+            return len(text.strip()) > 100
         except Exception as e:
             print(f"[FileClassifier] PDF text check failed: {e}")
             return False

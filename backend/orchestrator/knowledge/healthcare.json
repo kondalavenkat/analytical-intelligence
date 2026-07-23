@@ -1,0 +1,13 @@
+{
+  "_comment": "Healthcare and insurance domain vocabulary",
+  "patient": ["member", "insured", "claimant", "beneficiary", "enrollee"],
+  "claim": ["submission", "bill", "invoice", "request"],
+  "diagnosis": ["condition", "icd code", "disease", "ailment"],
+  "provider": ["doctor", "hospital", "physician", "specialist", "network"],
+  "premium": ["contribution", "subscription", "fee", "plan cost"],
+  "coverage": ["benefit", "policy", "plan", "entitlement"],
+  "deductible": ["excess", "copay", "out of pocket"],
+  "admission": ["inpatient", "hospitalisation", "stay"],
+  "outpatient": ["opd", "consultation", "visit"],
+  "procedure": ["treatment", "surgery", "intervention", "service"]
+}

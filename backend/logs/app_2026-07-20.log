@@ -19515,3 +19515,1458 @@ error loading model: unknown model architecture: 'mllama'
 2026-07-20 22:53:44.494 | INFO  | 1 change detected
 2026-07-20 22:53:44.859 | INFO  | 1 change detected
 2026-07-20 22:53:45.213 | INFO  | 1 change detected
+2026-07-20 23:33:17.702 | INFO  | [startup] Logging initialized → C:\Users\qam04800.QUINTEFT\Downloads\SQL_Data_Analysis_Agent-voice\backend\logs\app_2026-07-20.log
+2026-07-20 23:33:21.935 | INFO  | [startup] Logging initialized → C:\Users\qam04800.QUINTEFT\Downloads\SQL_Data_Analysis_Agent-voice\backend\logs\app_2026-07-20.log
+2026-07-20 23:33:41.167 | INFO  | [embedding] Preloading embedding model...
+2026-07-20 23:33:41.168 | INFO  | [voice] Loading Whisper model: tiny.en ...
+2026-07-20 23:33:42.186 | INFO  | [auth] ✅ Connected to auth DB: AdventureWorks2025 on QFTCHNLPT-04800
+2026-07-20 23:33:42.186 | INFO  | [startup] Auth engine ready (waited 1s) - initialising all tables...
+2026-07-20 23:33:42.244 | INFO  | HTTP Request: GET https://huggingface.co/api/models/Systran/faster-whisper-tiny.en/revision/main "HTTP/1.1 200 OK"
+2026-07-20 23:33:42.965 | INFO  | [voice] ✅ Whisper model 'tiny.en' ready.
+2026-07-20 23:33:43.559 | INFO  | [schema] 13 universal intake table(s) added for user 2
+2026-07-20 23:33:56.451 | INFO  | No device provided, using cpu
+2026-07-20 23:33:56.686 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-20 23:33:56.687 | WARNING | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-07-20 23:33:56.697 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json "HTTP/1.1 200 OK"
+2026-07-20 23:33:56.931 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-20 23:33:56.940 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-07-20 23:33:56.947 | INFO  | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-07-20 23:33:57.169 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-20 23:33:57.180 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-07-20 23:33:57.410 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-07-20 23:33:57.425 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/README.md "HTTP/1.1 200 OK"
+2026-07-20 23:33:57.659 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-20 23:33:57.667 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json "HTTP/1.1 200 OK"
+2026-07-20 23:33:57.895 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-20 23:33:57.903 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-07-20 23:33:58.138 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-07-20 23:33:58.369 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-20 23:33:58.380 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+2026-07-20 23:33:58.772 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-07-20 23:33:58.999 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-07-20 23:33:59.226 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-07-20 23:33:59.455 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-07-20 23:33:59.683 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-20 23:33:59.690 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-07-20 23:33:59.939 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-20 23:33:59.948 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+2026-07-20 23:34:00.187 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-20 23:34:00.195 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+2026-07-20 23:34:00.423 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-20 23:34:00.432 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-07-20 23:34:00.675 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-07-20 23:34:00.902 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-07-20 23:34:01.253 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-20 23:34:01.262 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-07-20 23:34:01.495 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-07-20 23:34:01.499 | INFO  | [embedding] ✅ Model loaded and ready.
+2026-07-20 23:34:29.626 | INFO  | [schema] 13 universal intake table(s) added for user 2
+2026-07-20 23:34:48.853 | INFO  | [db:chat] save_chat_log error: (pyodbc.ProgrammingError) ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'hit_count'. (207) (SQLExecDirectW); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'hit_count'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Statement(s) could not be prepared. (8180)")
+[SQL: 
+                DECLARE @hc INT;
+                SELECT @hc = ISNULL(MAX(hit_count), 0) + 1 FROM dbo.chat_log WHERE question = ?;
+
+                INSERT INTO dbo.chat_log
+                    (session_key, session_title, user_id, user_email,
+                     question, input_source,
+                     sql_query, analysis, row_count, columns_json,
+                     cache_id, source,
+                     execution_status, error,
+                     provider, model, exec_ms, hit_count)
+                VALUES
+                    (?, ?, ?, ?,
+                     ?, ?,
+                     ?, ?, ?, ?,
+                     ?, ?,
+                     ?, ?,
+                     ?, ?, ?, @hc)
+            ]
+[parameters: ('Session Started', 'f0622642-d5c3-4adb-be80-cd2bd3cdb2fc', 'Session Started', 2, 'divya.v@quinteft.com', 'Session Started', 'init', '', '', None, '[]', None, None, 'SUCCESS', None, '', '', 0)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-07-20 23:37:31.171 | INFO  | [Orchestrator] FileType = structured
+2026-07-20 23:37:31.172 | INFO  | [Orchestrator] Strategy = structured
+2026-07-20 23:37:31.182 | INFO  | [ExtractionService] Using StructuredExtractor for 'clean_sales.csv'
+2026-07-20 23:37:31.189 | INFO  | [StructuredExtractor] Parsed CSV: 50 rows, encoding=utf-8
+2026-07-20 23:37:31.214 | INFO  | [Orchestrator] Done — clean_sales.csv | subtype=generic | confidence=97% | flagged=False | time=43ms
+2026-07-20 23:37:31.387 | INFO  | [DynamicSQLEngine] Ingested 50 rows into [ui_generic_2_822e564f]
+2026-07-20 23:37:31.427 | INFO  | [MetadataRepository] Registered doc metadata id=38
+2026-07-20 23:38:23.109 | INFO  | [Orchestrator] FileType = structured
+2026-07-20 23:38:23.110 | INFO  | [Orchestrator] Strategy = structured
+2026-07-20 23:38:23.110 | INFO  | [ExtractionService] Using StructuredExtractor for 'clean_sales.csv'
+2026-07-20 23:38:23.112 | INFO  | [StructuredExtractor] Parsed CSV: 50 rows, encoding=utf-8
+2026-07-20 23:38:23.125 | INFO  | [Orchestrator] Done — clean_sales.csv | subtype=generic | confidence=97% | flagged=False | time=16ms
+2026-07-20 23:38:23.174 | INFO  | [DynamicSQLEngine] Created table [ui_generic_2_822e564f]
+2026-07-20 23:38:23.228 | INFO  | [DynamicSQLEngine] Ingested 50 rows into [ui_generic_2_822e564f]
+2026-07-20 23:38:23.277 | INFO  | [MetadataRepository] Registered doc metadata id=39
+2026-07-20 23:38:25.314 | INFO  | [ollama] Calling http://localhost:11434 model=gemma:7b ...
+2026-07-20 23:39:13.522 | INFO  | [ollama] Response received (94 chars)
+2026-07-20 23:39:13.523 | INFO  | [files] AI plan: {'operation': 'top_n', 'metric_column': 'Revenue', 'n': 5, 'agg': 'sum'}
+2026-07-20 23:39:13.527 | INFO  | [files] Auto-picked group_by: Product
+2026-07-20 23:39:13.528 | INFO  | [files] Final: op=top_n, metric=None, group_by=Product, agg=sum, n=5
+2026-07-20 23:39:13.543 | INFO  | [ollama] Calling http://localhost:11434 model=gemma:7b ...
+2026-07-20 23:39:51.642 | INFO  | [ollama] Response received (292 chars)
+2026-07-20 23:39:51.645 | INFO  | [files] Analysis took 86332 ms
+2026-07-20 23:39:51.684 | INFO  | [db:chat] save_chat_log error: (pyodbc.ProgrammingError) ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'hit_count'. (207) (SQLExecDirectW); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'hit_count'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Statement(s) could not be prepared. (8180)")
+[SQL: 
+                DECLARE @hc INT;
+                SELECT @hc = ISNULL(MAX(hit_count), 0) + 1 FROM dbo.chat_log WHERE question = ?;
+
+                INSERT INTO dbo.chat_log
+                    (session_key, session_title, user_id, user_email,
+                     question, input_source,
+                     sql_query, analysis, row_count, columns_json,
+                     cache_id, source,
+                     execution_status, error,
+                     provider, model, exec_ms, hit_count)
+                VALUES
+                    (?, ?, ?, ?,
+                     ?, ?,
+                     ?, ?, ?, ?,
+                     ?, ?,
+                     ?, ?,
+                     ?, ?, ?, @hc)
+            ]
+[parameters: ('What are the top-selling products based on revenue?', 'f0622642-d5c3-4adb-be80-cd2bd3cdb2fc', 'What are the top-selling products based on revenue?', 2, 'divya.v@quinteft.com', 'What are the top-selling products based on revenue?', 'keyboard', '', '## Top-Selling Products Based on Revenue\n\nBased on the pre-computed data, the top-selling products based on revenue are:\n\n* **Keyboard:** $30,172 ... (2 characters truncated) ... 4\n* **Monitor:** $24,719.11\n* **Laptop:** $23,198.11\n\nThese three products account for **88.7%** of the total revenue generated by product sales.', 5, '["Product", "count"]', None, 'model', 'SUCCESS', None, 'Ollama', 'gemma:7b', 86331.82621002197)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-07-20 23:47:00.806 | INFO  | [ollama] Calling http://localhost:11434 model=gemma:7b ...
+2026-07-20 23:47:43.167 | INFO  | [ollama] Response received (94 chars)
+2026-07-20 23:47:43.169 | INFO  | [files] AI plan: {'operation': 'top_n', 'metric_column': 'Revenue', 'n': 3, 'agg': 'sum'}
+2026-07-20 23:47:43.173 | INFO  | [files] Auto-picked group_by: Product
+2026-07-20 23:47:43.173 | INFO  | [files] Final: op=top_n, metric=None, group_by=Product, agg=sum, n=3
+2026-07-20 23:47:43.190 | INFO  | [ollama] Calling http://localhost:11434 model=gemma:7b ...
+2026-07-20 23:48:24.307 | INFO  | [ollama] Response received (292 chars)
+2026-07-20 23:48:24.309 | INFO  | [files] Analysis took 83507 ms
+2026-07-20 23:48:24.354 | INFO  | [db:chat] save_chat_log error: (pyodbc.ProgrammingError) ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'hit_count'. (207) (SQLExecDirectW); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'hit_count'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Statement(s) could not be prepared. (8180)")
+[SQL: 
+                DECLARE @hc INT;
+                SELECT @hc = ISNULL(MAX(hit_count), 0) + 1 FROM dbo.chat_log WHERE question = ?;
+
+                INSERT INTO dbo.chat_log
+                    (session_key, session_title, user_id, user_email,
+                     question, input_source,
+                     sql_query, analysis, row_count, columns_json,
+                     cache_id, source,
+                     execution_status, error,
+                     provider, model, exec_ms, hit_count)
+                VALUES
+                    (?, ?, ?, ?,
+                     ?, ?,
+                     ?, ?, ?, ?,
+                     ?, ?,
+                     ?, ?,
+                     ?, ?, ?, @hc)
+            ]
+[parameters: ('The top-selling product by revenue is Keyboard, followed by Headphones and Mouse .', 'f0622642-d5c3-4adb-be80-cd2bd3cdb2fc', 'The top-selling product by revenue is Keyboard, followed by ', 2, 'divya.v@quinteft.com', 'The top-selling product by revenue is Keyboard, followed by Headphones and Mouse .', 'keyboard', '', '## Top-Selling Products by Revenue\n\nBased on the pre-computed data, the top-selling products by revenue are:\n\n* **Keyboard:** $30,172.24 (1 sale) ... (2 characters truncated) ... * **Headphones:** $4,785.63 (1 sale)\n* **Mouse:** $2,4719.11 (1 sale)\n\nThese three products account for **35.3%** of total revenue in the dataset.', 3, '["Product", "count"]', None, 'model', 'SUCCESS', None, 'Ollama', 'gemma:7b', 83507.17115402222)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-07-20 23:51:48.736 | INFO  | [Orchestrator] FileType = structured
+2026-07-20 23:51:48.737 | INFO  | [Orchestrator] Strategy = structured
+2026-07-20 23:51:48.737 | INFO  | [ExtractionService] Using StructuredExtractor for 'employee_data (1).xlsx'
+2026-07-20 23:51:50.168 | INFO  | [StructuredExtractor] Opened Excel with engine=openpyxl
+2026-07-20 23:51:50.168 | INFO  | [StructuredExtractor] Excel sheets: ['HR_Master', 'Payroll', 'Performance']
+2026-07-20 23:51:50.211 | INFO  | [StructuredExtractor] Sheet 'HR_Master': 50 rows
+2026-07-20 23:51:50.242 | INFO  | [StructuredExtractor] Sheet 'Payroll': 51 rows
+2026-07-20 23:51:50.278 | INFO  | [StructuredExtractor] Sheet 'Performance': 50 rows
+2026-07-20 23:51:50.283 | INFO  | [Orchestrator] Done — employee_data (1).xlsx | subtype=generic | confidence=97% | flagged=False | time=1548ms
+2026-07-20 23:51:50.346 | INFO  | [DynamicSQLEngine] Created table [ui_generic_2_2fa56d58]
+2026-07-20 23:51:50.635 | INFO  | [DynamicSQLEngine] Ingested 50 rows into [ui_generic_2_2fa56d58]
+2026-07-20 23:52:15.418 | INFO  | [Orchestrator] FileType = structured
+2026-07-20 23:52:15.419 | INFO  | [Orchestrator] Strategy = structured
+2026-07-20 23:52:15.419 | INFO  | [ExtractionService] Using StructuredExtractor for 'employee_data (1).xlsx'
+2026-07-20 23:52:15.434 | INFO  | [StructuredExtractor] Opened Excel with engine=openpyxl
+2026-07-20 23:52:15.435 | INFO  | [StructuredExtractor] Excel sheets: ['HR_Master', 'Payroll', 'Performance']
+2026-07-20 23:52:15.466 | INFO  | [StructuredExtractor] Sheet 'HR_Master': 50 rows
+2026-07-20 23:52:15.491 | INFO  | [StructuredExtractor] Sheet 'Payroll': 51 rows
+2026-07-20 23:52:15.513 | INFO  | [StructuredExtractor] Sheet 'Performance': 50 rows
+2026-07-20 23:52:15.517 | INFO  | [Orchestrator] Done — employee_data (1).xlsx | subtype=generic | confidence=97% | flagged=False | time=98ms
+2026-07-20 23:52:15.652 | INFO  | [DynamicSQLEngine] Ingested 50 rows into [ui_generic_2_2fa56d58]
+2026-07-20 23:52:52.585 | INFO  | [Orchestrator] FileType = structured
+2026-07-20 23:52:52.586 | INFO  | [Orchestrator] Strategy = structured
+2026-07-20 23:52:52.586 | INFO  | [ExtractionService] Using StructuredExtractor for 'employee_data (1).xlsx'
+2026-07-20 23:52:52.599 | INFO  | [StructuredExtractor] Opened Excel with engine=openpyxl
+2026-07-20 23:52:52.599 | INFO  | [StructuredExtractor] Excel sheets: ['HR_Master', 'Payroll', 'Performance']
+2026-07-20 23:52:52.628 | INFO  | [StructuredExtractor] Sheet 'HR_Master': 50 rows
+2026-07-20 23:52:52.650 | INFO  | [StructuredExtractor] Sheet 'Payroll': 51 rows
+2026-07-20 23:52:52.672 | INFO  | [StructuredExtractor] Sheet 'Performance': 50 rows
+2026-07-20 23:52:52.675 | INFO  | [Orchestrator] Done — employee_data (1).xlsx | subtype=generic | confidence=97% | flagged=False | time=90ms
+2026-07-20 23:52:52.801 | INFO  | [DynamicSQLEngine] Ingested 50 rows into [ui_generic_2_2fa56d58]
+2026-07-20 23:53:50.422 | INFO  | 1 change detected
+2026-07-20 23:53:50.794 | INFO  | 1 change detected
+2026-07-20 23:53:51.151 | INFO  | 1 change detected
+2026-07-20 23:53:51.560 | INFO  | 1 change detected
+2026-07-20 23:53:51.966 | INFO  | 1 change detected
+2026-07-20 23:53:52.323 | INFO  | 1 change detected
+2026-07-20 23:53:52.734 | INFO  | 1 change detected
+2026-07-20 23:53:53.137 | INFO  | 1 change detected
+2026-07-20 23:53:53.541 | INFO  | 1 change detected
+2026-07-20 23:53:53.943 | INFO  | 1 change detected
+2026-07-20 23:53:54.359 | INFO  | 1 change detected
+2026-07-20 23:53:54.764 | INFO  | 1 change detected
+2026-07-20 23:53:55.169 | INFO  | 1 change detected
+2026-07-20 23:53:55.573 | INFO  | 1 change detected
+2026-07-20 23:53:55.981 | INFO  | 1 change detected
+2026-07-20 23:53:56.385 | INFO  | 1 change detected
+2026-07-20 23:53:56.786 | INFO  | 1 change detected
+2026-07-20 23:53:57.193 | INFO  | 1 change detected
+2026-07-20 23:53:57.600 | INFO  | 1 change detected
+2026-07-20 23:53:58.004 | INFO  | 1 change detected
+2026-07-20 23:53:58.410 | INFO  | 1 change detected
+2026-07-20 23:53:58.776 | INFO  | 1 change detected
+2026-07-20 23:53:59.183 | INFO  | 1 change detected
+2026-07-20 23:53:59.587 | INFO  | 1 change detected
+2026-07-20 23:54:00.004 | INFO  | 1 change detected
+2026-07-20 23:54:00.411 | INFO  | 1 change detected
+2026-07-20 23:54:00.770 | INFO  | 1 change detected
+2026-07-20 23:54:01.175 | INFO  | 1 change detected
+2026-07-20 23:54:01.577 | INFO  | 1 change detected
+2026-07-20 23:54:01.994 | INFO  | 1 change detected
+2026-07-20 23:54:02.396 | INFO  | 1 change detected
+2026-07-20 23:54:02.804 | INFO  | 1 change detected
+2026-07-20 23:54:03.207 | INFO  | 1 change detected
+2026-07-20 23:54:03.612 | INFO  | 1 change detected
+2026-07-20 23:54:04.020 | INFO  | 1 change detected
+2026-07-20 23:54:04.421 | INFO  | 1 change detected
+2026-07-20 23:54:04.826 | INFO  | 1 change detected
+2026-07-20 23:54:05.230 | INFO  | 1 change detected
+2026-07-20 23:54:05.634 | INFO  | 1 change detected
+2026-07-20 23:54:06.039 | INFO  | 1 change detected
+2026-07-20 23:54:06.442 | INFO  | 1 change detected
+2026-07-20 23:54:06.844 | INFO  | 1 change detected
+2026-07-20 23:54:07.257 | INFO  | 1 change detected
+2026-07-20 23:54:07.663 | INFO  | 1 change detected
+2026-07-20 23:54:08.067 | INFO  | 1 change detected
+2026-07-20 23:54:08.473 | INFO  | 1 change detected
+2026-07-20 23:54:08.876 | INFO  | 1 change detected
+2026-07-20 23:54:09.277 | INFO  | 1 change detected
+2026-07-20 23:54:09.681 | INFO  | 1 change detected
+2026-07-20 23:54:10.084 | INFO  | 1 change detected
+2026-07-20 23:54:10.449 | INFO  | 1 change detected
+2026-07-20 23:54:10.860 | INFO  | 1 change detected
+2026-07-20 23:54:11.264 | INFO  | 1 change detected
+2026-07-20 23:54:11.668 | INFO  | 1 change detected
+2026-07-20 23:54:12.071 | INFO  | 1 change detected
+2026-07-20 23:54:12.475 | INFO  | 1 change detected
+2026-07-20 23:54:12.876 | INFO  | 1 change detected
+2026-07-20 23:54:13.285 | INFO  | 1 change detected
+2026-07-20 23:54:13.691 | INFO  | 1 change detected
+2026-07-20 23:54:14.097 | INFO  | 1 change detected
+2026-07-20 23:54:14.504 | INFO  | 1 change detected
+2026-07-20 23:54:14.907 | INFO  | 1 change detected
+2026-07-20 23:54:15.314 | INFO  | 2 changes detected
+2026-07-20 23:54:17.896 | INFO  | 1 change detected
+2026-07-20 23:54:18.552 | INFO  | 5 changes detected
+2026-07-20 23:54:22.094 | INFO  | [startup] Logging initialized → C:\Users\qam04800.QUINTEFT\Downloads\SQL_Data_Analysis_Agent-voice\backend\logs\app_2026-07-20.log
+2026-07-20 23:54:31.673 | INFO  | [embedding] Preloading embedding model...
+2026-07-20 23:54:31.674 | INFO  | [voice] Loading Whisper model: tiny.en ...
+2026-07-20 23:54:32.182 | INFO  | [auth] ✅ Connected to auth DB: AdventureWorks2025 on QFTCHNLPT-04800
+2026-07-20 23:54:32.183 | INFO  | [startup] Auth engine ready (waited 0s) - initialising all tables...
+2026-07-20 23:54:32.946 | INFO  | HTTP Request: GET https://huggingface.co/api/models/Systran/faster-whisper-tiny.en/revision/main "HTTP/1.1 200 OK"
+2026-07-20 23:54:33.443 | INFO  | [voice] ✅ Whisper model 'tiny.en' ready.
+2026-07-20 23:54:40.546 | INFO  | No device provided, using cpu
+2026-07-20 23:54:40.786 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-20 23:54:40.795 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json "HTTP/1.1 200 OK"
+2026-07-20 23:54:41.025 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-20 23:54:41.026 | WARNING | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-07-20 23:54:41.036 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-07-20 23:54:41.041 | INFO  | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-07-20 23:54:41.264 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-20 23:54:41.275 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-07-20 23:54:41.505 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-07-20 23:54:41.516 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/README.md "HTTP/1.1 200 OK"
+2026-07-20 23:54:41.747 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-20 23:54:41.755 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json "HTTP/1.1 200 OK"
+2026-07-20 23:54:41.979 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-20 23:54:41.994 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-07-20 23:54:42.227 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-07-20 23:54:42.459 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-20 23:54:42.469 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+2026-07-20 23:54:42.946 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-07-20 23:54:43.177 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-07-20 23:54:43.412 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-07-20 23:54:43.640 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-07-20 23:54:43.869 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-20 23:54:43.883 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-07-20 23:54:44.113 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-20 23:54:44.121 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+2026-07-20 23:54:44.349 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-20 23:54:44.357 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+2026-07-20 23:54:44.590 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-20 23:54:44.599 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-07-20 23:54:44.843 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-07-20 23:54:45.073 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-07-20 23:54:45.361 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-20 23:54:45.389 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-07-20 23:54:45.645 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-07-20 23:54:45.663 | INFO  | [embedding] ✅ Model loaded and ready.
+2026-07-20 23:54:51.987 | INFO  | [Orchestrator] FileType = structured
+2026-07-20 23:54:51.987 | INFO  | [Orchestrator] Strategy = structured
+2026-07-20 23:54:51.997 | INFO  | [ExtractionService] Using StructuredExtractor for 'employee_data (1).xlsx'
+2026-07-20 23:54:52.568 | INFO  | [StructuredExtractor] Opened Excel with engine=openpyxl
+2026-07-20 23:54:52.569 | INFO  | [StructuredExtractor] Excel sheets: ['HR_Master', 'Payroll', 'Performance']
+2026-07-20 23:54:52.621 | INFO  | [StructuredExtractor] Sheet 'HR_Master': 50 rows
+2026-07-20 23:54:52.660 | INFO  | [StructuredExtractor] Sheet 'Payroll': 51 rows
+2026-07-20 23:54:52.710 | INFO  | [StructuredExtractor] Sheet 'Performance': 50 rows
+2026-07-20 23:54:52.722 | INFO  | [Orchestrator] Done — employee_data (1).xlsx | subtype=generic | confidence=97% | flagged=False | time=735ms
+2026-07-20 23:54:53.015 | INFO  | [DynamicSQLEngine] Ingested 50 rows into [ui_generic_2_2fa56d58]
+2026-07-20 23:54:53.048 | INFO  | [db:files] save_file error: (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]String or binary data would be truncated in table 'AdventureWorks2025.dbo.files', column 'file_hash'. Truncated value: '2fa56d58fddf9ac11ef7440bcd7ad680690b337ec27d6db6c02483219a95a91d'. (2628) (SQLExecDirectW); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+[SQL: 
+                INSERT INTO dbo.files
+                    (user_id, file_hash, file_name, file_size,
+                     file_type, category, sheet_name)
+                OUTPUT INSERTED.id
+                VALUES (?, ?, ?, ?, ?, ?, ?)
+            ]
+[parameters: (2, '2fa56d58fddf9ac11ef7440bcd7ad680690b337ec27d6db6c02483219a95a91d::HR_Master', 'employee_data (1).xlsx', 15383, 'xlsx', 'structured', 'HR_Master')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-07-20 23:54:53.054 | INFO  | [files] WARNING: could not get file_id for sheet 'HR_Master', skipping
+2026-07-20 23:54:53.064 | INFO  | [db:files] save_file error: (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]String or binary data would be truncated in table 'AdventureWorks2025.dbo.files', column 'file_hash'. Truncated value: '2fa56d58fddf9ac11ef7440bcd7ad680690b337ec27d6db6c02483219a95a91d'. (2628) (SQLExecDirectW); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+[SQL: 
+                INSERT INTO dbo.files
+                    (user_id, file_hash, file_name, file_size,
+                     file_type, category, sheet_name)
+                OUTPUT INSERTED.id
+                VALUES (?, ?, ?, ?, ?, ?, ?)
+            ]
+[parameters: (2, '2fa56d58fddf9ac11ef7440bcd7ad680690b337ec27d6db6c02483219a95a91d::Payroll', 'employee_data (1).xlsx', 15383, 'xlsx', 'structured', 'Payroll')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-07-20 23:54:53.068 | INFO  | [files] WARNING: could not get file_id for sheet 'Payroll', skipping
+2026-07-20 23:54:53.079 | INFO  | [db:files] save_file error: (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]String or binary data would be truncated in table 'AdventureWorks2025.dbo.files', column 'file_hash'. Truncated value: '2fa56d58fddf9ac11ef7440bcd7ad680690b337ec27d6db6c02483219a95a91d'. (2628) (SQLExecDirectW); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+[SQL: 
+                INSERT INTO dbo.files
+                    (user_id, file_hash, file_name, file_size,
+                     file_type, category, sheet_name)
+                OUTPUT INSERTED.id
+                VALUES (?, ?, ?, ?, ?, ?, ?)
+            ]
+[parameters: (2, '2fa56d58fddf9ac11ef7440bcd7ad680690b337ec27d6db6c02483219a95a91d::Performance', 'employee_data (1).xlsx', 15383, 'xlsx', 'structured', 'Performance')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-07-20 23:54:53.084 | INFO  | [files] WARNING: could not get file_id for sheet 'Performance', skipping
+2026-07-20 23:56:30.072 | INFO  | [startup] Logging initialized → C:\Users\qam04800.QUINTEFT\Downloads\SQL_Data_Analysis_Agent-voice\backend\logs\app_2026-07-20.log
+2026-07-20 23:56:37.265 | INFO  | [startup] Logging initialized → C:\Users\qam04800.QUINTEFT\Downloads\SQL_Data_Analysis_Agent-voice\backend\logs\app_2026-07-20.log
+2026-07-20 23:56:44.501 | INFO  | [embedding] Preloading embedding model...
+2026-07-20 23:56:44.502 | INFO  | [voice] Loading Whisper model: tiny.en ...
+2026-07-20 23:56:45.002 | INFO  | [auth] ✅ Connected to auth DB: AdventureWorks2025 on QFTCHNLPT-04800
+2026-07-20 23:56:45.002 | INFO  | [startup] Auth engine ready (waited 0s) - initialising all tables...
+2026-07-20 23:56:45.478 | INFO  | HTTP Request: GET https://huggingface.co/api/models/Systran/faster-whisper-tiny.en/revision/main "HTTP/1.1 200 OK"
+2026-07-20 23:56:45.888 | INFO  | [voice] ✅ Whisper model 'tiny.en' ready.
+2026-07-20 23:56:52.002 | INFO  | No device provided, using cpu
+2026-07-20 23:56:52.257 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-20 23:56:52.257 | WARNING | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-07-20 23:56:52.268 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json "HTTP/1.1 200 OK"
+2026-07-20 23:56:52.497 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-20 23:56:52.508 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-07-20 23:56:52.513 | INFO  | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-07-20 23:56:52.744 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-20 23:56:52.756 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-07-20 23:56:52.981 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-07-20 23:56:52.988 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/README.md "HTTP/1.1 200 OK"
+2026-07-20 23:56:53.215 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-20 23:56:53.225 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json "HTTP/1.1 200 OK"
+2026-07-20 23:56:53.458 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-20 23:56:53.468 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-07-20 23:56:53.700 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-07-20 23:56:53.932 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-20 23:56:53.940 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+2026-07-20 23:56:54.323 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-07-20 23:56:54.585 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-07-20 23:56:54.828 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-07-20 23:56:55.059 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-07-20 23:56:55.281 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-20 23:56:55.294 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-07-20 23:56:55.518 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-20 23:56:55.526 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+2026-07-20 23:56:55.752 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-20 23:56:55.761 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+2026-07-20 23:56:55.988 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-20 23:56:55.998 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-07-20 23:56:56.237 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-07-20 23:56:56.470 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-07-20 23:56:56.748 | INFO  | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-20 23:56:56.758 | INFO  | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-07-20 23:56:56.984 | INFO  | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-07-20 23:56:56.989 | INFO  | [embedding] ✅ Model loaded and ready.
+2026-07-20 23:58:19.285 | INFO  | [login] Attempting: 'dishanth@quinteft.com'
+2026-07-20 23:58:19.290 | INFO  | [login] User not found in DB — trying hardcoded
+2026-07-20 23:58:19.291 | INFO  | [login] ✅ Hardcoded auth: dishanth@quinteft.com
+2026-07-20 23:58:49.664 | INFO  | [schema] 0 universal intake table(s) added for user 3
+2026-07-20 23:58:59.796 | INFO  | [Orchestrator] FileType = structured
+2026-07-20 23:58:59.796 | INFO  | [Orchestrator] Strategy = structured
+2026-07-20 23:58:59.802 | INFO  | [ExtractionService] Using StructuredExtractor for 'employee_data (1).xlsx'
+2026-07-20 23:59:00.252 | INFO  | [StructuredExtractor] Opened Excel with engine=openpyxl
+2026-07-20 23:59:00.253 | INFO  | [StructuredExtractor] Excel sheets: ['HR_Master', 'Payroll', 'Performance']
+2026-07-20 23:59:00.294 | INFO  | [StructuredExtractor] Sheet 'HR_Master': 50 rows
+2026-07-20 23:59:00.319 | INFO  | [StructuredExtractor] Sheet 'Payroll': 51 rows
+2026-07-20 23:59:00.343 | INFO  | [StructuredExtractor] Sheet 'Performance': 50 rows
+2026-07-20 23:59:00.353 | INFO  | [Orchestrator] Done — employee_data (1).xlsx | subtype=generic | confidence=97% | flagged=False | time=558ms
+2026-07-20 23:59:00.416 | INFO  | [DynamicSQLEngine] Created table [ui_generic_3_2fa56d58]
+2026-07-20 23:59:00.640 | INFO  | [DynamicSQLEngine] Ingested 50 rows into [ui_generic_3_2fa56d58]
+2026-07-20 23:59:00.674 | INFO  | [db:files] save_file error: (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]String or binary data would be truncated in table 'AdventureWorks2025.dbo.files', column 'file_hash'. Truncated value: '2fa56d58fddf9ac11ef7440bcd7ad680690b337ec27d6db6c02483219a95a91d'. (2628) (SQLExecDirectW); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+[SQL: 
+                INSERT INTO dbo.files
+                    (user_id, file_hash, file_name, file_size,
+                     file_type, category, sheet_name)
+                OUTPUT INSERTED.id
+                VALUES (?, ?, ?, ?, ?, ?, ?)
+            ]
+[parameters: (3, '2fa56d58fddf9ac11ef7440bcd7ad680690b337ec27d6db6c02483219a95a91d::HR_Master', 'employee_data (1).xlsx', 15383, 'xlsx', 'structured', 'HR_Master')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-07-20 23:59:00.679 | INFO  | [files] WARNING: could not get file_id for sheet 'HR_Master', skipping
+2026-07-20 23:59:00.686 | INFO  | [db:files] save_file error: (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]String or binary data would be truncated in table 'AdventureWorks2025.dbo.files', column 'file_hash'. Truncated value: '2fa56d58fddf9ac11ef7440bcd7ad680690b337ec27d6db6c02483219a95a91d'. (2628) (SQLExecDirectW); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+[SQL: 
+                INSERT INTO dbo.files
+                    (user_id, file_hash, file_name, file_size,
+                     file_type, category, sheet_name)
+                OUTPUT INSERTED.id
+                VALUES (?, ?, ?, ?, ?, ?, ?)
+            ]
+[parameters: (3, '2fa56d58fddf9ac11ef7440bcd7ad680690b337ec27d6db6c02483219a95a91d::Payroll', 'employee_data (1).xlsx', 15383, 'xlsx', 'structured', 'Payroll')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-07-20 23:59:00.689 | INFO  | [files] WARNING: could not get file_id for sheet 'Payroll', skipping
+2026-07-20 23:59:00.697 | INFO  | [db:files] save_file error: (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]String or binary data would be truncated in table 'AdventureWorks2025.dbo.files', column 'file_hash'. Truncated value: '2fa56d58fddf9ac11ef7440bcd7ad680690b337ec27d6db6c02483219a95a91d'. (2628) (SQLExecDirectW); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+[SQL: 
+                INSERT INTO dbo.files
+                    (user_id, file_hash, file_name, file_size,
+                     file_type, category, sheet_name)
+                OUTPUT INSERTED.id
+                VALUES (?, ?, ?, ?, ?, ?, ?)
+            ]
+[parameters: (3, '2fa56d58fddf9ac11ef7440bcd7ad680690b337ec27d6db6c02483219a95a91d::Performance', 'employee_data (1).xlsx', 15383, 'xlsx', 'structured', 'Performance')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-07-20 23:59:00.700 | INFO  | [files] WARNING: could not get file_id for sheet 'Performance', skipping
+2026-07-20 23:59:20.921 | INFO  | [db:chat] save_chat_log error: (pyodbc.ProgrammingError) ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'hit_count'. (207) (SQLExecDirectW); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'hit_count'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Statement(s) could not be prepared. (8180)")
+[SQL: 
+                DECLARE @hc INT;
+                SELECT @hc = ISNULL(MAX(hit_count), 0) + 1 FROM dbo.chat_log WHERE question = ?;
+
+                INSERT INTO dbo.chat_log
+                    (session_key, session_title, user_id, user_email,
+                     question, input_source,
+                     sql_query, analysis, row_count, columns_json,
+                     cache_id, source,
+                     execution_status, error,
+                     provider, model, exec_ms, hit_count)
+                VALUES
+                    (?, ?, ?, ?,
+                     ?, ?,
+                     ?, ?, ?, ?,
+                     ?, ?,
+                     ?, ?,
+                     ?, ?, ?, @hc)
+            ]
+[parameters: ('Session Started', 'fe998472-dbe0-4d09-81d6-f0422239416d', 'Session Started', 3, 'dishanth@quinteft.com', 'Session Started', 'init', '', '', None, '[]', None, None, 'SUCCESS', None, '', '', 0)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-07-21 00:00:13.275 | INFO  | 1 change detected
+2026-07-21 00:00:15.453 | INFO  | 1 change detected
+2026-07-21 00:00:16.017 | INFO  | 5 changes detected
+2026-07-21 00:00:19.096 | INFO  | 2 changes detected
+2026-07-21 00:00:19.457 | INFO  | 1 change detected
+2026-07-21 00:00:23.799 | INFO  | 1 change detected
+2026-07-21 00:00:29.356 | INFO  | 2 changes detected
+2026-07-21 00:00:30.279 | INFO  | 5 changes detected
+2026-07-21 00:04:46.788 | INFO  | 2 changes detected
+2026-07-21 00:04:47.153 | INFO  | 1 change detected
+2026-07-21 00:04:47.507 | INFO  | 1 change detected
+2026-07-21 00:04:47.916 | INFO  | 1 change detected
+2026-07-21 00:04:48.320 | INFO  | 1 change detected
+2026-07-21 00:04:48.727 | INFO  | 1 change detected
+2026-07-21 00:04:49.132 | INFO  | 1 change detected
+2026-07-21 00:04:49.536 | INFO  | 1 change detected
+2026-07-21 00:04:49.942 | INFO  | 1 change detected
+2026-07-21 00:04:50.348 | INFO  | 1 change detected
+2026-07-21 00:04:50.753 | INFO  | 1 change detected
+2026-07-21 00:04:51.157 | INFO  | 1 change detected
+2026-07-21 00:04:51.573 | INFO  | 1 change detected
+2026-07-21 00:04:51.980 | INFO  | 1 change detected
+2026-07-21 00:04:52.346 | INFO  | 1 change detected
+2026-07-21 00:04:52.749 | INFO  | 1 change detected
+2026-07-21 00:04:53.152 | INFO  | 1 change detected
+2026-07-21 00:04:53.553 | INFO  | 1 change detected
+2026-07-21 00:04:53.956 | INFO  | 1 change detected
+2026-07-21 00:04:54.358 | INFO  | 1 change detected
+2026-07-21 00:04:54.763 | INFO  | 1 change detected
+2026-07-21 00:04:55.169 | INFO  | 1 change detected
+2026-07-21 00:04:55.573 | INFO  | 1 change detected
+2026-07-21 00:04:55.977 | INFO  | 1 change detected
+2026-07-21 00:04:56.379 | INFO  | 1 change detected
+2026-07-21 00:04:56.784 | INFO  | 1 change detected
+2026-07-21 00:04:57.189 | INFO  | 1 change detected
+2026-07-21 00:04:57.592 | INFO  | 1 change detected
+2026-07-21 00:04:58.009 | INFO  | 1 change detected
+2026-07-21 00:04:58.413 | INFO  | 1 change detected
+2026-07-21 00:04:58.814 | INFO  | 1 change detected
+2026-07-21 00:04:59.221 | INFO  | 1 change detected
+2026-07-21 00:04:59.586 | INFO  | 1 change detected
+2026-07-21 00:04:59.997 | INFO  | 1 change detected
+2026-07-21 00:05:00.400 | INFO  | 1 change detected
+2026-07-21 00:05:00.804 | INFO  | 1 change detected
+2026-07-21 00:05:01.217 | INFO  | 1 change detected
+2026-07-21 00:05:01.623 | INFO  | 1 change detected
+2026-07-21 00:05:02.029 | INFO  | 1 change detected
+2026-07-21 00:05:02.431 | INFO  | 1 change detected
+2026-07-21 00:05:02.836 | INFO  | 1 change detected
+2026-07-21 00:05:03.252 | INFO  | 1 change detected
+2026-07-21 00:05:03.659 | INFO  | 1 change detected
+2026-07-21 00:05:04.016 | INFO  | 1 change detected
+2026-07-21 00:05:04.423 | INFO  | 1 change detected
+2026-07-21 00:05:04.828 | INFO  | 1 change detected
+2026-07-21 00:05:05.235 | INFO  | 1 change detected
+2026-07-21 00:05:05.642 | INFO  | 1 change detected
+2026-07-21 00:05:06.045 | INFO  | 1 change detected
+2026-07-21 00:05:06.448 | INFO  | 1 change detected
+2026-07-21 00:05:06.853 | INFO  | 1 change detected
+2026-07-21 00:05:07.259 | INFO  | 1 change detected
+2026-07-21 00:05:07.666 | INFO  | 1 change detected
+2026-07-21 00:05:08.069 | INFO  | 1 change detected
+2026-07-21 00:05:08.475 | INFO  | 1 change detected
+2026-07-21 00:05:08.881 | INFO  | 1 change detected
+2026-07-21 00:05:09.286 | INFO  | 1 change detected
+2026-07-21 00:05:09.643 | INFO  | 1 change detected
+2026-07-21 00:05:10.054 | INFO  | 1 change detected
+2026-07-21 00:05:10.457 | INFO  | 1 change detected
+2026-07-21 00:05:10.863 | INFO  | 1 change detected
+2026-07-21 00:05:11.267 | INFO  | 1 change detected
+2026-07-21 00:05:11.674 | INFO  | 1 change detected
+2026-07-21 00:05:12.077 | INFO  | 1 change detected
+2026-07-21 00:05:12.481 | INFO  | 1 change detected
+2026-07-21 00:05:12.888 | INFO  | 1 change detected
+2026-07-21 00:05:13.294 | INFO  | 1 change detected
+2026-07-21 00:05:13.700 | INFO  | 1 change detected
+2026-07-21 00:05:14.113 | INFO  | 1 change detected
+2026-07-21 00:05:14.516 | INFO  | 1 change detected
+2026-07-21 00:05:14.921 | INFO  | 1 change detected
+2026-07-21 00:05:15.327 | INFO  | 1 change detected
+2026-07-21 00:05:15.691 | INFO  | 1 change detected
+2026-07-21 00:05:16.098 | INFO  | 1 change detected
+2026-07-21 00:05:16.507 | INFO  | 1 change detected
+2026-07-21 00:05:16.910 | INFO  | 1 change detected
+2026-07-21 00:05:17.314 | INFO  | 1 change detected
+2026-07-21 00:05:17.719 | INFO  | 1 change detected
+2026-07-21 00:05:18.121 | INFO  | 1 change detected
+2026-07-21 00:05:18.528 | INFO  | 1 change detected
+2026-07-21 00:05:18.934 | INFO  | 1 change detected
+2026-07-21 00:05:19.336 | INFO  | 1 change detected
+2026-07-21 00:05:19.741 | INFO  | 1 change detected
+2026-07-21 00:05:20.148 | INFO  | 1 change detected
+2026-07-21 00:05:20.558 | INFO  | 1 change detected
+2026-07-21 00:05:20.963 | INFO  | 1 change detected
+2026-07-21 00:05:21.366 | INFO  | 1 change detected
+2026-07-21 00:05:21.726 | INFO  | 1 change detected
+2026-07-21 00:05:22.181 | INFO  | 1 change detected
+2026-07-21 00:05:22.545 | INFO  | 1 change detected
+2026-07-21 00:05:22.954 | INFO  | 1 change detected
+2026-07-21 00:05:23.359 | INFO  | 1 change detected
+2026-07-21 00:05:23.764 | INFO  | 1 change detected
+2026-07-21 00:05:24.172 | INFO  | 1 change detected
+2026-07-21 00:05:24.578 | INFO  | 1 change detected
+2026-07-21 00:05:24.984 | INFO  | 1 change detected
+2026-07-21 00:05:25.389 | INFO  | 1 change detected
+2026-07-21 00:05:25.792 | INFO  | 1 change detected
+2026-07-21 00:05:26.148 | INFO  | 1 change detected
+2026-07-21 00:05:26.553 | INFO  | 1 change detected
+2026-07-21 00:05:26.957 | INFO  | 1 change detected
+2026-07-21 00:05:27.362 | INFO  | 1 change detected
+2026-07-21 00:05:27.763 | INFO  | 1 change detected
+2026-07-21 00:05:28.168 | INFO  | 1 change detected
+2026-07-21 00:05:28.571 | INFO  | 1 change detected
+2026-07-21 00:05:28.987 | INFO  | 1 change detected
+2026-07-21 00:05:29.396 | INFO  | 1 change detected
+2026-07-21 00:05:29.801 | INFO  | 1 change detected
+2026-07-21 00:05:30.202 | INFO  | 1 change detected
+2026-07-21 00:05:30.608 | INFO  | 1 change detected
+2026-07-21 00:05:31.011 | INFO  | 1 change detected
+2026-07-21 00:05:31.414 | INFO  | 1 change detected
+2026-07-21 00:05:31.823 | INFO  | 1 change detected
+2026-07-21 00:05:32.231 | INFO  | 1 change detected
+2026-07-21 00:05:32.634 | INFO  | 1 change detected
+2026-07-21 00:05:33.040 | INFO  | 1 change detected
+2026-07-21 00:05:33.406 | INFO  | 1 change detected
+2026-07-21 00:05:33.816 | INFO  | 1 change detected
+2026-07-21 00:05:34.220 | INFO  | 1 change detected
+2026-07-21 00:05:34.626 | INFO  | 1 change detected
+2026-07-21 00:05:35.030 | INFO  | 1 change detected
+2026-07-21 00:05:35.436 | INFO  | 1 change detected
+2026-07-21 00:05:35.799 | INFO  | 1 change detected
+2026-07-21 00:05:36.211 | INFO  | 1 change detected
+2026-07-21 00:05:36.617 | INFO  | 1 change detected
+2026-07-21 00:05:37.021 | INFO  | 1 change detected
+2026-07-21 00:05:37.423 | INFO  | 1 change detected
+2026-07-21 00:05:37.827 | INFO  | 1 change detected
+2026-07-21 00:05:38.232 | INFO  | 1 change detected
+2026-07-21 00:05:38.638 | INFO  | 1 change detected
+2026-07-21 00:05:39.041 | INFO  | 1 change detected
+2026-07-21 00:05:39.444 | INFO  | 1 change detected
+2026-07-21 00:05:39.848 | INFO  | 1 change detected
+2026-07-21 00:05:40.255 | INFO  | 1 change detected
+2026-07-21 00:05:40.659 | INFO  | 1 change detected
+2026-07-21 00:05:41.061 | INFO  | 1 change detected
+2026-07-21 00:05:41.464 | INFO  | 1 change detected
+2026-07-21 00:05:41.874 | INFO  | 1 change detected
+2026-07-21 00:05:42.277 | INFO  | 1 change detected
+2026-07-21 00:05:42.682 | INFO  | 1 change detected
+2026-07-21 00:05:43.086 | INFO  | 1 change detected
+2026-07-21 00:05:43.492 | INFO  | 1 change detected
+2026-07-21 00:05:43.848 | INFO  | 1 change detected
+2026-07-21 00:05:44.255 | INFO  | 1 change detected
+2026-07-21 00:05:44.711 | INFO  | 1 change detected
+2026-07-21 00:05:45.126 | INFO  | 1 change detected
+2026-07-21 00:05:45.528 | INFO  | 1 change detected
+2026-07-21 00:05:45.887 | INFO  | 1 change detected
+2026-07-21 00:05:46.296 | INFO  | 1 change detected
+2026-07-21 00:05:46.704 | INFO  | 1 change detected
+2026-07-21 00:05:47.109 | INFO  | 1 change detected
+2026-07-21 00:05:47.514 | INFO  | 1 change detected
+2026-07-21 00:05:47.918 | INFO  | 1 change detected
+2026-07-21 00:05:48.322 | INFO  | 1 change detected
+2026-07-21 00:05:48.737 | INFO  | 1 change detected
+2026-07-21 00:05:49.140 | INFO  | 1 change detected
+2026-07-21 00:05:49.548 | INFO  | 1 change detected
+2026-07-21 00:05:49.950 | INFO  | 1 change detected
+2026-07-21 00:05:50.364 | INFO  | 1 change detected
+2026-07-21 00:05:50.773 | INFO  | 1 change detected
+2026-07-21 00:05:51.176 | INFO  | 1 change detected
+2026-07-21 00:05:51.579 | INFO  | 1 change detected
+2026-07-21 00:05:51.984 | INFO  | 1 change detected
+2026-07-21 00:05:52.335 | INFO  | 1 change detected
+2026-07-21 00:05:52.744 | INFO  | 1 change detected
+2026-07-21 00:05:53.160 | INFO  | 1 change detected
+2026-07-21 00:05:53.569 | INFO  | 1 change detected
+2026-07-21 00:05:53.976 | INFO  | 1 change detected
+2026-07-21 00:05:54.379 | INFO  | 1 change detected
+2026-07-21 00:05:54.787 | INFO  | 1 change detected
+2026-07-21 00:05:55.190 | INFO  | 1 change detected
+2026-07-21 00:05:55.595 | INFO  | 1 change detected
+2026-07-21 00:05:56.000 | INFO  | 1 change detected
+2026-07-21 00:05:56.406 | INFO  | 1 change detected
+2026-07-21 00:05:56.812 | INFO  | 1 change detected
+2026-07-21 00:05:57.169 | INFO  | 1 change detected
+2026-07-21 00:05:57.580 | INFO  | 1 change detected
+2026-07-21 00:05:57.997 | INFO  | 1 change detected
+2026-07-21 00:05:58.400 | INFO  | 1 change detected
+2026-07-21 00:05:58.765 | INFO  | 1 change detected
+2026-07-21 00:05:59.172 | INFO  | 1 change detected
+2026-07-21 00:05:59.575 | INFO  | 1 change detected
+2026-07-21 00:05:59.980 | INFO  | 1 change detected
+2026-07-21 00:06:00.383 | INFO  | 1 change detected
+2026-07-21 00:06:00.786 | INFO  | 1 change detected
+2026-07-21 00:06:01.192 | INFO  | 1 change detected
+2026-07-21 00:06:01.607 | INFO  | 1 change detected
+2026-07-21 00:06:01.964 | INFO  | 1 change detected
+2026-07-21 00:06:02.376 | INFO  | 1 change detected
+2026-07-21 00:06:02.781 | INFO  | 1 change detected
+2026-07-21 00:06:03.189 | INFO  | 1 change detected
+2026-07-21 00:06:03.594 | INFO  | 1 change detected
+2026-07-21 00:06:04.011 | INFO  | 1 change detected
+2026-07-21 00:06:04.428 | INFO  | 1 change detected
+2026-07-21 00:06:04.785 | INFO  | 1 change detected
+2026-07-21 00:06:05.197 | INFO  | 1 change detected
+2026-07-21 00:06:05.603 | INFO  | 1 change detected
+2026-07-21 00:06:06.009 | INFO  | 1 change detected
+2026-07-21 00:06:06.414 | INFO  | 1 change detected
+2026-07-21 00:06:06.819 | INFO  | 1 change detected
+2026-07-21 00:06:07.224 | INFO  | 1 change detected
+2026-07-21 00:06:07.628 | INFO  | 1 change detected
+2026-07-21 00:06:08.042 | INFO  | 1 change detected
+2026-07-21 00:06:08.449 | INFO  | 1 change detected
+2026-07-21 00:06:08.852 | INFO  | 1 change detected
+2026-07-21 00:06:09.257 | INFO  | 1 change detected
+2026-07-21 00:06:09.660 | INFO  | 1 change detected
+2026-07-21 00:06:10.065 | INFO  | 1 change detected
+2026-07-21 00:06:10.467 | INFO  | 1 change detected
+2026-07-21 00:06:10.872 | INFO  | 1 change detected
+2026-07-21 00:06:11.228 | INFO  | 1 change detected
+2026-07-21 00:06:11.634 | INFO  | 1 change detected
+2026-07-21 00:06:12.041 | INFO  | 1 change detected
+2026-07-21 00:06:12.446 | INFO  | 1 change detected
+2026-07-21 00:06:12.850 | INFO  | 1 change detected
+2026-07-21 00:06:13.253 | INFO  | 1 change detected
+2026-07-21 00:06:13.659 | INFO  | 1 change detected
+2026-07-21 00:06:14.066 | INFO  | 1 change detected
+2026-07-21 00:06:14.481 | INFO  | 1 change detected
+2026-07-21 00:06:14.889 | INFO  | 1 change detected
+2026-07-21 00:06:15.296 | INFO  | 1 change detected
+2026-07-21 00:06:15.698 | INFO  | 1 change detected
+2026-07-21 00:06:16.106 | INFO  | 1 change detected
+2026-07-21 00:06:16.510 | INFO  | 1 change detected
+2026-07-21 00:06:16.911 | INFO  | 1 change detected
+2026-07-21 00:06:17.277 | INFO  | 1 change detected
+2026-07-21 00:06:17.685 | INFO  | 1 change detected
+2026-07-21 00:06:18.090 | INFO  | 1 change detected
+2026-07-21 00:06:18.495 | INFO  | 1 change detected
+2026-07-21 00:06:18.898 | INFO  | 1 change detected
+2026-07-21 00:06:19.303 | INFO  | 1 change detected
+2026-07-21 00:06:19.708 | INFO  | 1 change detected
+2026-07-21 00:06:20.117 | INFO  | 1 change detected
+2026-07-21 00:06:20.526 | INFO  | 1 change detected
+2026-07-21 00:06:20.932 | INFO  | 1 change detected
+2026-07-21 00:06:21.338 | INFO  | 1 change detected
+2026-07-21 00:06:21.706 | INFO  | 1 change detected
+2026-07-21 00:06:22.116 | INFO  | 1 change detected
+2026-07-21 00:06:22.519 | INFO  | 1 change detected
+2026-07-21 00:06:22.922 | INFO  | 1 change detected
+2026-07-21 00:06:23.324 | INFO  | 1 change detected
+2026-07-21 00:06:23.727 | INFO  | 1 change detected
+2026-07-21 00:06:24.132 | INFO  | 1 change detected
+2026-07-21 00:06:24.541 | INFO  | 1 change detected
+2026-07-21 00:06:24.945 | INFO  | 1 change detected
+2026-07-21 00:06:25.349 | INFO  | 1 change detected
+2026-07-21 00:06:25.754 | INFO  | 1 change detected
+2026-07-21 00:06:26.156 | INFO  | 1 change detected
+2026-07-21 00:06:26.561 | INFO  | 1 change detected
+2026-07-21 00:06:26.928 | INFO  | 1 change detected
+2026-07-21 00:06:27.334 | INFO  | 1 change detected
+2026-07-21 00:06:27.739 | INFO  | 1 change detected
+2026-07-21 00:06:28.145 | INFO  | 1 change detected
+2026-07-21 00:06:28.550 | INFO  | 1 change detected
+2026-07-21 00:06:28.955 | INFO  | 1 change detected
+2026-07-21 00:06:29.359 | INFO  | 1 change detected
+2026-07-21 00:06:29.766 | INFO  | 1 change detected
+2026-07-21 00:06:30.170 | INFO  | 1 change detected
+2026-07-21 00:06:30.576 | INFO  | 1 change detected
+2026-07-21 00:06:30.981 | INFO  | 1 change detected
+2026-07-21 00:06:31.392 | INFO  | 1 change detected
+2026-07-21 00:06:31.794 | INFO  | 1 change detected
+2026-07-21 00:06:32.198 | INFO  | 1 change detected
+2026-07-21 00:06:32.603 | INFO  | 1 change detected
+2026-07-21 00:06:33.009 | INFO  | 1 change detected
+2026-07-21 00:06:33.413 | INFO  | 1 change detected
+2026-07-21 00:06:33.818 | INFO  | 1 change detected
+2026-07-21 00:06:34.220 | INFO  | 1 change detected
+2026-07-21 00:06:34.624 | INFO  | 1 change detected
+2026-07-21 00:06:35.026 | INFO  | 1 change detected
+2026-07-21 00:06:35.384 | INFO  | 1 change detected
+2026-07-21 00:06:35.790 | INFO  | 1 change detected
+2026-07-21 00:06:36.193 | INFO  | 1 change detected
+2026-07-21 00:06:36.596 | INFO  | 1 change detected
+2026-07-21 00:06:36.998 | INFO  | 1 change detected
+2026-07-21 00:06:37.402 | INFO  | 1 change detected
+2026-07-21 00:06:37.855 | INFO  | 1 change detected
+2026-07-21 00:06:38.222 | INFO  | 1 change detected
+2026-07-21 00:06:38.630 | INFO  | 1 change detected
+2026-07-21 00:06:39.034 | INFO  | 1 change detected
+2026-07-21 00:06:39.440 | INFO  | 1 change detected
+2026-07-21 00:06:39.854 | INFO  | 1 change detected
+2026-07-21 00:06:40.258 | INFO  | 1 change detected
+2026-07-21 00:06:40.664 | INFO  | 1 change detected
+2026-07-21 00:06:41.068 | INFO  | 1 change detected
+2026-07-21 00:06:41.476 | INFO  | 1 change detected
+2026-07-21 00:06:41.878 | INFO  | 1 change detected
+2026-07-21 00:06:42.282 | INFO  | 1 change detected
+2026-07-21 00:06:42.690 | INFO  | 1 change detected
+2026-07-21 00:06:43.095 | INFO  | 1 change detected
+2026-07-21 00:06:43.499 | INFO  | 1 change detected
+2026-07-21 00:06:43.866 | INFO  | 1 change detected
+2026-07-21 00:06:44.273 | INFO  | 1 change detected
+2026-07-21 00:06:44.676 | INFO  | 1 change detected
+2026-07-21 00:06:45.078 | INFO  | 1 change detected
+2026-07-21 00:06:45.483 | INFO  | 1 change detected
+2026-07-21 00:06:45.885 | INFO  | 1 change detected
+2026-07-21 00:06:46.292 | INFO  | 1 change detected
+2026-07-21 00:06:46.696 | INFO  | 1 change detected
+2026-07-21 00:06:47.105 | INFO  | 1 change detected
+2026-07-21 00:06:47.513 | INFO  | 1 change detected
+2026-07-21 00:06:47.917 | INFO  | 1 change detected
+2026-07-21 00:06:48.321 | INFO  | 1 change detected
+2026-07-21 00:06:48.730 | INFO  | 1 change detected
+2026-07-21 00:06:49.133 | INFO  | 1 change detected
+2026-07-21 00:06:49.538 | INFO  | 1 change detected
+2026-07-21 00:06:49.943 | INFO  | 1 change detected
+2026-07-21 00:06:50.353 | INFO  | 1 change detected
+2026-07-21 00:06:50.759 | INFO  | 1 change detected
+2026-07-21 00:06:51.120 | INFO  | 1 change detected
+2026-07-21 00:06:51.530 | INFO  | 1 change detected
+2026-07-21 00:06:51.939 | INFO  | 1 change detected
+2026-07-21 00:06:52.345 | INFO  | 1 change detected
+2026-07-21 00:06:52.754 | INFO  | 1 change detected
+2026-07-21 00:06:53.156 | INFO  | 1 change detected
+2026-07-21 00:06:53.564 | INFO  | 1 change detected
+2026-07-21 00:06:53.920 | INFO  | 1 change detected
+2026-07-21 00:06:54.328 | INFO  | 1 change detected
+2026-07-21 00:06:54.732 | INFO  | 1 change detected
+2026-07-21 00:06:55.135 | INFO  | 1 change detected
+2026-07-21 00:06:55.537 | INFO  | 1 change detected
+2026-07-21 00:06:55.947 | INFO  | 1 change detected
+2026-07-21 00:06:56.352 | INFO  | 1 change detected
+2026-07-21 00:06:56.757 | INFO  | 1 change detected
+2026-07-21 00:06:57.162 | INFO  | 1 change detected
+2026-07-21 00:06:57.568 | INFO  | 1 change detected
+2026-07-21 00:06:57.977 | INFO  | 1 change detected
+2026-07-21 00:06:58.386 | INFO  | 1 change detected
+2026-07-21 00:06:58.791 | INFO  | 1 change detected
+2026-07-21 00:06:59.198 | INFO  | 1 change detected
+2026-07-21 00:06:59.554 | INFO  | 1 change detected
+2026-07-21 00:06:59.966 | INFO  | 1 change detected
+2026-07-21 00:07:00.373 | INFO  | 1 change detected
+2026-07-21 00:07:00.778 | INFO  | 1 change detected
+2026-07-21 00:07:01.182 | INFO  | 1 change detected
+2026-07-21 00:07:01.585 | INFO  | 1 change detected
+2026-07-21 00:07:01.994 | INFO  | 1 change detected
+2026-07-21 00:07:02.400 | INFO  | 1 change detected
+2026-07-21 00:07:02.807 | INFO  | 1 change detected
+2026-07-21 00:07:03.214 | INFO  | 1 change detected
+2026-07-21 00:07:03.620 | INFO  | 1 change detected
+2026-07-21 00:07:04.024 | INFO  | 1 change detected
+2026-07-21 00:07:04.377 | INFO  | 1 change detected
+2026-07-21 00:07:04.785 | INFO  | 1 change detected
+2026-07-21 00:07:05.188 | INFO  | 1 change detected
+2026-07-21 00:07:05.590 | INFO  | 1 change detected
+2026-07-21 00:07:06.000 | INFO  | 1 change detected
+2026-07-21 00:07:06.403 | INFO  | 1 change detected
+2026-07-21 00:07:06.807 | INFO  | 1 change detected
+2026-07-21 00:07:07.211 | INFO  | 1 change detected
+2026-07-21 00:07:07.626 | INFO  | 1 change detected
+2026-07-21 00:07:08.030 | INFO  | 1 change detected
+2026-07-21 00:07:08.436 | INFO  | 1 change detected
+2026-07-21 00:07:08.840 | INFO  | 1 change detected
+2026-07-21 00:07:09.244 | INFO  | 1 change detected
+2026-07-21 00:07:09.649 | INFO  | 1 change detected
+2026-07-21 00:07:10.051 | INFO  | 1 change detected
+2026-07-21 00:07:10.410 | INFO  | 1 change detected
+2026-07-21 00:07:10.819 | INFO  | 1 change detected
+2026-07-21 00:07:11.221 | INFO  | 1 change detected
+2026-07-21 00:07:11.627 | INFO  | 1 change detected
+2026-07-21 00:07:12.034 | INFO  | 1 change detected
+2026-07-21 00:07:12.450 | INFO  | 1 change detected
+2026-07-21 00:07:12.854 | INFO  | 1 change detected
+2026-07-21 00:07:13.260 | INFO  | 1 change detected
+2026-07-21 00:07:13.669 | INFO  | 1 change detected
+2026-07-21 00:07:14.073 | INFO  | 1 change detected
+2026-07-21 00:07:14.486 | INFO  | 1 change detected
+2026-07-21 00:07:14.891 | INFO  | 1 change detected
+2026-07-21 00:07:15.256 | INFO  | 1 change detected
+2026-07-21 00:07:15.669 | INFO  | 1 change detected
+2026-07-21 00:07:16.073 | INFO  | 1 change detected
+2026-07-21 00:07:16.477 | INFO  | 1 change detected
+2026-07-21 00:07:16.883 | INFO  | 1 change detected
+2026-07-21 00:07:17.292 | INFO  | 1 change detected
+2026-07-21 00:07:17.695 | INFO  | 1 change detected
+2026-07-21 00:07:18.102 | INFO  | 1 change detected
+2026-07-21 00:07:18.459 | INFO  | 1 change detected
+2026-07-21 00:07:18.868 | INFO  | 1 change detected
+2026-07-21 00:07:19.275 | INFO  | 1 change detected
+2026-07-21 00:07:19.680 | INFO  | 1 change detected
+2026-07-21 00:07:20.087 | INFO  | 1 change detected
+2026-07-21 00:07:20.496 | INFO  | 1 change detected
+2026-07-21 00:07:20.897 | INFO  | 1 change detected
+2026-07-21 00:07:21.702 | INFO  | 1 change detected
+2026-07-21 00:07:22.116 | INFO  | 1 change detected
+2026-07-21 00:07:22.519 | INFO  | 1 change detected
+2026-07-21 00:07:22.923 | INFO  | 1 change detected
+2026-07-21 00:07:23.327 | INFO  | 1 change detected
+2026-07-21 00:07:23.834 | INFO  | 1 change detected
+2026-07-21 00:07:24.247 | INFO  | 1 change detected
+2026-07-21 00:07:24.604 | INFO  | 1 change detected
+2026-07-21 00:07:25.014 | INFO  | 1 change detected
+2026-07-21 00:07:25.421 | INFO  | 1 change detected
+2026-07-21 00:07:25.828 | INFO  | 1 change detected
+2026-07-21 00:07:26.230 | INFO  | 1 change detected
+2026-07-21 00:07:26.637 | INFO  | 1 change detected
+2026-07-21 00:07:27.043 | INFO  | 1 change detected
+2026-07-21 00:07:27.446 | INFO  | 1 change detected
+2026-07-21 00:07:27.804 | INFO  | 1 change detected
+2026-07-21 00:07:28.214 | INFO  | 1 change detected
+2026-07-21 00:07:28.623 | INFO  | 1 change detected
+2026-07-21 00:07:29.027 | INFO  | 1 change detected
+2026-07-21 00:07:29.431 | INFO  | 1 change detected
+2026-07-21 00:07:29.837 | INFO  | 1 change detected
+2026-07-21 00:07:30.239 | INFO  | 1 change detected
+2026-07-21 00:07:30.647 | INFO  | 1 change detected
+2026-07-21 00:07:31.054 | INFO  | 1 change detected
+2026-07-21 00:07:31.460 | INFO  | 1 change detected
+2026-07-21 00:07:31.869 | INFO  | 1 change detected
+2026-07-21 00:07:32.270 | INFO  | 1 change detected
+2026-07-21 00:07:32.637 | INFO  | 1 change detected
+2026-07-21 00:07:33.043 | INFO  | 1 change detected
+2026-07-21 00:07:33.447 | INFO  | 1 change detected
+2026-07-21 00:07:33.849 | INFO  | 1 change detected
+2026-07-21 00:07:34.252 | INFO  | 1 change detected
+2026-07-21 00:07:34.655 | INFO  | 1 change detected
+2026-07-21 00:07:35.061 | INFO  | 1 change detected
+2026-07-21 00:07:35.466 | INFO  | 1 change detected
+2026-07-21 00:07:35.871 | INFO  | 1 change detected
+2026-07-21 00:07:36.276 | INFO  | 1 change detected
+2026-07-21 00:07:36.685 | INFO  | 1 change detected
+2026-07-21 00:07:37.089 | INFO  | 1 change detected
+2026-07-21 00:07:37.444 | INFO  | 1 change detected
+2026-07-21 00:07:37.851 | INFO  | 1 change detected
+2026-07-21 00:07:38.256 | INFO  | 1 change detected
+2026-07-21 00:07:38.661 | INFO  | 1 change detected
+2026-07-21 00:07:39.067 | INFO  | 1 change detected
+2026-07-21 00:07:39.484 | INFO  | 1 change detected
+2026-07-21 00:07:39.887 | INFO  | 1 change detected
+2026-07-21 00:07:40.290 | INFO  | 1 change detected
+2026-07-21 00:07:40.704 | INFO  | 1 change detected
+2026-07-21 00:07:41.106 | INFO  | 1 change detected
+2026-07-21 00:07:41.470 | INFO  | 1 change detected
+2026-07-21 00:07:41.878 | INFO  | 1 change detected
+2026-07-21 00:07:42.282 | INFO  | 1 change detected
+2026-07-21 00:07:42.689 | INFO  | 1 change detected
+2026-07-21 00:07:43.093 | INFO  | 1 change detected
+2026-07-21 00:07:43.498 | INFO  | 1 change detected
+2026-07-21 00:07:43.902 | INFO  | 1 change detected
+2026-07-21 00:07:44.309 | INFO  | 1 change detected
+2026-07-21 00:07:44.713 | INFO  | 1 change detected
+2026-07-21 00:07:45.118 | INFO  | 1 change detected
+2026-07-21 00:07:45.524 | INFO  | 1 change detected
+2026-07-21 00:07:45.938 | INFO  | 1 change detected
+2026-07-21 00:07:46.341 | INFO  | 1 change detected
+2026-07-21 00:07:46.745 | INFO  | 1 change detected
+2026-07-21 00:07:47.108 | INFO  | 1 change detected
+2026-07-21 00:07:47.518 | INFO  | 1 change detected
+2026-07-21 00:07:47.920 | INFO  | 1 change detected
+2026-07-21 00:07:48.323 | INFO  | 1 change detected
+2026-07-21 00:07:48.729 | INFO  | 1 change detected
+2026-07-21 00:07:49.132 | INFO  | 1 change detected
+2026-07-21 00:07:49.538 | INFO  | 1 change detected
+2026-07-21 00:07:49.948 | INFO  | 1 change detected
+2026-07-21 00:07:50.358 | INFO  | 1 change detected
+2026-07-21 00:07:50.763 | INFO  | 1 change detected
+2026-07-21 00:07:51.165 | INFO  | 1 change detected
+2026-07-21 00:07:51.569 | INFO  | 1 change detected
+2026-07-21 00:07:51.936 | INFO  | 1 change detected
+2026-07-21 00:07:52.344 | INFO  | 1 change detected
+2026-07-21 00:07:52.748 | INFO  | 1 change detected
+2026-07-21 00:07:53.154 | INFO  | 1 change detected
+2026-07-21 00:07:53.555 | INFO  | 1 change detected
+2026-07-21 00:07:53.962 | INFO  | 1 change detected
+2026-07-21 00:07:54.367 | INFO  | 1 change detected
+2026-07-21 00:07:54.774 | INFO  | 1 change detected
+2026-07-21 00:07:55.181 | INFO  | 1 change detected
+2026-07-21 00:07:55.584 | INFO  | 1 change detected
+2026-07-21 00:07:55.992 | INFO  | 1 change detected
+2026-07-21 00:07:56.398 | INFO  | 1 change detected
+2026-07-21 00:07:56.805 | INFO  | 1 change detected
+2026-07-21 00:07:57.207 | INFO  | 1 change detected
+2026-07-21 00:07:57.612 | INFO  | 1 change detected
+2026-07-21 00:07:57.971 | INFO  | 1 change detected
+2026-07-21 00:07:58.382 | INFO  | 1 change detected
+2026-07-21 00:07:58.786 | INFO  | 1 change detected
+2026-07-21 00:07:59.191 | INFO  | 1 change detected
+2026-07-21 00:07:59.594 | INFO  | 1 change detected
+2026-07-21 00:07:59.999 | INFO  | 1 change detected
+2026-07-21 00:08:00.404 | INFO  | 1 change detected
+2026-07-21 00:08:00.807 | INFO  | 1 change detected
+2026-07-21 00:08:01.215 | INFO  | 1 change detected
+2026-07-21 00:08:01.625 | INFO  | 1 change detected
+2026-07-21 00:08:02.028 | INFO  | 1 change detected
+2026-07-21 00:08:02.432 | INFO  | 1 change detected
+2026-07-21 00:08:02.837 | INFO  | 1 change detected
+2026-07-21 00:08:03.239 | INFO  | 1 change detected
+2026-07-21 00:08:03.642 | INFO  | 1 change detected
+2026-07-21 00:08:04.047 | INFO  | 1 change detected
+2026-07-21 00:08:04.454 | INFO  | 1 change detected
+2026-07-21 00:08:04.860 | INFO  | 1 change detected
+2026-07-21 00:08:05.263 | INFO  | 1 change detected
+2026-07-21 00:08:05.668 | INFO  | 1 change detected
+2026-07-21 00:08:06.026 | INFO  | 1 change detected
+2026-07-21 00:08:06.433 | INFO  | 1 change detected
+2026-07-21 00:08:06.837 | INFO  | 1 change detected
+2026-07-21 00:08:07.241 | INFO  | 1 change detected
+2026-07-21 00:08:07.648 | INFO  | 1 change detected
+2026-07-21 00:08:08.051 | INFO  | 1 change detected
+2026-07-21 00:08:08.455 | INFO  | 1 change detected
+2026-07-21 00:08:08.858 | INFO  | 1 change detected
+2026-07-21 00:08:09.262 | INFO  | 1 change detected
+2026-07-21 00:08:09.669 | INFO  | 1 change detected
+2026-07-21 00:08:10.077 | INFO  | 1 change detected
+2026-07-21 00:08:10.491 | INFO  | 1 change detected
+2026-07-21 00:08:10.898 | INFO  | 1 change detected
+2026-07-21 00:08:11.263 | INFO  | 1 change detected
+2026-07-21 00:08:11.673 | INFO  | 1 change detected
+2026-07-21 00:08:12.078 | INFO  | 1 change detected
+2026-07-21 00:08:12.480 | INFO  | 1 change detected
+2026-07-21 00:08:12.882 | INFO  | 1 change detected
+2026-07-21 00:08:13.286 | INFO  | 1 change detected
+2026-07-21 00:08:13.689 | INFO  | 1 change detected
+2026-07-21 00:08:14.093 | INFO  | 1 change detected
+2026-07-21 00:08:14.501 | INFO  | 1 change detected
+2026-07-21 00:08:14.905 | INFO  | 1 change detected
+2026-07-21 00:08:15.309 | INFO  | 1 change detected
+2026-07-21 00:08:15.714 | INFO  | 1 change detected
+2026-07-21 00:08:16.114 | INFO  | 1 change detected
+2026-07-21 00:08:16.468 | INFO  | 1 change detected
+2026-07-21 00:08:16.878 | INFO  | 1 change detected
+2026-07-21 00:08:17.283 | INFO  | 1 change detected
+2026-07-21 00:08:17.689 | INFO  | 1 change detected
+2026-07-21 00:08:18.092 | INFO  | 1 change detected
+2026-07-21 00:08:18.497 | INFO  | 1 change detected
+2026-07-21 00:08:18.904 | INFO  | 1 change detected
+2026-07-21 00:08:19.307 | INFO  | 1 change detected
+2026-07-21 00:08:19.710 | INFO  | 1 change detected
+2026-07-21 00:08:20.117 | INFO  | 1 change detected
+2026-07-21 00:08:20.524 | INFO  | 1 change detected
+2026-07-21 00:08:20.933 | INFO  | 1 change detected
+2026-07-21 00:08:21.335 | INFO  | 1 change detected
+2026-07-21 00:08:21.740 | INFO  | 1 change detected
+2026-07-21 00:08:22.143 | INFO  | 1 change detected
+2026-07-21 00:08:22.497 | INFO  | 1 change detected
+2026-07-21 00:08:22.905 | INFO  | 1 change detected
+2026-07-21 00:08:23.313 | INFO  | 1 change detected
+2026-07-21 00:08:23.718 | INFO  | 1 change detected
+2026-07-21 00:08:24.126 | INFO  | 1 change detected
+2026-07-21 00:08:24.531 | INFO  | 1 change detected
+2026-07-21 00:08:24.887 | INFO  | 1 change detected
+2026-07-21 00:08:25.295 | INFO  | 1 change detected
+2026-07-21 00:08:25.699 | INFO  | 1 change detected
+2026-07-21 00:08:26.106 | INFO  | 1 change detected
+2026-07-21 00:08:26.513 | INFO  | 1 change detected
+2026-07-21 00:08:26.879 | INFO  | 1 change detected
+2026-07-21 00:08:27.288 | INFO  | 1 change detected
+2026-07-21 00:08:27.692 | INFO  | 1 change detected
+2026-07-21 00:08:28.097 | INFO  | 1 change detected
+2026-07-21 00:08:28.501 | INFO  | 1 change detected
+2026-07-21 00:08:28.906 | INFO  | 1 change detected
+2026-07-21 00:08:29.313 | INFO  | 1 change detected
+2026-07-21 00:08:29.716 | INFO  | 1 change detected
+2026-07-21 00:08:30.124 | INFO  | 1 change detected
+2026-07-21 00:08:30.530 | INFO  | 1 change detected
+2026-07-21 00:08:30.933 | INFO  | 1 change detected
+2026-07-21 00:08:31.338 | INFO  | 1 change detected
+2026-07-21 00:08:31.744 | INFO  | 1 change detected
+2026-07-21 00:08:32.149 | INFO  | 1 change detected
+2026-07-21 00:08:32.554 | INFO  | 1 change detected
+2026-07-21 00:08:32.962 | INFO  | 1 change detected
+2026-07-21 00:08:33.364 | INFO  | 1 change detected
+2026-07-21 00:08:33.768 | INFO  | 1 change detected
+2026-07-21 00:08:34.184 | INFO  | 1 change detected
+2026-07-21 00:08:34.588 | INFO  | 1 change detected
+2026-07-21 00:08:34.992 | INFO  | 1 change detected
+2026-07-21 00:08:35.394 | INFO  | 1 change detected
+2026-07-21 00:08:35.796 | INFO  | 1 change detected
+2026-07-21 00:08:36.162 | INFO  | 1 change detected
+2026-07-21 00:08:36.571 | INFO  | 1 change detected
+2026-07-21 00:08:36.987 | INFO  | 1 change detected
+2026-07-21 00:08:37.389 | INFO  | 1 change detected
+2026-07-21 00:08:37.793 | INFO  | 1 change detected
+2026-07-21 00:08:38.201 | INFO  | 1 change detected
+2026-07-21 00:08:38.603 | INFO  | 1 change detected
+2026-07-21 00:08:39.009 | INFO  | 1 change detected
+2026-07-21 00:08:39.417 | INFO  | 1 change detected
+2026-07-21 00:08:39.821 | INFO  | 1 change detected
+2026-07-21 00:08:40.225 | INFO  | 1 change detected
+2026-07-21 00:08:40.628 | INFO  | 1 change detected
+2026-07-21 00:08:41.035 | INFO  | 1 change detected
+2026-07-21 00:08:41.451 | INFO  | 1 change detected
+2026-07-21 00:08:41.856 | INFO  | 1 change detected
+2026-07-21 00:08:42.259 | INFO  | 1 change detected
+2026-07-21 00:08:42.614 | INFO  | 1 change detected
+2026-07-21 00:08:43.024 | INFO  | 1 change detected
+2026-07-21 00:08:43.441 | INFO  | 1 change detected
+2026-07-21 00:08:43.846 | INFO  | 1 change detected
+2026-07-21 00:08:44.251 | INFO  | 1 change detected
+2026-07-21 00:08:44.666 | INFO  | 1 change detected
+2026-07-21 00:08:45.072 | INFO  | 1 change detected
+2026-07-21 00:08:45.475 | INFO  | 1 change detected
+2026-07-21 00:08:45.879 | INFO  | 1 change detected
+2026-07-21 00:08:46.245 | INFO  | 1 change detected
+2026-07-21 00:08:46.650 | INFO  | 1 change detected
+2026-07-21 00:08:47.055 | INFO  | 1 change detected
+2026-07-21 00:08:47.472 | INFO  | 1 change detected
+2026-07-21 00:08:47.887 | INFO  | 1 change detected
+2026-07-21 00:08:48.289 | INFO  | 1 change detected
+2026-07-21 00:08:48.696 | INFO  | 1 change detected
+2026-07-21 00:08:49.060 | INFO  | 1 change detected
+2026-07-21 00:08:49.468 | INFO  | 1 change detected
+2026-07-21 00:08:49.874 | INFO  | 1 change detected
+2026-07-21 00:08:50.278 | INFO  | 1 change detected
+2026-07-21 00:08:50.684 | INFO  | 1 change detected
+2026-07-21 00:08:51.085 | INFO  | 1 change detected
+2026-07-21 00:08:51.650 | INFO  | 1 change detected
+2026-07-21 00:08:52.011 | INFO  | 1 change detected
+2026-07-21 00:08:52.420 | INFO  | 1 change detected
+2026-07-21 00:08:52.825 | INFO  | 1 change detected
+2026-07-21 00:08:53.241 | INFO  | 1 change detected
+2026-07-21 00:08:53.747 | INFO  | 1 change detected
+2026-07-21 00:08:54.113 | INFO  | 1 change detected
+2026-07-21 00:08:54.519 | INFO  | 1 change detected
+2026-07-21 00:08:54.923 | INFO  | 1 change detected
+2026-07-21 00:08:55.330 | INFO  | 1 change detected
+2026-07-21 00:08:55.733 | INFO  | 1 change detected
+2026-07-21 00:08:56.136 | INFO  | 1 change detected
+2026-07-21 00:08:56.541 | INFO  | 1 change detected
+2026-07-21 00:08:56.947 | INFO  | 1 change detected
+2026-07-21 00:08:57.363 | INFO  | 1 change detected
+2026-07-21 00:08:57.722 | INFO  | 1 change detected
+2026-07-21 00:08:58.131 | INFO  | 1 change detected
+2026-07-21 00:08:58.547 | INFO  | 1 change detected
+2026-07-21 00:08:58.955 | INFO  | 1 change detected
+2026-07-21 00:08:59.362 | INFO  | 1 change detected
+2026-07-21 00:08:59.765 | INFO  | 1 change detected
+2026-07-21 00:09:00.120 | INFO  | 1 change detected
+2026-07-21 00:09:00.528 | INFO  | 1 change detected
+2026-07-21 00:09:00.932 | INFO  | 1 change detected
+2026-07-21 00:09:01.337 | INFO  | 1 change detected
+2026-07-21 00:09:01.744 | INFO  | 1 change detected
+2026-07-21 00:09:02.160 | INFO  | 1 change detected
+2026-07-21 00:09:02.566 | INFO  | 1 change detected
+2026-07-21 00:09:02.968 | INFO  | 1 change detected
+2026-07-21 00:09:03.323 | INFO  | 1 change detected
+2026-07-21 00:09:03.734 | INFO  | 1 change detected
+2026-07-21 00:09:04.138 | INFO  | 1 change detected
+2026-07-21 00:09:04.540 | INFO  | 1 change detected
+2026-07-21 00:09:04.947 | INFO  | 1 change detected
+2026-07-21 00:09:05.351 | INFO  | 1 change detected
+2026-07-21 00:09:05.756 | INFO  | 1 change detected
+2026-07-21 00:09:06.161 | INFO  | 1 change detected
+2026-07-21 00:09:06.567 | INFO  | 1 change detected
+2026-07-21 00:09:06.973 | INFO  | 1 change detected
+2026-07-21 00:09:07.378 | INFO  | 1 change detected
+2026-07-21 00:09:07.779 | INFO  | 1 change detected
+2026-07-21 00:09:08.187 | INFO  | 1 change detected
+2026-07-21 00:09:08.591 | INFO  | 1 change detected
+2026-07-21 00:09:08.996 | INFO  | 1 change detected
+2026-07-21 00:09:09.360 | INFO  | 1 change detected
+2026-07-21 00:09:09.767 | INFO  | 1 change detected
+2026-07-21 00:09:10.169 | INFO  | 1 change detected
+2026-07-21 00:09:10.574 | INFO  | 1 change detected
+2026-07-21 00:09:10.979 | INFO  | 1 change detected
+2026-07-21 00:09:11.393 | INFO  | 1 change detected
+2026-07-21 00:09:11.799 | INFO  | 1 change detected
+2026-07-21 00:09:12.204 | INFO  | 1 change detected
+2026-07-21 00:09:12.610 | INFO  | 1 change detected
+2026-07-21 00:09:13.015 | INFO  | 1 change detected
+2026-07-21 00:09:13.424 | INFO  | 1 change detected
+2026-07-21 00:09:13.839 | INFO  | 1 change detected
+2026-07-21 00:09:14.246 | INFO  | 1 change detected
+2026-07-21 00:09:14.649 | INFO  | 1 change detected
+2026-07-21 00:09:15.056 | INFO  | 1 change detected
+2026-07-21 00:09:15.460 | INFO  | 1 change detected
+2026-07-21 00:09:15.866 | INFO  | 1 change detected
+2026-07-21 00:09:16.273 | INFO  | 1 change detected
+2026-07-21 00:09:16.677 | INFO  | 1 change detected
+2026-07-21 00:09:17.082 | INFO  | 1 change detected
+2026-07-21 00:09:17.488 | INFO  | 1 change detected
+2026-07-21 00:09:17.894 | INFO  | 1 change detected
+2026-07-21 00:09:18.252 | INFO  | 1 change detected
+2026-07-21 00:09:18.657 | INFO  | 1 change detected
+2026-07-21 00:09:19.062 | INFO  | 1 change detected
+2026-07-21 00:09:19.464 | INFO  | 1 change detected
+2026-07-21 00:09:19.874 | INFO  | 1 change detected
+2026-07-21 00:09:20.278 | INFO  | 1 change detected
+2026-07-21 00:09:20.683 | INFO  | 1 change detected
+2026-07-21 00:09:21.090 | INFO  | 1 change detected
+2026-07-21 00:09:21.594 | INFO  | 1 change detected
+2026-07-21 00:09:22.008 | INFO  | 1 change detected
+2026-07-21 00:09:22.413 | INFO  | 1 change detected
+2026-07-21 00:09:22.823 | INFO  | 1 change detected
+2026-07-21 00:09:23.229 | INFO  | 1 change detected
+2026-07-21 00:09:23.683 | INFO  | 1 change detected
+2026-07-21 00:09:24.705 | INFO  | 1 change detected
+2026-07-21 00:09:25.059 | INFO  | 1 change detected
+2026-07-21 00:09:25.463 | INFO  | 1 change detected
+2026-07-21 00:09:25.867 | INFO  | 1 change detected
+2026-07-21 00:09:26.274 | INFO  | 1 change detected
+2026-07-21 00:09:26.677 | INFO  | 1 change detected
+2026-07-21 00:09:27.084 | INFO  | 1 change detected
+2026-07-21 00:09:27.492 | INFO  | 1 change detected
+2026-07-21 00:09:27.899 | INFO  | 1 change detected
+2026-07-21 00:09:28.303 | INFO  | 1 change detected
+2026-07-21 00:09:28.713 | INFO  | 1 change detected
+2026-07-21 00:09:29.118 | INFO  | 1 change detected
+2026-07-21 00:09:29.528 | INFO  | 1 change detected
+2026-07-21 00:09:29.882 | INFO  | 1 change detected
+2026-07-21 00:09:30.287 | INFO  | 1 change detected
+2026-07-21 00:09:30.693 | INFO  | 1 change detected
+2026-07-21 00:09:31.101 | INFO  | 1 change detected
+2026-07-21 00:09:31.508 | INFO  | 1 change detected
+2026-07-21 00:09:31.909 | INFO  | 1 change detected
+2026-07-21 00:09:32.314 | INFO  | 1 change detected
+2026-07-21 00:09:32.721 | INFO  | 1 change detected
+2026-07-21 00:09:33.125 | INFO  | 1 change detected
+2026-07-21 00:09:33.532 | INFO  | 1 change detected
+2026-07-21 00:09:33.937 | INFO  | 1 change detected
+2026-07-21 00:09:34.340 | INFO  | 1 change detected
+2026-07-21 00:09:34.746 | INFO  | 1 change detected
+2026-07-21 00:09:35.162 | INFO  | 1 change detected
+2026-07-21 00:09:35.566 | INFO  | 1 change detected
+2026-07-21 00:09:35.971 | INFO  | 1 change detected
+2026-07-21 00:09:36.377 | INFO  | 1 change detected
+2026-07-21 00:09:36.783 | INFO  | 1 change detected
+2026-07-21 00:09:37.189 | INFO  | 1 change detected
+2026-07-21 00:09:37.593 | INFO  | 1 change detected
+2026-07-21 00:09:38.001 | INFO  | 1 change detected
+2026-07-21 00:09:38.403 | INFO  | 1 change detected
+2026-07-21 00:09:38.805 | INFO  | 1 change detected
+2026-07-21 00:09:39.209 | INFO  | 1 change detected
+2026-07-21 00:09:39.613 | INFO  | 1 change detected
+2026-07-21 00:09:40.017 | INFO  | 1 change detected
+2026-07-21 00:09:40.421 | INFO  | 1 change detected
+2026-07-21 00:09:40.787 | INFO  | 1 change detected
+2026-07-21 00:09:41.200 | INFO  | 1 change detected
+2026-07-21 00:09:41.606 | INFO  | 1 change detected
+2026-07-21 00:09:42.019 | INFO  | 1 change detected
+2026-07-21 00:09:42.425 | INFO  | 1 change detected
+2026-07-21 00:09:42.831 | INFO  | 1 change detected
+2026-07-21 00:09:43.237 | INFO  | 1 change detected
+2026-07-21 00:09:43.640 | INFO  | 1 change detected
+2026-07-21 00:09:44.043 | INFO  | 1 change detected
+2026-07-21 00:09:44.446 | INFO  | 1 change detected
+2026-07-21 00:09:44.802 | INFO  | 1 change detected
+2026-07-21 00:09:45.213 | INFO  | 1 change detected
+2026-07-21 00:09:45.628 | INFO  | 1 change detected
+2026-07-21 00:09:46.032 | INFO  | 1 change detected
+2026-07-21 00:09:46.435 | INFO  | 1 change detected
+2026-07-21 00:09:46.842 | INFO  | 1 change detected
+2026-07-21 00:09:47.248 | INFO  | 1 change detected
+2026-07-21 00:09:47.652 | INFO  | 1 change detected
+2026-07-21 00:09:48.057 | INFO  | 1 change detected
+2026-07-21 00:09:48.467 | INFO  | 1 change detected
+2026-07-21 00:09:48.874 | INFO  | 1 change detected
+2026-07-21 00:09:49.278 | INFO  | 1 change detected
+2026-07-21 00:09:49.636 | INFO  | 1 change detected
+2026-07-21 00:09:50.047 | INFO  | 1 change detected
+2026-07-21 00:09:50.450 | INFO  | 1 change detected
+2026-07-21 00:09:50.854 | INFO  | 1 change detected
+2026-07-21 00:09:51.258 | INFO  | 1 change detected
+2026-07-21 00:09:51.664 | INFO  | 1 change detected
+2026-07-21 00:09:52.068 | INFO  | 1 change detected
+2026-07-21 00:09:52.475 | INFO  | 1 change detected
+2026-07-21 00:09:52.931 | INFO  | 1 change detected
+2026-07-21 00:09:53.337 | INFO  | 1 change detected
+2026-07-21 00:09:53.693 | INFO  | 1 change detected
+2026-07-21 00:09:54.100 | INFO  | 1 change detected
+2026-07-21 00:09:54.506 | INFO  | 1 change detected
+2026-07-21 00:09:54.910 | INFO  | 1 change detected
+2026-07-21 00:09:55.314 | INFO  | 1 change detected
+2026-07-21 00:09:55.717 | INFO  | 1 change detected
+2026-07-21 00:09:56.122 | INFO  | 1 change detected
+2026-07-21 00:09:56.524 | INFO  | 1 change detected
+2026-07-21 00:09:56.929 | INFO  | 1 change detected
+2026-07-21 00:09:57.333 | INFO  | 1 change detected
+2026-07-21 00:09:57.734 | INFO  | 1 change detected
+2026-07-21 00:09:58.142 | INFO  | 1 change detected
+2026-07-21 00:09:58.546 | INFO  | 1 change detected
+2026-07-21 00:09:58.956 | INFO  | 1 change detected
+2026-07-21 00:09:59.358 | INFO  | 1 change detected
+2026-07-21 00:09:59.764 | INFO  | 1 change detected
+2026-07-21 00:10:00.167 | INFO  | 1 change detected
+2026-07-21 00:10:00.576 | INFO  | 1 change detected
+2026-07-21 00:10:00.984 | INFO  | 1 change detected
+2026-07-21 00:10:01.343 | INFO  | 1 change detected
+2026-07-21 00:10:01.751 | INFO  | 1 change detected
+2026-07-21 00:10:02.158 | INFO  | 1 change detected
+2026-07-21 00:10:02.617 | INFO  | 1 change detected
+2026-07-21 00:10:03.022 | INFO  | 1 change detected
+2026-07-21 00:10:03.430 | INFO  | 1 change detected
+2026-07-21 00:10:03.835 | INFO  | 1 change detected
+2026-07-21 00:10:04.242 | INFO  | 1 change detected
+2026-07-21 00:10:04.652 | INFO  | 1 change detected
+2026-07-21 00:10:05.059 | INFO  | 1 change detected
+2026-07-21 00:10:05.464 | INFO  | 1 change detected
+2026-07-21 00:10:05.869 | INFO  | 1 change detected
+2026-07-21 00:10:06.276 | INFO  | 1 change detected
+2026-07-21 00:10:06.692 | INFO  | 1 change detected
+2026-07-21 00:10:07.301 | INFO  | 1 change detected
+2026-07-21 00:10:07.657 | INFO  | 1 change detected
+2026-07-21 00:10:08.065 | INFO  | 1 change detected
+2026-07-21 00:10:08.421 | INFO  | 1 change detected
+2026-07-21 00:10:08.828 | INFO  | 1 change detected
+2026-07-21 00:10:09.193 | INFO  | 1 change detected
+2026-07-21 00:10:09.596 | INFO  | 1 change detected
+2026-07-21 00:10:10.010 | INFO  | 1 change detected
+2026-07-21 00:10:10.375 | INFO  | 1 change detected
+2026-07-21 00:10:10.985 | INFO  | 1 change detected
+2026-07-21 00:10:11.343 | INFO  | 1 change detected
+2026-07-21 00:10:11.753 | INFO  | 1 change detected
+2026-07-21 00:10:12.155 | INFO  | 1 change detected
+2026-07-21 00:10:12.570 | INFO  | 1 change detected
+2026-07-21 00:10:13.024 | INFO  | 1 change detected
+2026-07-21 00:10:13.388 | INFO  | 1 change detected
+2026-07-21 00:10:13.797 | INFO  | 1 change detected
+2026-07-21 00:10:14.201 | INFO  | 1 change detected
+2026-07-21 00:10:14.617 | INFO  | 1 change detected
+2026-07-21 00:10:15.023 | INFO  | 1 change detected
+2026-07-21 00:10:15.427 | INFO  | 1 change detected
+2026-07-21 00:10:15.833 | INFO  | 1 change detected
+2026-07-21 00:10:16.239 | INFO  | 1 change detected
+2026-07-21 00:10:16.649 | INFO  | 1 change detected
+2026-07-21 00:10:17.055 | INFO  | 1 change detected
+2026-07-21 00:10:17.457 | INFO  | 1 change detected
+2026-07-21 00:10:17.860 | INFO  | 1 change detected
+2026-07-21 00:10:18.264 | INFO  | 1 change detected
+2026-07-21 00:10:18.671 | INFO  | 1 change detected
+2026-07-21 00:10:19.078 | INFO  | 1 change detected
+2026-07-21 00:10:19.483 | INFO  | 1 change detected
+2026-07-21 00:10:19.889 | INFO  | 1 change detected
+2026-07-21 00:10:20.304 | INFO  | 1 change detected
+2026-07-21 00:10:20.705 | INFO  | 1 change detected
+2026-07-21 00:10:21.108 | INFO  | 1 change detected
+2026-07-21 00:10:21.465 | INFO  | 1 change detected
+2026-07-21 00:10:21.872 | INFO  | 1 change detected
+2026-07-21 00:10:22.273 | INFO  | 1 change detected
+2026-07-21 00:10:22.682 | INFO  | 1 change detected
+2026-07-21 00:10:23.089 | INFO  | 1 change detected
+2026-07-21 00:10:23.494 | INFO  | 1 change detected
+2026-07-21 00:10:23.852 | INFO  | 1 change detected
+2026-07-21 00:10:24.267 | INFO  | 1 change detected
+2026-07-21 00:10:24.675 | INFO  | 1 change detected
+2026-07-21 00:10:25.083 | INFO  | 1 change detected
+2026-07-21 00:10:25.488 | INFO  | 1 change detected
+2026-07-21 00:10:25.890 | INFO  | 1 change detected
+2026-07-21 00:10:26.292 | INFO  | 1 change detected
+2026-07-21 00:10:26.699 | INFO  | 1 change detected
+2026-07-21 00:10:27.100 | INFO  | 1 change detected
+2026-07-21 00:10:27.505 | INFO  | 1 change detected
+2026-07-21 00:10:27.911 | INFO  | 1 change detected
+2026-07-21 00:10:28.318 | INFO  | 1 change detected
+2026-07-21 00:10:28.720 | INFO  | 1 change detected
+2026-07-21 00:10:29.125 | INFO  | 1 change detected
+2026-07-21 00:10:29.533 | INFO  | 1 change detected
+2026-07-21 00:10:29.939 | INFO  | 1 change detected
+2026-07-21 00:10:30.343 | INFO  | 1 change detected
+2026-07-21 00:10:30.747 | INFO  | 1 change detected
+2026-07-21 00:10:31.151 | INFO  | 1 change detected
+2026-07-21 00:10:31.558 | INFO  | 1 change detected
+2026-07-21 00:10:31.964 | INFO  | 1 change detected
+2026-07-21 00:10:32.319 | INFO  | 1 change detected
+2026-07-21 00:10:32.726 | INFO  | 1 change detected
+2026-07-21 00:10:33.130 | INFO  | 1 change detected
+2026-07-21 00:10:33.535 | INFO  | 1 change detected
+2026-07-21 00:10:33.938 | INFO  | 1 change detected
+2026-07-21 00:10:34.341 | INFO  | 1 change detected
+2026-07-21 00:10:34.743 | INFO  | 1 change detected
+2026-07-21 00:10:35.159 | INFO  | 1 change detected
+2026-07-21 00:10:35.563 | INFO  | 1 change detected
+2026-07-21 00:10:35.966 | INFO  | 1 change detected
+2026-07-21 00:10:36.377 | INFO  | 1 change detected
+2026-07-21 00:10:36.784 | INFO  | 1 change detected
+2026-07-21 00:10:37.190 | INFO  | 1 change detected
+2026-07-21 00:10:37.596 | INFO  | 1 change detected
+2026-07-21 00:10:38.000 | INFO  | 1 change detected
+2026-07-21 00:10:38.357 | INFO  | 1 change detected
+2026-07-21 00:10:38.763 | INFO  | 1 change detected
+2026-07-21 00:10:39.168 | INFO  | 1 change detected
+2026-07-21 00:10:39.573 | INFO  | 1 change detected
+2026-07-21 00:10:39.981 | INFO  | 1 change detected
+2026-07-21 00:10:40.385 | INFO  | 1 change detected
+2026-07-21 00:10:40.789 | INFO  | 1 change detected
+2026-07-21 00:10:41.193 | INFO  | 1 change detected
+2026-07-21 00:10:41.600 | INFO  | 1 change detected
+2026-07-21 00:10:42.116 | INFO  | 1 change detected
+2026-07-21 00:10:42.526 | INFO  | 1 change detected
+2026-07-21 00:10:42.929 | INFO  | 1 change detected
+2026-07-21 00:10:43.332 | INFO  | 1 change detected
+2026-07-21 00:10:43.737 | INFO  | 1 change detected
+2026-07-21 00:10:44.093 | INFO  | 1 change detected
+2026-07-21 00:10:44.502 | INFO  | 1 change detected
+2026-07-21 00:10:44.909 | INFO  | 1 change detected
+2026-07-21 00:10:45.313 | INFO  | 1 change detected
+2026-07-21 00:10:45.717 | INFO  | 1 change detected
+2026-07-21 00:10:46.122 | INFO  | 1 change detected
+2026-07-21 00:10:46.528 | INFO  | 1 change detected
+2026-07-21 00:10:46.934 | INFO  | 1 change detected
+2026-07-21 00:10:47.336 | INFO  | 1 change detected
+2026-07-21 00:10:47.754 | INFO  | 1 change detected
+2026-07-21 00:10:48.159 | INFO  | 1 change detected
+2026-07-21 00:10:48.564 | INFO  | 1 change detected
+2026-07-21 00:10:48.967 | INFO  | 1 change detected
+2026-07-21 00:10:49.375 | INFO  | 1 change detected
+2026-07-21 00:10:49.780 | INFO  | 1 change detected
+2026-07-21 00:10:50.136 | INFO  | 1 change detected
+2026-07-21 00:10:50.545 | INFO  | 1 change detected
+2026-07-21 00:10:50.948 | INFO  | 1 change detected
+2026-07-21 00:10:51.354 | INFO  | 1 change detected
+2026-07-21 00:10:51.763 | INFO  | 1 change detected
+2026-07-21 00:10:52.167 | INFO  | 1 change detected
+2026-07-21 00:10:52.570 | INFO  | 1 change detected
+2026-07-21 00:10:52.974 | INFO  | 1 change detected
+2026-07-21 00:10:53.383 | INFO  | 1 change detected
+2026-07-21 00:10:53.748 | INFO  | 1 change detected
+2026-07-21 00:10:54.159 | INFO  | 1 change detected
+2026-07-21 00:10:54.562 | INFO  | 1 change detected
+2026-07-21 00:10:54.972 | INFO  | 1 change detected
+2026-07-21 00:10:55.374 | INFO  | 1 change detected
+2026-07-21 00:10:55.781 | INFO  | 1 change detected
+2026-07-21 00:10:56.197 | INFO  | 1 change detected
+2026-07-21 00:10:56.603 | INFO  | 1 change detected
+2026-07-21 00:10:57.020 | INFO  | 1 change detected
+2026-07-21 00:10:57.426 | INFO  | 1 change detected
+2026-07-21 00:10:57.836 | INFO  | 1 change detected
+2026-07-21 00:10:58.194 | INFO  | 1 change detected
+2026-07-21 00:10:58.606 | INFO  | 1 change detected
+2026-07-21 00:10:59.023 | INFO  | 1 change detected
+2026-07-21 00:10:59.426 | INFO  | 1 change detected
+2026-07-21 00:10:59.830 | INFO  | 1 change detected
+2026-07-21 00:11:00.236 | INFO  | 1 change detected
+2026-07-21 00:11:00.594 | INFO  | 1 change detected
+2026-07-21 00:11:01.005 | INFO  | 1 change detected
+2026-07-21 00:11:01.408 | INFO  | 1 change detected
+2026-07-21 00:11:01.824 | INFO  | 1 change detected
+2026-07-21 00:11:02.235 | INFO  | 1 change detected
+2026-07-21 00:11:02.639 | INFO  | 1 change detected
+2026-07-21 00:11:03.048 | INFO  | 1 change detected
+2026-07-21 00:11:03.454 | INFO  | 1 change detected
+2026-07-21 00:11:03.858 | INFO  | 1 change detected
+2026-07-21 00:11:04.265 | INFO  | 1 change detected
+2026-07-21 00:11:04.670 | INFO  | 1 change detected
+2026-07-21 00:11:05.075 | INFO  | 1 change detected
+2026-07-21 00:11:05.431 | INFO  | 1 change detected
+2026-07-21 00:11:05.841 | INFO  | 1 change detected
+2026-07-21 00:11:06.248 | INFO  | 1 change detected
+2026-07-21 00:11:06.654 | INFO  | 1 change detected
+2026-07-21 00:11:07.057 | INFO  | 1 change detected
+2026-07-21 00:11:07.466 | INFO  | 1 change detected
+2026-07-21 00:11:07.870 | INFO  | 1 change detected
+2026-07-21 00:11:08.278 | INFO  | 1 change detected
+2026-07-21 00:11:08.681 | INFO  | 1 change detected
+2026-07-21 00:11:09.086 | INFO  | 1 change detected
+2026-07-21 00:11:09.503 | INFO  | 1 change detected
+2026-07-21 00:11:09.908 | INFO  | 1 change detected
+2026-07-21 00:11:10.313 | INFO  | 1 change detected
+2026-07-21 00:11:10.720 | INFO  | 1 change detected
+2026-07-21 00:11:11.126 | INFO  | 1 change detected
+2026-07-21 00:11:11.527 | INFO  | 1 change detected
+2026-07-21 00:11:11.932 | INFO  | 1 change detected
+2026-07-21 00:11:12.337 | INFO  | 1 change detected
+2026-07-21 00:11:12.694 | INFO  | 1 change detected
+2026-07-21 00:11:13.104 | INFO  | 1 change detected
+2026-07-21 00:11:13.507 | INFO  | 1 change detected
+2026-07-21 00:11:13.914 | INFO  | 1 change detected
+2026-07-21 00:11:14.318 | INFO  | 1 change detected
+2026-07-21 00:11:14.726 | INFO  | 1 change detected
+2026-07-21 00:11:15.141 | INFO  | 1 change detected
+2026-07-21 00:11:15.547 | INFO  | 1 change detected
+2026-07-21 00:11:15.953 | INFO  | 1 change detected
+2026-07-21 00:11:16.308 | INFO  | 1 change detected
+2026-07-21 00:11:16.718 | INFO  | 1 change detected
+2026-07-21 00:11:17.124 | INFO  | 1 change detected
+2026-07-21 00:11:17.532 | INFO  | 1 change detected
+2026-07-21 00:11:17.942 | INFO  | 1 change detected
+2026-07-21 00:11:18.345 | INFO  | 1 change detected
+2026-07-21 00:11:18.750 | INFO  | 1 change detected
+2026-07-21 00:11:19.105 | INFO  | 1 change detected
+2026-07-21 00:11:19.517 | INFO  | 1 change detected
+2026-07-21 00:11:19.927 | INFO  | 1 change detected
+2026-07-21 00:11:20.334 | INFO  | 1 change detected
+2026-07-21 00:11:20.736 | INFO  | 1 change detected
+2026-07-21 00:11:21.142 | INFO  | 1 change detected
+2026-07-21 00:11:21.497 | INFO  | 1 change detected
+2026-07-21 00:11:21.906 | INFO  | 1 change detected
+2026-07-21 00:11:22.310 | INFO  | 1 change detected
+2026-07-21 00:11:22.717 | INFO  | 1 change detected
+2026-07-21 00:11:23.119 | INFO  | 1 change detected
+2026-07-21 00:11:23.522 | INFO  | 1 change detected
+2026-07-21 00:11:23.926 | INFO  | 1 change detected
+2026-07-21 00:11:24.343 | INFO  | 1 change detected
+2026-07-21 00:11:24.745 | INFO  | 1 change detected
+2026-07-21 00:11:25.151 | INFO  | 1 change detected
+2026-07-21 00:11:25.555 | INFO  | 1 change detected
+2026-07-21 00:11:25.961 | INFO  | 1 change detected
+2026-07-21 00:11:26.374 | INFO  | 1 change detected
+2026-07-21 00:11:26.731 | INFO  | 1 change detected
+2026-07-21 00:11:27.139 | INFO  | 1 change detected
+2026-07-21 00:11:27.544 | INFO  | 1 change detected
+2026-07-21 00:11:27.950 | INFO  | 1 change detected
+2026-07-21 00:11:28.356 | INFO  | 1 change detected
+2026-07-21 00:11:28.761 | INFO  | 1 change detected
+2026-07-21 00:11:29.166 | INFO  | 1 change detected
+2026-07-21 00:11:29.574 | INFO  | 1 change detected
+2026-07-21 00:11:29.978 | INFO  | 1 change detected
+2026-07-21 00:11:30.380 | INFO  | 1 change detected
+2026-07-21 00:11:30.784 | INFO  | 1 change detected
+2026-07-21 00:11:31.186 | INFO  | 2 changes detected
+2026-07-21 00:11:33.241 | INFO  | 2 changes detected
+2026-07-21 00:12:01.127 | INFO  | 1 change detected
+2026-07-21 00:12:02.997 | INFO  | 1 change detected
+2026-07-21 00:12:03.353 | INFO  | 5 changes detected
+2026-07-21 00:12:09.217 | INFO  | 1 change detected
+2026-07-21 00:12:14.158 | INFO  | 1 change detected
+2026-07-21 00:12:14.518 | INFO  | 5 changes detected

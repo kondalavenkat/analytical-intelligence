@@ -1,0 +1,13 @@
+{
+  "_comment": "Retail and e-commerce domain vocabulary",
+  "product": ["item", "sku", "goods", "merchandise", "offering", "line item", "article", "variant"],
+  "customer": ["buyer", "consumer", "shopper", "end user", "patron", "member", "subscriber"],
+  "order": ["transaction", "purchase", "sale", "basket", "cart", "invoice"],
+  "discount": ["offer", "promotion", "deal", "markdown", "rebate", "coupon"],
+  "supplier": ["vendor", "manufacturer", "distributor", "wholesaler", "source"],
+  "store": ["outlet", "branch", "location", "channel", "site"],
+  "inventory": ["stock", "units on hand", "available quantity"],
+  "return": ["refund", "chargeback", "reversal"],
+  "category": ["department", "aisle", "product line", "collection"],
+  "margin": ["markup", "gross margin", "profit margin", "contribution margin"]
+}

@@ -1,0 +1,13 @@
+{
+  "_comment": "Banking and financial services domain vocabulary",
+  "loan": ["credit", "advance", "facility", "mortgage", "overdraft", "lending"],
+  "customer": ["client", "borrower", "applicant", "account holder", "depositor"],
+  "branch": ["outlet", "location", "office", "unit", "site"],
+  "balance": ["outstanding", "principal", "outstanding amount", "remaining"],
+  "interest": ["rate", "yield", "return", "emi", "instalment"],
+  "deposit": ["savings", "fixed deposit", "fd", "term deposit"],
+  "transaction": ["transfer", "payment", "debit", "credit", "remittance"],
+  "npa": ["non-performing asset", "bad loan", "default", "delinquent"],
+  "portfolio": ["book", "loan book", "exposure", "assets under management"],
+  "disbursement": ["payout", "sanction", "release", "drawdown"]
+}

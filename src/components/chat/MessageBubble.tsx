@@ -371,6 +371,16 @@ export function MessageBubble({
               )}
             </div>
           )}
+          {msg.sources && msg.sources.length > 0 && (
+            <div style={{ marginTop: 8, padding: "8px 12px", background: "#f0f2f5", borderRadius: 8, border: "1px solid #e1e4e8", fontSize: 12 }}>
+              <div style={{ fontWeight: 600, color: "#185FA5", marginBottom: 4 }}>Evidence Sources:</div>
+              <ul style={{ margin: 0, paddingLeft: 20, color: "#4a4c50", display: "flex", flexDirection: "column", gap: 3 }}>
+                {msg.sources.map((src, i) => (
+                  <li key={i}>{src}</li>
+                ))}
+              </ul>
+            </div>
+          )}
           {/* Rich error card — shown when the query failed */}
           {msg.errorInfo && (
             <ErrorCard

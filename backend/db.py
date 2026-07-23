@@ -995,7 +995,11 @@ def get_file_data(engine, file_id: int, user_id: int) -> Optional[dict]:
                 return None
             cat = base[0]
 
-            res = {"category": cat}
+            res = {
+                "category": cat,
+                "file_type": base[1],
+                "file_name": base[2]
+            }
 
             # Fetch ALL available child records dynamically
             
